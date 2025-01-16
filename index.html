@@ -53,7 +53,13 @@
                 </ul>
             </nav>
             <!-- .navbar -->
-            <a href="contact.html" class="btn-get-started hide-on-mobile">Solicitar Cotización</a>
+            <a href="https://wa.me/529622113136?text=Me%20gustaría%20cotizar%20sobre:" 
+            class="btn-get-started hide-on-mobile" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Solicitar Cotización
+         </a>
+         
             <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -77,8 +83,14 @@
                     <a href="https://www.instagram.com/softdevagency/" target="_blank"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div class="d-flex justify-content-start">
-                    <a href="#contact" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Solicitar Cotización</a>
-                    <a href="#services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Ver Servicios</a>
+                    <a href="https://wa.me/529622113136?text=Me%20gustaría%20cotizar%20sobre:" 
+                    class="btn-get-started hide-on-mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Solicitar Cotización
+                 </a>
+                 
+                    <a href="/services.html" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Ver Servicios</a>
                 </div>
             </div>
         </div>
@@ -349,7 +361,12 @@
                                 <li><i class="bi bi-check-circle" aria-hidden="true"></i> Soporte por correo electrónico</li>
                             </ul>
                         </div>
-                        <a href="#">Contratar Ahora</a>
+                        <a href="https://wa.me/529622113136?text=Me%20gustaría%20contratar%20mantenimiento:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Solicitar Cotización
+                     </a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -370,7 +387,12 @@
                                 <li><i class="bi bi-check-circle" aria-hidden="true"></i> Análisis de tráfico mensual</li>
                             </ul>
                         </div>
-                        <a href="#">Contratar Ahora</a>
+                        <a href="https://wa.me/529622113136?text=Me%20gustaría%20contratar%20mantenimiento:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Solicitar Cotización
+                     </a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -392,7 +414,13 @@
                                 <li><i class="bi bi-check-circle" aria-hidden="true"></i> Revisión mensual de SEO</li>
                             </ul>
                         </div>
-                        <a href="#">Contratar Ahora</a>
+                        <a href="https://wa.me/529622113136?text=Me%20gustaría%20contratar%20mantenimiento:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Solicitar Cotización
+                     </a>
+                     
                     </div>
                 </div>
             </div>
@@ -849,7 +877,12 @@
             <div class="col-lg-12">
                 <h3>Hablemos de tu Proyecto</h3>
                 <p>Nos enorgullece nuestra capacidad para innovar y entregar soluciones digitales de calidad. Usa el formulario a continuación para discutir tus necesidades con nuestro equipo, y nos pondremos en contacto contigo lo antes posible.</p>
-                <a class="cta-btn" href="mailto:info@softdevagency.com">Contáctanos</a>
+                <a href="https://wa.me/529622113136?text=Me%20gustaría%20comentar%20miproyecto:" 
+                class="btn-get-started hide-on-mobile" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Contáctanos
+             </a>
             </div>
         </div>
     </div>
@@ -936,6 +969,7 @@
    <!-- Finalizar la sección de publicaciones recientes del blog -->
 
      <!-- Iniciar sección de contacto -->
+<!-- Iniciar sección de contacto -->
 <div id="contact" class="contact-section section">
     <div class="section-header">
         <h2>Contáctanos</h2>
@@ -980,7 +1014,7 @@
             <div class="col-lg-8 col-md-12" data-aos="fade-left">
                 <div class="contact-form-box contact-form contact-form-3">
                     <div class="form-container-box">
-                        <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php">
+                        <form class="contact-form form" id="ajax-contact">
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -1025,6 +1059,36 @@
     </div>
 </div>
 <!-- Fin de sección de contacto -->
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("YOUR_PUBLIC_KEY"); // Reemplaza con tu clave pública de EmailJS
+
+    document.getElementById("ajax-contact").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Captura los datos del formulario
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.querySelector("input[name='subject']").value,
+            message: document.getElementById("message").value,
+        };
+
+        // Envía el correo usando EmailJS
+        emailjs.send("service_eurl92j", "YOUR_TEMPLATE_ID", formData)
+            .then(function (response) {
+                alert("Mensaje enviado con éxito!");
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById("ajax-contact").reset(); // Limpia el formulario después del envío
+            })
+            .catch(function (error) {
+                alert("Hubo un error al enviar el mensaje.");
+                console.log("FAILED...", error);
+            });
+    });
+</script>
+
 
 
     </main>
