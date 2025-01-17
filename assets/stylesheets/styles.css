@@ -3602,3 +3602,7 @@ canvas {
     margin-bottom: 1.5rem;
     color: #333; /* Ajusta según el tema */
 }
+.form-control {
+    color: #000 !important; /* Forzar el color negro */
+    background-color: #76e7eb6e !important; /* Asegurar el fondo blanco */
+}
