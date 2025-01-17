@@ -25,6 +25,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
     <!-- Main CSS File -->
     <link href="assets/stylesheets/styles.css" rel="stylesheet">
 </head>
@@ -37,11 +38,12 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="index.html" class="">Inicio</a></li>
-                    <li><a href="services.html" class="">Servicios</a></li>
                     <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
                      <!-- <li><a href="testimonials.html" class="">Testimonios</a></li>-->
                     <li class="dropdown"><a href="#"><span>Menú</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
+                            <li><a href="services.html" class="">Servicios</a></li>
                             <li><a href="portfolio.html" class="">Portafolio</a></li>
                             <li><a href="team.html" class="">Equipo</a></li>
                             <li><a href="faqs.html">Preguntas Frecuentes</a></li>
@@ -969,11 +971,11 @@
    <!-- Finalizar la sección de publicaciones recientes del blog -->
 
      <!-- Iniciar sección de contacto -->
- <!-- Iniciar sección de contacto -->
+<!-- Formulario de contacto -->
 <div id="contact" class="contact-section section">
     <div class="section-header">
         <h2>Contáctanos</h2>
-        <p>Estamos disponibles para ayudarte con tus necesidades de software. No dudes en ponerte en contacto con nosotros, ¡estamos listos para escuchar tu proyecto!</p>
+        <p>Por favor, llena el formulario y envíanos tus datos para ponernos en contacto contigo.</p>
     </div>
     <div class="container">
         <div class="row">
@@ -1014,28 +1016,46 @@
             <div class="col-lg-8 col-md-12" data-aos="fade-left">
                 <div class="contact-form-box contact-form contact-form-3">
                     <div class="form-container-box">
-                        <form id="ajax-contact">
+                        <form id="contact-form">
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*" required data-error="El nombre es requerido.">
+                                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre*" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico*" required data-error="El correo electrónico es requerido.">
+                                            <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos*" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-input-box">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required>
+                                            <select id="servicio" name="servicio" class="form-control" required>
+                                                <option value="" disabled selected>Selecciona un servicio</option>
+                                                <option value="Desarrollo de Software">Desarrollo de Software</option>
+                                                <option value="Desarrollo de webs">Desarrollo de webs</option>
+                                                <option value="Desarrollo App móvil">Desarrollo App móvil</option>
+                                                <option value="Marketing Digital">Marketing Digital</option>
+                                                <option value="Servicio técnico">Servicio técnico</option>
+                                                <option value="Sistemas de seguridad">Sistemas de seguridad</option>
+                                                <option value="Ciberseguridad">Ciberseguridad</option>
+                                                <option value="Edición de foto">Edición de foto</option>
+                                                <option value="Edición de video">Edición de video</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <textarea class="form-control" id="message" name="message" rows="7" placeholder="Escribe tu mensaje*" required></textarea>
+                                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingresa tu correo" required>
                                         </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-input-box">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto*" required>
+                                        </div>
+                                    </div>
+                                   
                                     </div>
                                     <div class="col-md-12">
                                         <button type="submit" id="send-button" data-text="Enviar mensaje">Enviar mensaje</button>
@@ -1054,7 +1074,34 @@
         </div>
     </div>
 </div>
-<!-- Fin de sección de contacto -->
+
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevenir el envío del formulario por defecto
+        
+        // Obtener los valores de los campos
+        const nombre = document.getElementById("nombre").value.trim();
+        const apellidos = document.getElementById("apellidos").value.trim();
+        const servicio = document.getElementById("servicio").value;
+        const correo = document.getElementById("correo").value.trim();
+        
+        // Construir el mensaje para WhatsApp
+        const mensaje = `Hola, me gustaría solicitar más información:
+        %0A*Nombre:* ${nombre}
+        %0A*Apellidos:* ${apellidos}
+        %0A*Servicio requerido:* ${servicio}
+        %0A*Correo electrónico:* ${correo}`;
+        
+        // Número de WhatsApp al que se enviará el mensaje
+        const numeroWhatsApp = "529622113136";
+        
+        // Abrir WhatsApp en una nueva pestaña
+        window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, "_blank");
+    });
+</script>
+
+
 
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
