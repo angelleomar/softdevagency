@@ -240,35 +240,33 @@
         </div>
     </div>
 </div>
-
-
 <script>
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita el envío por defecto
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Evita el envío por defecto
 
-    // Obtener los valores de los campos
-    const nombre = encodeURIComponent(document.getElementById("nombre").value.trim());
-    const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
-    const servicio = encodeURIComponent(document.getElementById("servicio").value);
-    const correo = encodeURIComponent(document.getElementById("correo").value.trim());
+        // Obtener los valores de los campos
+        const nombre = encodeURIComponent(document.getElementById("nombre").value.trim());
+        const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
+        const servicio = encodeURIComponent(document.getElementById("servicio").value);
+        const correo = encodeURIComponent(document.getElementById("correo").value.trim());
 
-    // Construir el mensaje
-    const mensaje = `Hola, me gustaría solicitar más información:
-    %0A*Nombre:* ${nombre}
-    %0A*Apellidos:* ${apellidos}
-    %0A*Servicio requerido:* ${servicio}
-    %0A*Correo electrónico:* ${correo}`;
+        // Construir el mensaje
+        const mensaje = `Hola, me gustaría solicitar más información:
+*Nombre:* ${decodeURIComponent(nombre)}
+*Apellidos:* ${decodeURIComponent(apellidos)}
+*Servicio requerido:* ${decodeURIComponent(servicio)}
+*Correo electrónico:* ${decodeURIComponent(correo)}`;
 
-    // Número de WhatsApp
-    const numeroWhatsApp = "529622113136";
+        // Número de WhatsApp
+        const numeroWhatsApp = "529622113136";
 
-    // Abrir el enlace en una nueva pestaña
-    window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, "_blank");
-});
+        // Construir el enlace para la API de WhatsApp
+        const enlaceWhatsApp = `https://api.whatsapp.com/send/?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
 
+        // Abrir el enlace en una nueva pestaña
+        window.open(enlaceWhatsApp, "_blank");
+    });
 </script>
-
-
   </main> <!-- Fin #principal -->
 
    <!-- Pie de página -->
