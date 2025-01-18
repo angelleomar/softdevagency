@@ -243,28 +243,29 @@
 
 
 <script>
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevenir el envío del formulario por defecto
-        
-        // Obtener los valores de los campos
-        const nombre = document.getElementById("nombre").value.trim();
-        const apellidos = document.getElementById("apellidos").value.trim();
-        const servicio = document.getElementById("servicio").value;
-        const correo = document.getElementById("correo").value.trim();
-        
-        // Construir el mensaje para WhatsApp
-        const mensaje = `Hola, me gustaría solicitar más información:
-        %0A*Nombre:* ${nombre}
-        %0A*Apellidos:* ${apellidos}
-        %0A*Servicio requerido:* ${servicio}
-        %0A*Correo electrónico:* ${correo}`;
-        
-        // Número de WhatsApp al que se enviará el mensaje
-        const numeroWhatsApp = "529622113136";
-        
-        // Abrir WhatsApp en una nueva pestaña
-        window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, "_blank");
-    });
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el envío por defecto
+
+    // Obtener los valores de los campos
+    const nombre = encodeURIComponent(document.getElementById("nombre").value.trim());
+    const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
+    const servicio = encodeURIComponent(document.getElementById("servicio").value);
+    const correo = encodeURIComponent(document.getElementById("correo").value.trim());
+
+    // Construir el mensaje
+    const mensaje = `Hola, me gustaría solicitar más información:
+    %0A*Nombre:* ${nombre}
+    %0A*Apellidos:* ${apellidos}
+    %0A*Servicio requerido:* ${servicio}
+    %0A*Correo electrónico:* ${correo}`;
+
+    // Número de WhatsApp
+    const numeroWhatsApp = "529622113136";
+
+    // Abrir el enlace en una nueva pestaña
+    window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, "_blank");
+});
+
 </script>
 
 
