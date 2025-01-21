@@ -3608,4 +3608,19 @@ canvas {
 #download-app .store-badge {
     margin: 10px; /* Espaciado entre los botones */
 }
+:root {
+    --color-bg: #ffffff; /* Claro */
+    --text-color: #000000; /* Claro */
+}
+
+:root.dark {
+    --color-bg: #000000; /* Oscuro */
+    --text-color: #ffffff; /* Oscuro */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--text-color);
+}
+
 
