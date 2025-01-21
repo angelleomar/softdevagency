@@ -1126,42 +1126,44 @@
 </div>
 
 
+
 <script>
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Evita el envío por defecto del formulario
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el envío por defecto del formulario
 
-        // Obtener valores de los campos
-        const nombre = document.getElementById("nombre").value.trim();
-        const apellidos = document.getElementById("apellidos").value.trim();
-        const servicio = document.getElementById("servicio").value;
-        const correo = document.getElementById("correo").value.trim();
+    // Obtener valores de los campos
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellidos = document.getElementById("apellidos").value.trim();
+    const servicio = document.getElementById("servicio").value;
+    const correo = document.getElementById("correo").value.trim();
 
-        // Validaciones
-        if (!nombre || !apellidos || !servicio || !correo) {
-            alert("Por favor, completa todos los campos.");
-            return;
-        }
+    // Validaciones
+    if (!nombre || !apellidos || !servicio || !correo) {
+        alert("Por favor, completa todos los campos.");
+        return;
+    }
 
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
-            alert("Por favor, ingresa un correo válido.");
-            return;
-        }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+        alert("Por favor, ingresa un correo válido.");
+        return;
+    }
 
-        // Construir mensaje
-        const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${nombre}\n*Apellidos:* ${apellidos}\n*Servicio requerido:* ${servicio}\n*Correo electrónico:* ${correo}`;
+    // Construir mensaje
+    const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${nombre}\n*Apellidos:* ${apellidos}\n*Servicio requerido:* ${servicio}\n*Correo electrónico:* ${correo}`;
 
-        // Crear enlace para WhatsApp
-        const numeroWhatsApp = "529622113136"; // Número de WhatsApp
-        const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+    // Crear enlace para WhatsApp
+    const numeroWhatsApp = "529622113136"; // Número de WhatsApp
+    const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
-        // Redirigir a WhatsApp
-        try {
-            window.location.href = enlaceWhatsApp;
-        } catch (error) {
-            console.error("Error al redirigir a WhatsApp:", error);
-            alert("Ocurrió un problema al intentar redirigir a WhatsApp. Inténtalo nuevamente.");
-        }
-    });
+    // Redirigir a WhatsApp
+    try {
+        window.location.href = enlaceWhatsApp;
+    } catch (error) {
+        console.error("Error al redirigir a WhatsApp:", error);
+        alert("Ocurrió un problema al intentar redirigir a WhatsApp. Inténtalo nuevamente.");
+    }
+});
+
 </script>
 
     
