@@ -1129,7 +1129,7 @@
 
 <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Evita el envío por defecto
+        e.preventDefault(); // Evita el envío por defecto del formulario
 
         // Obtener los valores de los campos
         const nombre = document.getElementById("nombre").value.trim();
@@ -1144,24 +1144,22 @@
         }
 
         // Mostrar en consola los valores capturados para debug
-        console.log("Nombre:", nombre);
-        console.log("Apellidos:", apellidos);
-        console.log("Servicio:", servicio);
-        console.log("Correo:", correo);
+        console.log("Datos capturados:", { nombre, apellidos, servicio, correo });
 
-        // Construir el mensaje
+        // Construir el mensaje para enviar
         const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${nombre}\n*Apellidos:* ${apellidos}\n*Servicio requerido:* ${servicio}\n*Correo electrónico:* ${correo}`;
 
-        // Número de WhatsApp
-        const numeroWhatsApp = "529622113136"; // Número de WhatsApp al que se enviará el mensaje
+        // Número de WhatsApp al que se enviará el mensaje
+        const numeroWhatsApp = "529622113136"; // Número de WhatsApp (ajústalo si es necesario)
 
-        // Construir el enlace para WhatsApp
+        // Crear el enlace para WhatsApp
         const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
         // Redirigir al usuario a WhatsApp con el mensaje
         window.location.href = enlaceWhatsApp;
     });
 </script>
+
 
 
     </main>
