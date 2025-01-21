@@ -41,21 +41,21 @@
     --hero-overlay-color: #000000;
     --menu-color: #ffffff;
     --theme-color: #000000;
-    --border-color: #14929a;
+    --border-color: #025add;
     --theme-color-dark: #2c2c2c;
     --text-color: #ffffff;
     --hero-text-color: #ffffff;
     --text-white-color: #ffffff;
     --text-grey-color: #565656;
-    --text-theme-color: #14929a;
+    --text-theme-color: #025add;
     --light-color: #000000;
     --color-default: #000000;
-    --color-primary: #14929a;
+    --color-primary: #025add;
     --color-secondary: #0c6de0;
     --color-start: #000000;
     --color-end: #000000;
     --hero-card-bg: rgb(0 0 0 / 83%);
-    --box-shadow-color: rgb(20 146 154 / 49%);
+    --box-shadow-color: rgba(20, 45, 154, 0.49);
 }
 
 body {
@@ -3586,10 +3586,7 @@ canvas {
     margin-bottom: 1.5rem;
     color: #333; /* Ajusta según el tema */
 }
-.form-control {
-    color: #000 !important; /* Forzar el color negro */
-    background-color: #76e7eb6e !important; /* Asegurar el fondo blanco */
-}
+
 /* Ajusta el tamaño de los íconos de Google Play y App Store */
 .store-badge {
     width: 150px;  /* Tamaño ajustado de los íconos */
@@ -3600,3 +3597,15 @@ canvas {
     max-width: 100%; /* Cambia este valor según lo que desees */
     height: auto; /* Mantiene la relación de aspecto */
 }
+#download-app .row {
+    margin-bottom: 40px; /* Ajusta este valor según la separación que quieras */
+}
+
+#download-app .text-center {
+    margin-bottom: 30px; /* Esto aplica espacio entre la imagen y los botones */
+}
+
+#download-app .store-badge {
+    margin: 10px; /* Espaciado entre los botones */
+}
+
