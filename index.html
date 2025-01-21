@@ -1132,13 +1132,25 @@
         e.preventDefault(); // Evita el envío por defecto
 
         // Obtener los valores de los campos
-        const nombre = encodeURIComponent(document.getElementById("nombre").value.trim());
-        const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
-        const servicio = encodeURIComponent(document.getElementById("servicio").value);
-        const correo = encodeURIComponent(document.getElementById("correo").value.trim());
+        const nombre = document.getElementById("nombre").value.trim();
+        const apellidos = document.getElementById("apellidos").value.trim();
+        const servicio = document.getElementById("servicio").value;
+        const correo = document.getElementById("correo").value.trim();
+
+        // Verificar si los valores están vacíos
+        if (!nombre || !apellidos || !servicio || !correo) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        // Mostrar en consola los valores capturados para debug
+        console.log("Nombre:", nombre);
+        console.log("Apellidos:", apellidos);
+        console.log("Servicio:", servicio);
+        console.log("Correo:", correo);
 
         // Construir el mensaje
-        const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${decodeURIComponent(nombre)}\n*Apellidos:* ${decodeURIComponent(apellidos)}\n*Servicio requerido:* ${decodeURIComponent(servicio)}\n*Correo electrónico:* ${decodeURIComponent(correo)}`;
+        const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${nombre}\n*Apellidos:* ${apellidos}\n*Servicio requerido:* ${servicio}\n*Correo electrónico:* ${correo}`;
 
         // Número de WhatsApp
         const numeroWhatsApp = "529622113136"; // Número de WhatsApp al que se enviará el mensaje
@@ -1150,6 +1162,7 @@
         window.location.href = enlaceWhatsApp;
     });
 </script>
+
 
     </main>
     <!-- Fin #principal -->
