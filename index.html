@@ -1073,17 +1073,17 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre*" required>
+                                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre*" required aria-label="Nombre">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos*" required>
+                                            <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos*" required aria-label="Apellidos">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-input-box">
-                                            <select id="servicio" name="servicio" class="form-control" required>
+                                            <select id="servicio" name="servicio" class="form-control" required aria-label="Selecciona un servicio">
                                                 <option value="" disabled selected>Selecciona un servicio</option>
                                                 <option value="Desarrollo de Software">Desarrollo de Software</option>
                                                 <option value="Desarrollo de webs">Desarrollo de webs</option>
@@ -1099,18 +1099,16 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group form-input-box">
-                                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingresa tu correo" required>
+                                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingresa tu correo*" required aria-label="Correo electrónico">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-input-box">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto*" required>
+                                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Asunto*" required aria-label="Asunto">
                                         </div>
                                     </div>
-                                   
-                                    </div>
                                     <div class="col-md-12">
-                                        <button type="submit" id="send-button" data-text="Enviar mensaje">Enviar mensaje</button>
+                                        <button type="submit" id="send-button" class="btn btn-primary" aria-label="Enviar mensaje">Enviar mensaje</button>
                                     </div>
                                     <div class="messages">
                                         <div class="alert alert-success alert-dismissable hidden" id="msgSubmit">
@@ -1127,40 +1125,46 @@
     </div>
 </div>
 
+
 <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault(); // Evita el envío por defecto del formulario
 
-        // Obtener los valores de los campos
+        // Obtener valores de los campos
         const nombre = document.getElementById("nombre").value.trim();
         const apellidos = document.getElementById("apellidos").value.trim();
         const servicio = document.getElementById("servicio").value;
         const correo = document.getElementById("correo").value.trim();
 
-        // Verificar si los valores están vacíos
+        // Validaciones
         if (!nombre || !apellidos || !servicio || !correo) {
             alert("Por favor, completa todos los campos.");
             return;
         }
 
-        // Mostrar en consola los valores capturados para debug
-        console.log("Datos capturados:", { nombre, apellidos, servicio, correo });
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+            alert("Por favor, ingresa un correo válido.");
+            return;
+        }
 
-        // Construir el mensaje para enviar
+        // Construir mensaje
         const mensaje = `Hola, me gustaría solicitar más información:\n*Nombre:* ${nombre}\n*Apellidos:* ${apellidos}\n*Servicio requerido:* ${servicio}\n*Correo electrónico:* ${correo}`;
 
-        // Número de WhatsApp al que se enviará el mensaje
-        const numeroWhatsApp = "529622113136"; // Número de WhatsApp (ajústalo si es necesario)
-
-        // Crear el enlace para WhatsApp
+        // Crear enlace para WhatsApp
+        const numeroWhatsApp = "529622113136"; // Número de WhatsApp
         const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
-        // Redirigir al usuario a WhatsApp con el mensaje
-        window.location.href = enlaceWhatsApp;
+        // Redirigir a WhatsApp
+        try {
+            window.location.href = enlaceWhatsApp;
+        } catch (error) {
+            console.error("Error al redirigir a WhatsApp:", error);
+            alert("Ocurrió un problema al intentar redirigir a WhatsApp. Inténtalo nuevamente.");
+        }
     });
 </script>
 
-
+    
 
     </main>
     <!-- Fin #principal -->
