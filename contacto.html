@@ -221,8 +221,6 @@
                                             <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto*" required>
                                         </div>
                                     </div>
-                                   
-                                    </div>
                                     <div class="col-md-12">
                                         <button type="submit" id="send-button" data-text="Enviar mensaje">Enviar mensaje</button>
                                     </div>
@@ -240,6 +238,7 @@
         </div>
     </div>
 </div>
+
 <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault(); // Evita el envío por defecto
@@ -249,13 +248,15 @@
         const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
         const servicio = encodeURIComponent(document.getElementById("servicio").value);
         const correo = encodeURIComponent(document.getElementById("correo").value.trim());
+        const subject = encodeURIComponent(document.getElementById("subject").value.trim()); // Asunto
 
         // Construir el mensaje
         const mensaje = `Hola, me gustaría solicitar más información:
 *Nombre:* ${decodeURIComponent(nombre)}
 *Apellidos:* ${decodeURIComponent(apellidos)}
 *Servicio requerido:* ${decodeURIComponent(servicio)}
-*Correo electrónico:* ${decodeURIComponent(correo)}`;
+*Correo electrónico:* ${decodeURIComponent(correo)}
+*Asunto:* ${decodeURIComponent(subject)}`; // Agregar el campo de asunto
 
         // Número de WhatsApp
         const numeroWhatsApp = "529622113136";
@@ -267,6 +268,7 @@
         window.open(enlaceWhatsApp, "_blank");
     });
 </script>
+
   </main> <!-- Fin #principal -->
 
    <!-- Pie de página -->
