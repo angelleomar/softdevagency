@@ -3590,3 +3590,13 @@ canvas {
     color: #000 !important; /* Forzar el color negro */
     background-color: #76e7eb6e !important; /* Asegurar el fondo blanco */
 }
+/* Ajusta el tamaño de los íconos de Google Play y App Store */
+.store-badge {
+    width: 150px;  /* Tamaño ajustado de los íconos */
+    height: auto;  /* Mantiene la relación de aspecto */
+    margin: 0 10px; /* Espaciado entre los íconos */
+}
+#download-app .img-fluid {
+    max-width: 100%; /* Cambia este valor según lo que desees */
+    height: auto; /* Mantiene la relación de aspecto */
+}
