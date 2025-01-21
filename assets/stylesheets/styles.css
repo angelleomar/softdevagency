@@ -14,6 +14,7 @@
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+
     --color-bg: #025add;
     --hero-overlay-color: transparent;
     --menu-color: #ffffff;
@@ -36,7 +37,6 @@
 }
 
 :root.dark {
-    --menu-color-bg: #565656;
     --color-bg: #000000;
     --hero-overlay-color: #000000;
     --menu-color: #ffffff;
@@ -50,8 +50,8 @@
     --text-theme-color: #14929a;
     --light-color: #000000;
     --color-default: #000000;
-    --color-primary: #000000;
-    --color-secondary: #000000;
+    --color-primary: #14929a;
+    --color-secondary: #0c6de0;
     --color-start: #000000;
     --color-end: #000000;
     --hero-card-bg: rgb(0 0 0 / 83%);
@@ -61,28 +61,8 @@
 body {
     font-family: var(--font-default);
     color: var(--text-color);
-    background: var(--theme-color);
-    transition: 0.5s background ease;
-}
-
-body.dark {
-    --menu-color-bg: #ffffff;
-    --color-bg: #000000;
-    --hero-overlay-color: #000000;
-    --menu-color: #ffffff;
-    --border-color: #025add;
-    --theme-color-dark: #151515;
-    --text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #565656;
-    --text-theme-color: #025add;
-    --light-color: #000000;
-    --color-default: #000000;
-    --color-secondary: #0c6de0;
-    --color-start: #000000;
-    --color-end: #000000;
-    --hero-card-bg: rgb(0 0 0 / 83%);
-    --box-shadow-color: rgb(12 109 224 / 69%);
+    background: var(--color-bg);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #darkmode-button {
@@ -94,7 +74,11 @@ body.dark {
     width: 45px;
     height: 45px;
     margin-left: 10px;
+    background-color: var(--menu-color);
+    color: var(--text-theme-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 a {
     color: var(--color-primary);
