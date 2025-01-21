@@ -1,8 +1,6 @@
-// Selecciona elementos del DOM
 const darkModeButton = document.getElementById('darkmode-button');
-const root = document.documentElement; // <html> element
+const root = document.documentElement;  // <html> element
 
-// Función para aplicar el modo oscuro o claro
 function applyDarkMode(isDarkMode) {
     if (isDarkMode) {
         root.classList.add('dark');  // Aplica la clase 'dark' en el <html>
@@ -12,7 +10,6 @@ function applyDarkMode(isDarkMode) {
     updateButtonIcon(isDarkMode);  // Actualiza el ícono del botón
 }
 
-// Función para actualizar el ícono del botón
 function updateButtonIcon(isDarkMode) {
     const icon = darkModeButton.querySelector('i');
     if (icon) {
@@ -20,25 +17,20 @@ function updateButtonIcon(isDarkMode) {
     }
 }
 
-// Alternar el modo oscuro
 function toggleDarkMode() {
     const isDarkMode = root.classList.toggle('dark');  // Alterna la clase 'dark' en <html>
     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');  // Guarda la preferencia en localStorage
     updateButtonIcon(isDarkMode);  // Actualiza el ícono al alternar
 }
 
-// Configurar el estado inicial al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeSetting = localStorage.getItem('darkMode');
     const isDarkMode = darkModeSetting === 'enabled';  // Recupera la preferencia guardada
 
-    // Aplica el estado inicial según la preferencia guardada
-    applyDarkMode(isDarkMode);
+    applyDarkMode(isDarkMode);  // Aplica el modo oscuro o claro según el estado guardado
 
-    // Añadir evento al botón
     darkModeButton.addEventListener('click', toggleDarkMode);
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const isWebView = () => {
