@@ -50,11 +50,11 @@
     --text-grey-color: #565656;
     --text-theme-color: #14929a;
     --light-color: #000000;
-    --color-default: #000000;
-    --color-primary: #000000;
-    --color-secondary: #000000;
-    --color-start: #000000;
-    --color-end: #000000;
+    --color-default: #3a3a3a; /* Consistencia */
+    --color-primary: #025add; /* Azul principal */
+    --color-secondary: #0c6de0; /* Azul secundario */
+    --color-start: #025add; /* Degradado inicial */
+    --color-end: #0c6de0; /* Degradado final */
     --hero-card-bg: rgb(0 0 0 / 83%);
     --box-shadow-color: rgb(20 146 154 / 49%);
   }
@@ -63,28 +63,20 @@
     font-family: var(--font-default);
     color: var(--text-color);
     background: var(--theme-color);
-    transition: 0.5s background ease;
+    transition: 0.5s background ease, 0.5s color ease;
   }
   
-  body.dark {
-    --menu-color-bg: #ffffff;
-    --color-bg: #000000;
-    --hero-overlay-color: #000000;
-    --menu-color: #ffffff;
-    --border-color: #025add;
-    --theme-color-dark: #151515;
-    --text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #565656;
-    --text-theme-color: #025add;
-    --light-color: #000000;
-    --color-default: #000000;
-    --color-secondary: #0c6de0;
-    --color-start: #000000;
-    --color-end: #000000;
-    --hero-card-bg: rgb(0 0 0 / 83%);
-    --box-shadow-color: rgb(12 109 224 / 69%);
+  #darkmode-button {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
   }
+  
   
   #darkmode-button {
     border-radius: 50%;
@@ -1018,10 +1010,7 @@
   }
   
   .clients .swiper-slide img {
-    transition: 0.3s;
-    filter: grayscale(1);
-    opacity: 1;
-    border-radius: 8px;
+    filter: grayscale(0);
   }
   
   .clients .swiper-slide img:hover {
