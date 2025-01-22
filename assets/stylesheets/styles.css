@@ -56,18 +56,25 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-  
-  #darkmode-button {
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    display: grid;
-    place-items: center;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-  }
-  
+#darkmode-button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+  background-color: var(--menu-color-bg); /* Usa las variables para adaptarse a ambos modos */
+  color: var(--text-color);
+  box-shadow: 0 2px 5px var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#darkmode-button:hover {
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
   
   a {
     color: var(--color-primary);
