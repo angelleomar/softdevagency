@@ -1,80 +1,61 @@
 /* Variables predeterminadas para el modo claro */
 :root {
-    --font-default: "Poppins", sans-serif;
-    --font-primary: "Poppins", sans-serif;
-    --font-secondary: "Poppins", sans-serif;
-    scroll-behavior: smooth;
-    --color-bg: #025add;
-    --hero-overlay-color: transparent;
-    --menu-color: #ffffff;
-    --theme-color: #025add;
-    --border-color: #e2e2e2;
-    --theme-color-dark: #f8f8f8;
-    --text-color: #3a3a3a;
-    --hero-text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #3a3a3a;
-    --text-theme-color: #025add;
-    --light-color: #ffffff;
-    --color-default: #3a3a3a;
-    --color-primary: #025add;
-    --color-secondary: #0c6de0;
-    --color-start: #3a3a3a;
-    --color-end: #3a3a3a;
-    --hero-card-bg: rgb(228 227 223 / 17%);
-    --box-shadow-color: rgb(82 90 101 / 10%);
-  }
-  
-  /* Variables del modo oscuro */
-  :root.dark {
-    --menu-color-bg: #565656;
-    --color-bg: #000000;
-    --hero-overlay-color: #000000;
-    --menu-color: #ffffff;
-    --theme-color: #000000;
-    --border-color: #14929a;
-    --theme-color-dark: #2c2c2c;
-    --text-color: #ffffff;
-    --hero-text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #565656;
-    --text-theme-color: #14929a;
-    --light-color: #000000;
-    --color-default: #000000;
-    --color-primary: #025add;
-    --color-secondary: #025add;
-    --color-start: #000000;
-    --color-end: #000000;
-    --hero-card-bg: rgb(0 0 0 / 83%);
-    --box-shadow-color: rgb(20 146 154 / 49%);
-  }
-  
-  body {
-    font-family: var(--font-default);
-    color: var(--text-color);
-    background: var(--theme-color);
-    transition: 0.5s background ease;
-  }
-  
-  body.dark {
-    --menu-color-bg: #ffffff;
-    --color-bg: #000000;
-    --hero-overlay-color: #000000;
-    --menu-color: #ffffff;
-    --border-color: #025add;
-    --theme-color-dark: #151515;
-    --text-color: #ffffff;
-    --text-white-color: #ffffff;
-    --text-grey-color: #565656;
-    --text-theme-color: #025add;
-    --light-color: #000000;
-    --color-default: #000000;
-    --color-secondary: #0c6de0;
-    --color-start: #000000;
-    --color-end: #000000;
-    --hero-card-bg: rgb(0 0 0 / 83%);
-    --box-shadow-color: rgb(12 109 224 / 69%);
-  }
+  --font-default: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+  /* Modo claro */
+  --color-bg: #025add;
+  --hero-overlay-color: transparent;
+  --menu-color: #ffffff;
+  --theme-color: #025add;
+  --border-color: #e2e2e2;
+  --theme-color-dark: #f8f8f8;
+  --text-color: #3a3a3a;
+  --hero-text-color: #ffffff;
+  --text-white-color: #ffffff;
+  --text-grey-color: #3a3a3a;
+  --text-theme-color: #025add;
+  --light-color: #ffffff;
+  --color-default: #3a3a3a;
+  --color-primary: #025add;
+  --color-secondary: #0c6de0;
+  --color-start: #3a3a3a;
+  --color-end: #3a3a3a;
+  --hero-card-bg: rgb(228 227 223 / 17%);
+  --box-shadow-color: rgb(82 90 101 / 10%);
+}
+
+:root.dark {
+  /* Modo oscuro */
+  --color-bg: #000000;
+  --menu-color-bg: #151515;
+  --hero-overlay-color: #000000;
+  --menu-color: #ffffff;
+  --theme-color: #151515;
+  --border-color: #14929a;
+  --theme-color-dark: #2c2c2c;
+  --text-color: #ffffff;
+  --hero-text-color: #ffffff;
+  --text-white-color: #ffffff;
+  --text-grey-color: #565656;
+  --text-theme-color: #14929a;
+  --light-color: #000000;
+  --color-default: #000000;
+  --color-primary: #14929a;
+  --color-secondary: #025add;
+  --color-start: #000000;
+  --color-end: #000000;
+  --hero-card-bg: rgb(0 0 0 / 83%);
+  --box-shadow-color: rgb(20 146 154 / 49%);
+}
+
+body {
+  font-family: var(--font-default);
+  color: var(--text-color);
+  background-color: var(--color-bg);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
   
   #darkmode-button {
     border-radius: 50%;
@@ -3162,7 +3143,7 @@
     width: 100%;
     padding: 10px 20px;
     height: 52px;
-    color: #1674c0;
+    color: #1850eb;
     border: none;
     border-radius: 8px;
     text-transform: capitalize;
