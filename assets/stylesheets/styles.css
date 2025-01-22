@@ -3595,3 +3595,44 @@
     color: #000000;
   }
   
+  .equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px; /* Puedes ajustar esta altura según tu preferencia */
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333; /* Ajusta según el tema */
+}
+
+/* Ajusta el tamaño de los íconos de Google Play y App Store */
+.store-badge {
+    width: 150px;  /* Tamaño ajustado de los íconos */
+    height: auto;  /* Mantiene la relación de aspecto */
+    margin: 0 10px; /* Espaciado entre los íconos */
+}
+#download-app .img-fluid {
+    max-width: 100%; /* Cambia este valor según lo que desees */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+#download-app .row {
+    margin-bottom: 40px; /* Ajusta este valor según la separación que quieras */
+}
+
+#download-app .text-center {
+    margin-bottom: 30px; /* Esto aplica espacio entre la imagen y los botones */
+}
+
+#download-app .store-badge {
+    margin: 10px; /* Espaciado entre los botones */
+}
