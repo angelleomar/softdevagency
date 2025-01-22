@@ -65,9 +65,9 @@ body {
   width: 45px;
   height: 45px;
   margin-left: 10px;
-  background-color: var(--menu-color-bg); /* Usa las variables para adaptarse a ambos modos */
-  color: var(--text-color);
-  box-shadow: 0 2px 5px var(--text-color);
+   /* Usa las variables para adaptarse a ambos modos */
+  color: var(--text-grey-color);
+  box-shadow: 0 2px 5px var(--text-grey-color);
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
