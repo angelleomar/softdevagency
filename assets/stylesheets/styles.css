@@ -78,16 +78,6 @@
   }
   
   
-  #darkmode-button {
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    display: grid;
-    place-items: center;
-    width: 45px;
-    height: 45px;
-    margin-left: 10px;
-  }
   
   a {
     color: var(--color-primary);
