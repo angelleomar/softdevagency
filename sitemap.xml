@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://softdevagency.com/</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
@@ -48,5 +47,67 @@
   <priority>0.80</priority>
 </url>
 
+<!-- Imágenes del Portafolio -->
+<url>
+  <loc>https://softdevagency.com/assets/images/portfolio/innovacion-realidad-virtual.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
+<url>
+  <loc>https://softdevagency.com/assets/images/portfolio/ia-en-marketing.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/portfolio/diseño-web-apps.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Imágenes de las Promociones -->
+<url>
+  <loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-1.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-2.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Imágenes de Cripto -->
+<url>
+  <loc>https://softdevagency.com/assets/images/cripto/inteligencia-artificial-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/cripto/innovacion-realidad-virtual.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/cripto/innovacion-realidad-virtual.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Imágenes de funciones destacadas -->
+<url>
+  <loc>https://softdevagency.com/assets/images/funciones-destacadas-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/vista-previa-app-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>
