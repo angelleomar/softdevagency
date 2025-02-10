@@ -91,7 +91,6 @@
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://softdevagency.com/assets/images/cripto/innovacion-realidad-virtual.webp</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
@@ -107,6 +106,32 @@
 
 <url>
   <loc>https://softdevagency.com/assets/images/vista-previa-app-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Imágenes de equipo -->
+<url>
+  <loc>https://softdevagency.com/assets/images/team/manuel_leon-equipo-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://softdevagency.com/assets/images/team/patricio_munoz-equipo-softdevagency.webp</loc>
+  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Imágenes de sobre nosotros-->
+<url>
+  <loc>https://softdevagency.com/assets/images/blog/logotipo_softdevagency.webp</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
