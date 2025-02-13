@@ -10,11 +10,35 @@
   <loc>https://softdevagency.com/</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>1.00</priority>
+<image:image>
+      <image:loc>https://softdevagency.com/assets/images/portfolio/innovacion-realidad-virtual.webp</image:loc>
+    </image:image>
+<image:image>
+      <image:loc>https://softdevagency.com/assets/images/portfolio/ia-en-marketing.webp</image:loc>
+    </image:image>
+<image:image>
+      <image:loc>https://softdevagency.com/assets/images/portfolio/diseño-web-apps.webp</image:loc>
+    </image:image>
+ <image:image>
+      <image:loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-1.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-2.webp</image:loc>
+    </image:image>
+<image:image>
+      <image:loc>https://softdevagency.com/assets/images/cripto/inteligencia-artificial-softdevagency.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://softdevagency.com/assets/images/cripto/innovacion-realidad-virtual.webp</image:loc>
+    </image:image>
 </url>
 <url>
   <loc>https://softdevagency.com/about</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
+ <image:image>
+      <image:loc>https://softdevagency.com/assets/images/blog/logotipo_softdevagency.webp</image:loc>
+    </image:image>
 </url>
 <url>
   <loc>https://softdevagency.com/contacto</loc>
@@ -35,6 +59,15 @@
   <loc>https://softdevagency.com/team</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
+<image:image>
+      <image:loc>https://softdevagency.com/assets/images/team/manuel_leon-equipo-softdevagency.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://softdevagency.com/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://softdevagency.com/assets/images/team/patricio_munoz-equipo-softdevagency.webp</image:loc>
+    </image:image>
 </url>
 <url>
   <loc>https://softdevagency.com/faqs</loc>
