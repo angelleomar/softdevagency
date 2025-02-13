@@ -11,6 +11,10 @@
     <title>Sobre Nosotros | SoftdevAgency - Desarrollo de Software</title>
      <!-- Canonica -->
     <link rel="canonical" href="https://softdevagency.com/about">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Flag Icons CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.png">
     <!-- Google Fonts (Optimizadas) -->
@@ -59,18 +63,37 @@
                 </li>
             </ul>
         </nav>
-        <!-- .navbar -->
-        <a href="https://wa.me/529622113136?text=Me%20gustaría%20cotizar%20sobre:" 
-        class="btn-get-started hide-on-mobile" 
-        target="_blank" 
-        rel="noopener noreferrer">
-        Solicitar Cotización
-        </a>
-        <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    </div>
-</header>
+ <!-- Contenedor para el selector de idiomas y el botón de modo oscuro -->
+           <div class="d-flex align-items-center gap-3">
+            <!-- Language selector with only a flag -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="en" data-flag="flag-icon-us">
+                            <span class="flag-icon flag-icon-us me-2"></span> English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="es" data-flag="flag-icon-mx">
+                            <span class="flag-icon flag-icon-mx me-2"></span> Español
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="fr" data-flag="flag-icon-fr">
+                            <span class="flag-icon flag-icon-fr me-2"></span> Français
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="darkmode-button"><i class="bi bi-moon-fill" ></i></button>
+            
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
 <!-- Fin del Encabezado -->
 <!-- Sección Hero -->
   <div class="breadcrumbs">
@@ -327,5 +350,10 @@
 <script src="assets/javascripts/guardardark.js"></script>
 <!-- Archivo JS principal de plantilla -->
   <script src="assets/javascripts/main.js"></script>
+        <!-- Bootstrap JS (Opcional, si deseas que funcione el dropdown) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+           <!-- Bootstrap JS (Asegúrate de incluir estos scripts) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
