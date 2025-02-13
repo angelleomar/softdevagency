@@ -72,41 +72,25 @@
                     </li>
                 </ul>
             </nav>
-             <!-- Language selector with flags (Bootstrap Dropdown) -->
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="flag-icon flag-icon-mx"></span> Español
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                    <li>
-                        <a class="dropdown-item" href="en">
-                            <span class="flag-icon flag-icon-us"></span> English
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="es">
-                            <span class="flag-icon flag-icon-mx"></span> Español
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="fr">
-                            <span class="flag-icon flag-icon-fr"></span> Français
-                        </a>
-                    </li>
-                    <!-- Add more languages here -->
                 </ul>
-            </div>
-            <!-- .navbar -->
-            <a href="https://wa.me/529622113136?text=Me%20gustaría%20cotizar%20sobre:" 
-            class="btn-get-started hide-on-mobile" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Solicitar Cotización
-            </a>
-            <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-        </div>
+    <!-- Contenedor para el selector de idioma y el modo oscuro -->
+    <div class="d-flex align-items-center language-darkmode-container">
+    <!-- Selector de idioma -->
+    <div class="dropdown">
+    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="flag-icon flag-icon-us"></span> English
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="en"><span class="flag-icon flag-icon-us"></span> English</a></li>
+            <li><a class="dropdown-item" href="es"><span class="flag-icon flag-icon-mx"></span> Español</a></li>
+            <li><a class="dropdown-item" href="fr"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
+        </ul>
+    </div>
+    <!-- Botón de modo oscuro con espacio a la izquierda -->
+    <button id="darkmode-button" class="btn btn-secondary ms-md-3">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+</div>
     </header>
     <!-- Fin del Encabezado -->
     <!-- Sección Hero -->
