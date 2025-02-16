@@ -92,7 +92,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item d-flex align-items-center language-option" href="/" data-flag="flag-icon-mx">
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/mx/" data-flag="flag-icon-mx">
                             <span class="flag-icon flag-icon-mx me-2"></span> México
                         </a>
                     </li>
@@ -110,6 +110,12 @@
         </div>
     </header>
     <!-- Fin del Encabezado -->
+    <script>
+  if (window.location.pathname === "/" && !document.cookie.includes("redirected")) {
+    document.cookie = "redirected=true; path=/"; // Guarda una cookie para evitar redirecciones repetidas
+    window.location.replace("/mx/");
+  }
+    </script>
     <!-- Sección Hero -->
 <section id="hero" class="hero sticked-header-offset">
 
