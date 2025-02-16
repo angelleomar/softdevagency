@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO -->
+    <meta name="author" content="SoftdevAgency">
+    <meta name="keywords" content="software development, web design, technology, programming, digital solutions">
+    <meta name="description" content="SoftdevAgency offers software development, web design, and innovative technology solutions for businesses and entrepreneurs.">
+    <title>SoftdevAgency | Professional Software Development & Web Design</title>
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://softdevagency.com/us"> 
+      <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Flag Icons CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="/assets/images/favicon.ico" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Main CSS File -->
+    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
+    
+    <!-- Redirect to the version without index.html -->
+    <script>
+        if (window.location.href.includes("index.html")) {
+            window.location.href = window.location.href.replace("index.html", "");
+        }
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQSKFK2V9V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TQSKFK2V9V');
+    </script>
+    
+    </head>
+    <body>
+        <header id="header" class="header d-flex align-items-center sticked sticky-menu">
+             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+                 <a href="/" class="logo d-flex align-items-center">
+                     <!-- Large logo for desktops -->
+                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                     <!-- Small logo for mobile devices -->
+                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+                 </a>
+                 <nav id="navbar" class="navbar">
+                     <ul>
+                         <li><a href="/" class="">Home</a></li>
+                         <li><a href="about" class="">About Us</a></li>
+                         <li><a href="contact" class="">Contact Us</a></li>
+                         <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                             <ul>
+                                 <li><a href="services" class="">Services</a></li>
+                                 <li><a href="portfolio" class="">Portfolio</a></li>
+                                 <li><a href="team" class="">Team</a></li>
+                                 <li><a href="calendar" class="">Schedule a Meeting</a></li>
+                                 <li><a href="faqs">FAQs</a></li>
+                                 <li><a href="terms-conditions">Terms & Conditions</a></li>
+                                 <li><a href="privacy-policy">Privacy Policy</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </nav>
+                <!-- Container for language selector and dark mode button -->
+                <div class="d-flex align-items-center gap-3">
+                 <!-- Language selector with only a flag -->
+                 <div class="dropdown">
+                     <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                         <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
+                     </button>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="en" data-flag="flag-icon-us">
+                                <span class="flag-icon flag-icon-us me-2"></span> USA
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="es" data-flag="flag-icon-mx">
+                                <span class="flag-icon flag-icon-mx me-2"></span> Mexico
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="fr" data-flag="flag-icon-fr">
+                                <span class="flag-icon flag-icon-fr me-2"></span> France
+                            </a>
+                        </li>
+                     </ul>
+                 </div>
+                 <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+                 
+                 <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                 <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+             </div>
+         </header>
+         <!-- End of Header -->
+         <!-- Hero Section -->
+     <section id="hero" class="hero sticked-header-offset">
+     
+         <div id="particles-js"></div>
+         <div id="repulse-circle-div"></div>
+         <div class="container position-relative">
+             <div class="row gy-5 aos-init aos-animate">
+                 <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+                     <h2 data-aos="fade-up">We Transform Ideas into <span>Digital Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+                     <p data-aos="fade-up" data-aos-delay="400">We offer innovative services: software development, websites, mobile apps, digital marketing, and cybersecurity. Our focus is on growing your business with cutting-edge technology.</p>
+                     <div class="social" data-aos="fade-up" data-aos-delay="600">
+                         <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                         <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank"><i class="bi bi-facebook"></i></a>
+                         <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
+                         <a href="https://www.instagram.com/softdevagency.latam/" target="_blank"><i class="bi bi-instagram"></i></a>
+                     </div>
+                     <div class="d-flex justify-content-start">
+                         <a href="https://wa.me/529622113136?text=I%20would%20like%20a%20quote%20for:" 
+                         class="btn-get-started hide-on-mobile" 
+                         target="_blank" 
+                         rel="noopener noreferrer">
+                         Request a Quote
+                      </a>
+                         <a href="services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">View Services</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- End of Hero Section -->
+     <!-- Start of Services Section -->
+<div id="services" class="section">
+    <div class="top-icon-box position-relative">
+        <div class="container position-relative">
+            <div class="row gy-4">
+
+                <!-- Software Development -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-design.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Software Development</a></h4>
+                        <p>We design and implement customized solutions to optimize your business processes.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+
+                <!-- Website Development -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-hosting.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Website Development</a></h4>
+                        <p>Creation of professional, responsive, and optimized websites to enhance your online presence.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+
+                <!-- Mobile Applications -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-social.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Mobile Applications</a></h4>
+                        <p>We develop innovative apps for Android and iOS devices, tailored to your needs.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+
+                <!-- Digital Marketing -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-seo.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Digital Marketing</a></h4>
+                        <p>Boost your brand with digital marketing strategies, social media management, and SEO optimization.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+
+                <!-- Cybersecurity -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-secure.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Cybersecurity</a></h4>
+                        <p>We protect your systems and data with advanced IT security solutions.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+
+                <!-- Technical Support -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-cloud.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Technical Support</a></h4>
+                        <p>We provide maintenance, technical support, and optimization for your tech equipment.</p>
+                    </div>
+                </div>
+                <!-- End of Icon Box -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Services Section -->
+
+<!-- Cryptocurrency Creation -->
+<section id="crypto-development">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Create Your Own Cryptocurrency!</h2>
+            <p>Turn your idea into a real, secure cryptocurrency ready to operate in the global market.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Representative Image -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="/assets/images/cripto/tu-cripto-exito-softdevagency.webp" alt="Your idea, your crypto, your success in the blockchain world" title="Take your crypto idea to success" class="img-fluid" />  
+            </div>
+            <!-- Action Button -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250">
+                <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20creating%20a%20cryptocurrency" 
+                    class="btn-get-started hide-on-mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Create Your Cryptocurrency Now
+                </a>
+            </div>
+            <!-- Detailed Description -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                    We guide you through the entire process of developing your cryptocurrency, from token creation 
+                    to market implementation. We design tailor-made solutions with secure and efficient smart contracts, 
+                    adapted to your needs. Our team of blockchain experts will advise you every step of the way to ensure 
+                    that your cryptocurrency is functional, scalable, and meets industry standards.  
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Promotions Section -->
+<section id="promotions" class="section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2>Special Promotion</h2>
+            <p>Join our affiliate program and enjoy unique benefits by promoting our services.</p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- First Image -->
+            <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                <img 
+                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    alt="Affiliate Promotion 1 - Exclusive Benefits" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage1"
+                    title="Affiliate Promotion 1 - Exclusive Benefits">
+            </div>
+            <!-- Second Image -->
+            <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                <img 
+                    src="/assets/images/icons/promocion-afiliados-2.webp" 
+                    alt="Affiliate Promotion 2 - Join Today" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage2"
+                    title="Affiliate Promotion 2 - Join Today">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for First Image -->
+<div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                  <img 
+                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    alt="Affiliate Promotion 1 - Exclusive Benefits" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage1"
+                    title="Affiliate Promotion 1 - Exclusive Benefits">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Second Image -->
+<div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img 
+                src="/assets/images/icons/promocion-afiliados-2.webp" 
+                alt="Affiliate Promotion 2 - Join Today" 
+                class="img-fluid rounded" 
+                style="max-width: 90%; height: auto; cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalImage2"
+                title="Affiliate Promotion 2 - Join Today">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Highlights -->
+<section>
+    <div class="container" id="featured">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Why Choose Us?</h2>
+            <p>We stand out in providing high-quality technology solutions that transform your business.</p>
+        </div>
+        <div class="row">
+            <!-- Left Side -->
+            <div class="col-md-4 left">
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="description">
+                        <h4>Experience</h4>
+                        <p>Over 10 years developing customized solutions for businesses in various industries.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-1.svg" alt="icon">
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="400">
+                    <div class="description">
+                        <h4>Quality</h4>
+                        <p>We focus on delivering robust, scalable products tailored to our clients' needs.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-2.svg" alt="icon">
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                    <div class="description">
+                        <h4>Innovation</h4>
+                        <p>We adopt cutting-edge technologies to keep you ahead in the market.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-3.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <!-- Center -->
+            <div class="col-md-4 p-4 p-sm-5 center">
+                <div class="list-center-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="center-icon">
+                        <img src="/assets/images/funciones-destacadas-softdevagency.webp" alt="SoftdevAgency Key Features" title="SoftdevAgency Key Features" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="col-md-4 right">
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-4.svg" alt="icon">
+                    </div>
+                    <div class="description">
+                        <h4>Competitive Prices</h4>
+                        <p>We offer affordable solutions without compromising the quality of our services.</p>
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-5.svg" alt="icon">
+                    </div>
+                    <div class="description">
+                        <h4>On-Time Delivery</h4>
+                        <p>We ensure compliance with agreed timelines for each project.</p>
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-6.svg" alt="icon">
+                    </div>
+                    <div class="description">
+                        <h4>Technical Support</h4>
+                        <p>We provide personalized assistance and continuous support to ensure your satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Highlights -->
+ <!-- Download the App -->
+<section id="download-app">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Download Our App!</h2>
+            <p>Access our mobile application for the best experience.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- App Image -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
+               <img src="/assets/images/vista-previa-app-softdevagency.webp" alt="SoftdevAgency mobile app preview" title="SoftdevAgency app preview" class="img-fluid" />
+            </div>
+            <!-- Download Buttons -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://play.google.com/store/apps/details?id=com.leomar.softdevagency&hl=en" target="_blank">
+                    <img src="/assets/images/app2.png" alt="Download on Google Play" class="store-badge">
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="/assets/images/app1.png" alt="Download on the App Store" class="store-badge">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Our Portfolio</h2>
+            <p>Explore some of our projects.</p>
+        </div>
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <ul class="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">Web Design</li>
+                    <li data-filter=".filter-product">Web Development</li>
+                    <li data-filter=".filter-branding">Mobile Apps</li>
+                </ul>
+            </div>
+
+            <div class="row gy-4 portfolio-container">
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/diseno-web-moderno.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/diseno-web-moderno.webp" class="img-fluid" alt="Modern and attractive web design - SoftdevAgency" title="Modern and attractive web design">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/desarrollo-web-empresas.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/desarrollo-web-empresas.webp" class="img-fluid" alt="Business web development - SoftdevAgency" title="Business web development">
+                        </a>
+                    </div>
+                </div>  
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/web-ecommerce-profesional.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/web-ecommerce-profesional.webp" class="img-fluid" alt="Professional eCommerce store - SoftdevAgency" title="Professional eCommerce store">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/landing-page-efectiva.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/landing-page-efectiva.webp" class="img-fluid" alt="Effective landing page for businesses - SoftdevAgency" title="Effective landing page for businesses">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/software-gestion-empresarial.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/software-gestion-empresarial.webp" class="img-fluid" alt="Business management software - SoftdevAgency" title="Business management software">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/app-movil-android-ios.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/app-movil-android-ios.webp" class="img-fluid" alt="Mobile app development for Android and iOS - SoftdevAgency" title="Mobile app development for Android and iOS">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Portfolio Container -->
+        </div>
+    </div>
+</section>
+<!-- End of Portfolio Section -->
+        <!-- Start Pricing Section -->
+<div class="pricing section">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Web Maintenance Plans</h2>
+                <p>Select the plan that best suits your needs.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Basic</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>999</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly content updates</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Basic security maintenance</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly backups</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Email support</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Request a Quote
+                     </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Plus</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>1500</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Weekly content updates</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Advanced security maintenance</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Weekly backups</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Phone and email support</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Web performance optimization</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly traffic analysis</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Request a Quote
+                     </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>2000</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily content updates</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Full security maintenance</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily backups</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Priority support via phone, chat, and email</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Advanced web performance optimization</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Detailed traffic analysis and reports</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly SEO review</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Request a Quote
+                     </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Pricing Section -->
+<!-- AI in Marketing and Automation -->
+<section id="ai-marketing">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Artificial Intelligence</h2>
+            <p>Enhance your marketing strategy and optimize processes with artificial intelligence.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Representative Image -->
+            <div class="col-md-12 text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+                <img src="/assets/images/cripto/inteligencia-artificial-softdevagency.webp" alt="AI in Marketing and Automation - Innovation and Future" class="img-fluid" title="AI in Marketing and Automation - Innovation and Future" />
+            </div>
+            <!-- Detailed Description -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                    We offer AI solutions, developing automation systems to reduce costs, streamline operations, and boost productivity in your business. 
+                    From chatbots to predictive analytics, we help you implement AI efficiently.  
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Testimonials</h2>
+            <p>What our satisfied clients say</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="/assets/images/testimonials/testimonial-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <div>
+                                    <h3>Raul Peralta</h3>
+                                    <h4>Client</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i> "Working with this team has been a pleasure. They are professional, creative, and always meet deadlines. Highly recommended." 
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="/assets/images/testimonials/testimonial-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <div>
+                                    <h3>Oscar Navarrete</h3>
+                                    <h4>Client</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i> "Excellent service and support! Always available when we need them, and they never disappoint. I highly recommend them for any project." 
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- End of Testimonials Section --><!-- Virtual Reality Development --><section id="vr-development"> <div class="container"> <div class="section-header" data-aos="fade-up" data-aos-delay="100"> <h2>Take Your Business to Virtual Reality!</h2> <p>We design immersive experiences for businesses, education, and entertainment using VR and augmented reality technologies.</p> </div> <div class="row align-items-center"> <!-- Representative Image --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200"> <img src="/assets/images/cripto/innovacion-realidad-virtual.webp" alt="Innovation in Virtual Reality - Technology of the Future" class="img-fluid" title="Innovation in Virtual Reality - Technology of the Future" /> </div> <!-- Call-to-Action Button --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250"> <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20virtual%20reality%20development" class="btn-get-started hide-on-mobile" target="_blank" rel="noopener noreferrer"> Develop Your VR Project </a> </div> <!-- Description with Technologies --> <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300"> <p> We create simulations and immersive environments using technologies like Unity, Unreal Engine, and WebXR, compatible with devices such as Oculus, HTC Vive, and more. We implement 3D modeling in Blender and Maya, along with programming in C#, Blueprints, and JavaScript for interactive experiences. Take your ideas to the next level with VR. </p> </div> </div> </div> </section> <!-- Start of Counter Section --> <div id="stats-counter" class="call-to-action stats-counter section"> <div class="container" data-aos="fade-up"> <div class="row gy-4 align-items-center"> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> <p><span>Satisfied Clients</span> We achieve great results</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> <p><span>Completed Projects</span> Successfully delivered projects</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> <p><span>Support Hours</span> Assistance provided to our clients</p> </div> <!-- End of Stats Item --> </div> </div> </div> </div> <!-- End of Counter Section --> <!-- Clients Section --><div id="clients" class="clients section"> <div class="container" data-aos="zoom-out"> <!-- Section Title --> <h2 class="section-title">Skills We Handle</h2>
+    <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+            <!-- Slider elements will go here -->
+
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/androidstudio-original.svg" class="img-fluid" alt="Android Studio">
+                    <p>Android Studio</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/composer-original.svg" class="img-fluid" alt="Composer">
+                    <p>Composer</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/flutter-original.svg" class="img-fluid" alt="Flutter">
+                    <p>Flutter</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/gitlab-original.svg" class="img-fluid" alt="GitLab">
+                    <p>GitLab</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/graphql.svg" class="img-fluid" alt="GraphQL">
+                    <p>GraphQL</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-bootstrap.svg" class="img-fluid" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-css.svg" class="img-fluid" alt="CSS">
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-dart.svg" class="img-fluid" alt="Dart">
+                    <p>Dart</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-express.svg" class="img-fluid" alt="Express">
+                    <p>Express</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-git.svg" class="img-fluid" alt="Git">
+                    <p>Git</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-github.svg" class="img-fluid" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-html.svg" class="img-fluid" alt="HTML">
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-javascript.svg" class="img-fluid" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-mysql.svg" class="img-fluid" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-python.svg" class="img-fluid" alt="Python">
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-react.svg" class="img-fluid" alt="React">
+                    <p>React</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-sass.svg" class="img-fluid" alt="Sass">
+                    <p>Sass</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/icon-typescript.svg" class="img-fluid" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/java-original.svg" class="img-fluid" alt="Java">
+                    <p>Java</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/laravel.svg" class="img-fluid" alt="Laravel">
+                    <p>Laravel</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/linux-original.svg" class="img-fluid" alt="Linux">
+                    <p>Linux</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/materialui-original.svg" class="img-fluid" alt="Material UI">
+                    <p>Material UI</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/mongodb-original.svg" class="img-fluid" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="client-item">
+                    <img src="/assets/images/clients/tailwindcss.svg" class="img-fluid" alt="Tailwind CSS">
+                    <p>Tailwind CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> <!-- End of Clients Section -->
+<!-- Team Section -->
+<section id="team" class="team sections-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Our Team</h2>
+            <p>Meet our core team.</p>
+        </div>
+        <div class="row gy-4">
+
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <img src="/assets/images/team/manuel_leon-equipo-softdevagency.webp" class="img-fluid" alt="Manuel León">
+                    <h4>Manuel León</h4>
+                    <span>Software Developer</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561254802853" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/%C3%A1ngel-manuel-le%C3%B3n-martinez-39789a270/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/manuell_leon/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team Member -->
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                    <img src="/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp" class="img-fluid" alt="Manuel Sarmiento">
+                    <h4>Manuel Sarmiento</h4>
+                    <span>Software Developer</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100013127976460" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/juanm_fuentes/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team Member -->
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="member">
+                    <img src="/assets/images/team/patricio_munoz-equipo-softdevagency.webp" class="img-fluid" alt="Patricio Muñoz">
+                    <h4>Patricio Muñoz</h4>
+                    <span>Software Developer</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100070953241619" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team Member -->
+        </div>
+    </div>
+</section>
+<!-- End Team Section -->
+
+<!-- FAQ Section -->
+<section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to the most common questions about our software services, web development, mobile applications, and more.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                What is software development and why is it important for my business?
+                            </button>
+                        </h3>
+                        <div id="faq-content-1" class="accordion-collapse collapse show" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Software development is the process of creating custom applications and computer systems to solve specific problems. It is important because it allows you to optimize processes, improve productivity, and provide tailored solutions for your business needs.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End FAQ Item -->
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                How do I know if I need a website or a mobile app?
+                            </button>
+                        </h3>
+                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                If your business needs an online presence accessible from any device, a website is ideal. However, if your service requires specific mobile functionalities or constant access through mobile devices, an app might be the best option. We can help you decide what’s best for your needs.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End FAQ Item -->
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Why is digital marketing important for my company?
+                            </button>
+                        </h3>
+                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Digital marketing is key to reaching a broader audience online. It allows you to promote your business, increase brand visibility, and generate more sales opportunities through strategies like social media, SEO, paid advertising, and more.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End FAQ Item -->
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                What types of software services do you offer?
+                            </button>
+                        </h3>
+                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                At **SoftDevAgency**, we offer a variety of services, including mobile app development, custom website creation, security system design, digital marketing, and technical support to ensure your technology always performs at its best.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End FAQ Item -->
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                How long does it take to develop a mobile app or a website?
+                            </button>
+                        </h3>
+                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                The development time depends on the complexity of the project. A simple website or basic app can take a few weeks, while more complex projects may take several months. Our team works efficiently to deliver solutions on time.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End FAQ Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End FAQ Section -->
+
+<!-- Call to Action Section -->
+<section id="call-to-action" class="call-to-action">
+    <div class="container text-center aos-init aos-animate" data-aos="zoom-out">
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <h3>Let's Talk About Your Project</h3>
+                <p>We take pride in our ability to innovate and deliver high-quality digital solutions. Use the form below to discuss your needs with our team, and we’ll get back to you as soon as possible.</p>
+                <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20discuss%20my%20project:" 
+                class="btn-get-started hide-on-mobile" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Contact Us
+             </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Call to Action Section -->
+ <!-- Recent Blog Posts Section -->
+<section id="recent-posts" class="recent-posts sections-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Latest News</h2>
+            <p>Check out our section for the latest technology news.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/B5HYGO462ZFPZLY44ERPG23PLQ.jpg?auth=7c383907bdb02d3d9334c0863797f96f1358c9e154e5f52bfb4c7a5229c81182&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-10/los-10-inventos-mas-curiosos-del-ces-2025-de-la-cuchara-que-sala-la-comida-sin-sal-a-la-camioneta-con-un-coche-volador-dentro.html">The 10 Most Curious Inventions</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Isabel Rubio</p>
+                            <p class="post-date">
+                                <time datetime="2025-01-10">January 10, 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/GMXKZWL3KBGFNBGRKIBLLFQYSU.jpg?auth=f09568974543e7924deec8509b3416eb37a90272adb6f481cbde7c38d96e1035&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-10/suprimir-la-verificacion-y-moderacion-en-redes-aumenta-el-odio-y-el-acoso-advierten-los-expertos.html">Removing Verification and Moderation on Social Networks</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Raúl Limón</p>
+                            <p class="post-date">
+                                <time datetime="2025-01-09">January 9, 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/ZF3SXI5OTFDE5IL6JE4BQBLKNM.jpg?auth=a27a6727bf45032d2b79b4d0d9448b379e78157be9b9e2a475e06b0a07265e98&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-09/un-robot-que-aspira-y-recoge-los-calcetines-tirados-por-el-suelo-asi-sera-el-futuro-de-la-limpieza.html">A Robot That Vacuums and Picks Up Socks</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Isabel Rubio</p>
+                            <p class="post-date">
+                                <time datetime="2025-01-09">January 9, 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default submission
+
+        // Get field values
+        const name = encodeURIComponent(document.getElementById("name").value.trim());
+        const surname = encodeURIComponent(document.getElementById("surname").value.trim());
+        const service = encodeURIComponent(document.getElementById("service").value);
+        const email = encodeURIComponent(document.getElementById("email").value.trim());
+        const subject = encodeURIComponent(document.getElementById("subject").value.trim()); // Subject
+
+        // Construct the message
+        const message = `Hello, I would like to request more information:
+*Name:* ${decodeURIComponent(name)}
+*Surname:* ${decodeURIComponent(surname)}
+*Required service:* ${decodeURIComponent(service)}
+*Email:* ${decodeURIComponent(email)}
+*Subject:* ${decodeURIComponent(subject)}`;
+
+        // WhatsApp number
+        const whatsappNumber = "529622113136";
+
+        // Build the WhatsApp API link
+        const whatsappLink = `https://api.whatsapp.com/send/?phone=${whatsappNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+
+        // Open the link in a new tab
+        window.open(whatsappLink, "_blank");
+    });
+</script>
+
+</main>
+<!-- End #main -->
+
+<!-- Footer -->
+<footer id="footer" class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="/" class="logo d-flex align-items-center">
+                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Pages">
+                            </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>We offer solutions in web development, applications, and more, committed to providing high-quality services for your business.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/106189443/admin/dashboard/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/softdevagency.latam/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Services</h3>
+                        </div>
+                        <ul class="list">
+                            <li><a href="services">Digital Innovation</a></li>
+                            <li><a href="services">Web Development</a></li>
+                            <li><a href="services">Mobile Apps</a></li>
+                            <li><a href="services">Marketing</a></li>
+                            <li><a href="services">Technical Service</a></li>
+                            <li><a href="services">Security Systems</a></li>
+                            <li><a href="services">Cryptocurrencies & Blockchain</a></li>
+                            <li><a href="services">Artificial Intelligence</a></li>
+                            <li><a href="services">Augmented Reality</a></li>
+                            <li><a href="services">Virtual Reality</a></li>
+                            <li><a href="services">Video Editing</a></li>
+                            <li><a href="services">Photo Editing</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Information</h3>
+                        </div>
+                        <ul class="list">
+                            <li><a href="about">About</a></li>
+                            <li><a href="team">Team</a></li>
+                            <li><a href="portfolio">Portfolio</a></li>
+                            <li><a href="faqs">FAQs</a></li>
+                            <li><a href="privacy-policy">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="contact-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p><i class="bi bi-geo-alt-fill mr-15"></i> Monterrey, Nuevo León / Tapachula, Chiapas, Mexico</p>
+                            <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +52 9622113136</p>
+                            <p><i class="bi bi-envelope-fill mr-15"></i> softdevagency@gmail.com</p>
+                            <p><i class="bi bi-envelope-fill mr-15"></i> snokert17@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don't miss our updates, subscribe to our newsletter.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="bi bi-telegram"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+                    <div class="copyright-text">
+                     <p>SoftdevAgency © 2023 - Designed by <a href="#">Manuel Leon</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+    <div id="preloader"></div>
+
+   <!-- Archivos JS del proveedor -->
+    <script src="/assets/javascripts/jquery.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/javascripts/plugins.js"></script>
+    <script src="/assets/javascripts/purecounter_vanilla.js"></script>
+    <script src="/assets/javascripts/validator.min.js"></script>
+    <script src="/assets/javascripts/contactform.js"></script>
+    <script src="/assets/javascripts/particles.min.js"></script>
+    <script src="/assets/javascripts/script.js"></script>
+<script src="/assets/javascripts/guardardark.js"></script>
+ <!-- Archivo JS principal de plantilla -->
+    <script src="/assets/javascripts/main.js"></script>
+    <!-- Bootstrap JS (Opcional, si deseas que funcione el dropdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+       <!-- Bootstrap JS (Asegúrate de incluir estos scripts) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
