@@ -1178,150 +1178,8 @@
             </div>
         </section>
    <!-- Finalizar la sección de publicaciones recientes del blog -->
-
-     <!-- Iniciar sección de contacto -->
-<!-- Formulario de contacto -->
-<div id="contact" class="contact-section section">
-    <div class="section-header">
-        <h2>Contáctanos</h2>
-        <p>Por favor, llena el formulario y envíanos tus datos para ponernos en contacto contigo.</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-12" data-aos="fade-right">
-                <div class="contact-information-box-3">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="single-contact-info-box">
-                                <div class="contact-info">
-                                    <h6>Dirección:</h6>
-                                    <p>Monterrey, Nuevo León</p>
-                                    <p>Tapachula, Chiapas</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-contact-info-box">
-                                <div class="contact-info">
-                                    <h6>Teléfono:</h6>
-                                    <p>+52 9622113136</p>
-                                    <p>+52 9621464390</p>
-                                    <p>+52 9621642308</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-contact-info-box">
-                                <div class="contact-info">
-                                    <h6>Correo:</h6>
-                                    <p>softdevagency@gmail.com</p>
-                                    <p>snokert17@hotmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-12" data-aos="fade-left">
-                <div class="contact-form-box contact-form contact-form-3">
-                    <div class="form-container-box">
-                        <form id="contact-form">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group form-input-box">
-                                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre*" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group form-input-box">
-                                            <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos*" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-input-box">
-                                            <select id="servicio" name="servicio" class="form-control" required aria-label="Selecciona un servicio">
-                                                <option value="" disabled selected>Selecciona un servicio</option>
-                                                <option value="Desarrollo de Software">Desarrollo de Software</option>
-                                                <option value="Desarrollo de webs">Desarrollo de webs</option>
-                                                <option value="Desarrollo App móvil">Desarrollo App móvil</option>
-                                                <option value="Marketing Digital">Marketing Digital</option>
-                                                <option value="Servicio técnico">Servicio técnico</option>
-                                                <option value="Sistemas de seguridad">Sistemas de seguridad</option>
-                                                <option value="Ciberseguridad">Ciberseguridad</option>
-                                                <option value="Edición de foto">Edición de foto</option>
-                                                <option value="Edición de video">Edición de video</option>
-                                                <option value="Innovación Digital">Innovación Digital</option>
-                                                <option value="Criptomonedas y Blockchain">Criptomonedas y Blockchain</option>
-                                                <option value="Inteligencia Artificial">Inteligencia Artificial</option>
-                                                <option value="Realidad Aumentada">Realidad Aumentada</option>
-                                                <option value="Realidad Virtual">Realidad Virtual</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group form-input-box">
-                                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingresa tu correo" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-input-box">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto*" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" id="send-button" data-text="Enviar mensaje">Enviar mensaje</button>
-                                    </div>
-                                    <div class="messages">
-                                        <div class="alert alert-success alert-dismissable hidden" id="msgSubmit">
-                                            ¡Gracias! Tu mensaje ha sido enviado.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Evita el envío por defecto
-
-        // Obtener los valores de los campos
-        const nombre = encodeURIComponent(document.getElementById("nombre").value.trim());
-        const apellidos = encodeURIComponent(document.getElementById("apellidos").value.trim());
-        const servicio = encodeURIComponent(document.getElementById("servicio").value);
-        const correo = encodeURIComponent(document.getElementById("correo").value.trim());
-        const subject = encodeURIComponent(document.getElementById("subject").value.trim()); // Asunto
-
-        // Construir el mensaje
-        const mensaje = `Hola, me gustaría solicitar más información:
-*Nombre:* ${decodeURIComponent(nombre)}
-*Apellidos:* ${decodeURIComponent(apellidos)}
-*Servicio requerido:* ${decodeURIComponent(servicio)}
-*Correo electrónico:* ${decodeURIComponent(correo)}
-*Asunto:* ${decodeURIComponent(subject)}`; // Agregar el campo de asunto
-
-        // Número de WhatsApp
-        const numeroWhatsApp = "529622113136";
-
-        // Construir el enlace para la API de WhatsApp
-        const enlaceWhatsApp = `https://api.whatsapp.com/send/?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
-
-        // Abrir el enlace en una nueva pestaña
-        window.open(enlaceWhatsApp, "_blank");
-    });
-</script>
-
-    
-
     </main>
     <!-- Fin #principal -->
-
  <!-- Pie de página -->
 <footer id="footer" class="footer-section">
     <div class="container">
@@ -1443,6 +1301,7 @@
     <script src="assets/javascripts/particles.min.js"></script>
     <script src="assets/javascripts/script.js"></script>
 <script src="assets/javascripts/guardardark.js"></script>
+
  <!-- Archivo JS principal de plantilla -->
     <script src="assets/javascripts/main.js"></script>
     <!-- Bootstrap JS (Opcional, si deseas que funcione el dropdown) -->
