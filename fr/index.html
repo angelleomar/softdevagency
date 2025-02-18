@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO -->
+    <meta name="author" content="SoftdevAgency">
+    <meta name="keywords" content="développement de logiciels, sites web, technologie, programmation, solutions numériques">
+    <meta name="description" content="SoftdevAgency propose le développement de logiciels, la conception de sites web et des solutions technologiques innovantes pour les entreprises et les entrepreneurs.">
+    <title>SoftdevAgency | Développement de Logiciels et Sites Web Professionnels</title>
+    <!-- Balise canonique -->
+    <link rel="canonical" href="https://softdevagency.com/"> 
+      <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Flag Icons CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="/assets/images/favicon.ico" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Main CSS File -->
+    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
+    
+    <!-- Redirection vers la version sans index.html -->
+    <script>
+        if (window.location.href.includes("index.html")) {
+            window.location.href = window.location.href.replace("index.html", "");
+        }
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQSKFK2V9V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TQSKFK2V9V');
+    </script>
+    
+    </head>
+<body>
+   <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/fr/" class="logo d-flex align-items-center">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Développement de logiciels et conception de sites web" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Développement de logiciels et conception de sites web" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="/fr/" class="">Accueil</a></li>
+                    <li><a href="nous" class="">À propos</a></li>
+                    <li><a href="contacter" class="">Contactez-nous</a></li>
+                    <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="lesservices" class="">Services</a></li>
+                            <li><a href="portefeuille" class="">Portfolio</a></li>
+                            <li><a href="équipe" class="">Équipe</a></li>
+                           <li><a href="calendrier" class="">Planifier une réunion</a></li>
+                            <li><a href="desquestions">Questions Fréquentes</a></li>
+                            <li><a href="politiques_de_vie privée">Politique de Confidentialité</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+           <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="flag-icon flag-icon-fr" id="selectedFlag"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/us/" data-flag="flag-icon-us">
+                            <span class="flag-icon flag-icon-us me-2"></span> États-Unis
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/" data-flag="flag-icon-mx">
+                            <span class="flag-icon flag-icon-mx me-2"></span> Mexique
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/fr/" data-flag="flag-icon-fr">
+                            <span class="flag-icon flag-icon-fr me-2"></span> France
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+            <button id="darkmode-button"><i class="bi bi-moon-fill" ></i></button>
+            
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
+    <!-- Fin de l'En-tête -->
+<!-- Section Héro -->
+<section id="hero" class="hero sticked-header-offset">
+
+    <div id="particles-js"></div>
+    <div id="repulse-circle-div"></div>
+    <div class="container position-relative">
+        <div class="row gy-5 aos-init aos-animate">
+            <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+                <h2 data-aos="fade-up">Nous transformons les idées en <span>solutions digitales</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+                <p data-aos="fade-up" data-aos-delay="400">Nous offrons des services innovants : développement de logiciels, sites web, applications mobiles, marketing digital et cybersécurité. Notre objectif est de faire croître votre entreprise avec des technologies de pointe.</p>
+                <div class="social" data-aos="fade-up" data-aos-delay="600">
+                    <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <a href="https://wa.me/529622113136?text=Je%20voudrais%20demander%20un%20devis%20pour:" 
+                    class="btn-get-started hide-on-mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Demander un devis
+                 </a>
+                    <a href="/fr/services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Voir les services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin de la Section Héro -->
+
+<!-- Début de la Section Services -->
+<div id="services" class="section">
+    <div class="top-icon-box position-relative">
+        <div class="container position-relative">
+            <div class="row gy-4">
+
+                <!-- Développement de Logiciels -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-design.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Développement de Logiciels</a></h4>
+                        <p>Nous concevons et mettons en œuvre des solutions personnalisées pour optimiser vos processus commerciaux.</p>
+                    </div>
+                </div>
+                <!-- Fin de l'Icon Box -->
+
+                <!-- Développement de Sites Web -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-hosting.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Développement de Sites Web</a></h4>
+                        <p>Création de sites web professionnels, responsifs et optimisés pour mettre en valeur votre entreprise en ligne.</p>
+                    </div>
+                </div>
+                <!-- Fin de l'Icon Box -->
+
+                <!-- Applications Mobiles -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-social.svg" alt="icon"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Applications Mobiles</a></h4>
+                        <p>Nous développons des applications innovantes pour Android et iOS, adaptées à vos besoins.</p>
+                    </div>
+                </div>
+                <!-- Fin de l'Icon Box -->
+                     <!-- Marketing numérique -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-seo.svg" alt="icono"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Marketing numérique</a></h4>
+                        <p>Boostez votre marque grâce à des stratégies de marketing numérique, à la gestion des médias sociaux et à l'optimisation du référencement.</p>
+                    </div>
+                </div>
+                <!-- Fin de la boîte à icônes -->
+
+                <!-- Sécurité des données -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-secure.svg" alt="icono"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Cybersécurité</a></h4>
+                        <p>Nous protégeons vos systèmes et vos données grâce à des solutions de sécurité informatique avancées.</p>
+                    </div>
+                </div>
+                <!-- Fin de la boîte à icônes  -->
+
+                <!-- Service technique -->
+                <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><img src="/assets/images/icons/service-cloud.svg" alt="icono"></div>
+                        <h4 class="title"><a href="" class="stretched-link">Service technique</a></h4>
+                        <p>Nous assurons la maintenance, l'assistance technique et l'optimisation de vos équipements technologiques.</p>
+                    </div>
+                </div>
+                <!-- Fin de la boîte à icônes -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la Section Services -->
+
+<!-- Création de Cryptomonnaies -->
+<section id="crypto-development">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Créez votre propre cryptomonnaie !</h2>
+            <p>Transformez votre idée en une cryptomonnaie réelle, sécurisée et prête à opérer sur le marché mondial.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Image -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="/assets/images/cripto/tu-cripto-exito-softdevagency.webp" alt="Votre idée, votre crypto, votre succès dans le monde de la blockchain" title="Amenez votre idée crypto au succès" class="img-fluid" />  
+            </div>
+            <!-- Bouton d'action -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250">
+                <a href="https://wa.me/529622113136?text=Je%20voudrais%20demander%20un%20devis%20pour%20la%20création%20d%27une%20cryptomonnaie" 
+                    class="btn-get-started hide-on-mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Créez votre cryptomonnaie maintenant
+                </a>
+            </div>
+             <!-- Descripción Detallada -->
+             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                    Nous vous accompagnons tout au long du processus de développement de votre crypto-monnaie, de la création du token 
+                    à sa mise en place sur le marché. Nous concevons des solutions sur mesure avec des contrats intelligents sécurisés et efficaces, adaptés à vos besoins. 
+                    des smart contracts sécurisés et efficaces, adaptés à vos besoins. Notre équipe d'experts en blockchain 
+                    vous conseillera à chaque étape pour s'assurer que votre crypto-monnaie est fonctionnelle, évolutive et conforme aux normes de l'industrie. 
+                    conforme aux normes de l'industrie.  
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section des Promotions -->
+<section id="promotions" class="section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2>Promotion Spéciale</h2>
+            <p>Rejoignez notre programme d'affiliation et profitez d'avantages exclusifs en promouvant nos services.</p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Première image -->
+            <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                <img 
+                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    alt="Promotion d'Affiliés 1 - Avantages exclusifs" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage1"
+                    title="Promotion d'Affiliés 1 - Avantages exclusifs">
+            </div>
+            <!-- Deuxième image -->
+            <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                <img 
+                    src="/assets/images/icons/promocion-afiliados-2.webp" 
+                    alt="Promotion d'Affiliés 2 - Rejoignez-nous dès aujourd'hui" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage2"
+                    title="Promotion d'Affiliés 2 - Rejoignez-nous dès aujourd'hui">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal pour la première image -->
+<div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                  <img 
+                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    alt="Promotion d'Affiliés 1 - Avantages exclusifs" 
+                    class="img-fluid rounded" 
+                    style="max-width: 90%; height: auto; cursor: pointer;" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalImage1"
+                    title="Promotion d'Affiliés 1 - Avantages exclusifs">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal pour la deuxième image -->
+<div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img 
+                src="/assets/images/icons/promocion-afiliados-2.webp" 
+                alt="Promotion d'Affiliés 2 - Rejoignez-nous dès aujourd'hui" 
+                class="img-fluid rounded" 
+                style="max-width: 90%; height: auto; cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalImage2"
+                title="Promotion d'Affiliés 2 - Rejoignez-nous dès aujourd'hui">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Points forts -->
+<section>
+    <div class="container" id="featured">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Pourquoi nous choisir ?</h2>
+            <p>Nous nous distinguons en offrant des solutions technologiques de qualité qui transforment votre entreprise.</p>
+        </div>
+        <div class="row">
+            <!-- Début gauche -->
+            <div class="col-md-4 left">
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="description">
+                        <h4>Expérience</h4>
+                        <p>Plus de 10 ans de développement de solutions personnalisées pour des entreprises de divers secteurs.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-1.svg" alt="icône">
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="400">
+                    <div class="description">
+                        <h4>Qualité</h4>
+                        <p>Nous nous concentrons sur la livraison de produits robustes, évolutifs et adaptés aux besoins de nos clients.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-2.svg" alt="icône">
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                    <div class="description">
+                        <h4>Innovation</h4>
+                        <p>Nous adoptons des technologies de pointe pour vous garder une longueur d'avance sur le marché.</p>
+                    </div>
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-3.svg" alt="icône">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin gauche -->
+
+            <!-- Début centre -->
+            <div class="col-md-4 p-4 p-sm-5 center">
+                <div class="list-center-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="center-icon">
+                        <img src="/assets/images/funciones-destacadas-softdevagency.webp" alt="Fonctionnalités mises en avant de SoftdevAgency" title="Fonctionnalités mises en avant de SoftdevAgency" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin centre -->
+
+            <!-- Début droite -->
+            <div class="col-md-4 right">
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-4.svg" alt="icône">
+                    </div>
+                    <div class="description">
+                        <h4>Tarifs compétitifs</h4>
+                        <p>Nous proposons des solutions abordables sans compromettre la qualité de nos services.</p>
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-5.svg" alt="icône">
+                    </div>
+                    <div class="description">
+                        <h4>Livraison à temps</h4>
+                        <p>Nous garantissons le respect des délais convenus pour chaque projet.</p>
+                    </div>
+                </div>
+
+                <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon">
+                        <img src="/assets/images/icons/icon-6.svg" alt="icône">
+                    </div>
+                    <div class="description">
+                        <h4>Support technique</h4>
+                        <p>Nous offrons une assistance personnalisée et un support continu pour assurer votre satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin droite -->
+        </div>
+    </div>
+</section>
+<!-- Points forts -->
+
+<!-- Téléchargez l'App -->
+<section id="download-app">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Téléchargez notre application !</h2>
+            <p>Accédez à notre application mobile pour profiter de la meilleure expérience.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Image de l'App -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
+               <img src="/assets/images/vista-previa-app-softdevagency.webp" alt="Aperçu de l'application mobile de SoftdevAgency" title="Aperçu de l'application SoftdevAgency" class="img-fluid" />
+            </div>
+            <!-- Boutons de téléchargement -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://play.google.com/store/apps/details?id=com.leomar.softdevagency&hl=fr_FR" target="_blank">
+                    <img src="/assets/images/app2.png" alt="Télécharger sur Google Play" class="store-badge">
+                </a>
+                <a href="https://www.apple.com/fr/app-store/" target="_blank">
+                    <img src="/assets/images/app1.png" alt="Télécharger sur l'App Store" class="store-badge">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Section Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Notre Portefeuille</h2>
+            <p>Découvrez quelques-uns de nos projets.</p>
+        </div>
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+            <div>
+                <ul class="portfolio-flters">
+                    <li data-filter="*" class="filter-active">Tous</li>
+                    <li data-filter=".filter-app">Design Web</li>
+                    <li data-filter=".filter-product">Développement Web</li>
+                    <li data-filter=".filter-branding">Applications Mobiles</li>
+                </ul>
+            </div>
+
+            <div class="row gy-4 portfolio-container">
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/diseno-web-moderno.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/diseno-web-moderno.webp" class="img-fluid" alt="Design web moderne et attrayant - SoftdevAgency" title="Design web moderne et attrayant">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/desarrollo-web-empresas.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/desarrollo-web-empresas.webp" class="img-fluid" alt="Développement web pour entreprises - SoftdevAgency" title="Développement web pour entreprises">
+                        </a>
+                    </div>
+                </div>  
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/web-ecommerce-profesional.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/web-ecommerce-profesional.webp" class="img-fluid" alt="Boutique en ligne avec design professionnel - SoftdevAgency" title="Boutique en ligne avec design professionnel">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/landing-page-efectiva.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/landing-page-efectiva.webp" class="img-fluid" alt="Landing page efficace pour les entreprises - SoftdevAgency" title="Landing page efficace pour les entreprises">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-product">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/software-gestion-empresarial.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/software-gestion-empresarial.webp" class="img-fluid" alt="Logiciel de gestion d'entreprise - SoftdevAgency" title="Logiciel de gestion d'entreprise">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
+                    <div class="portfolio-wrap">
+                        <a href="/assets/images/portfolio/app-movil-android-ios.webp" data-gallery="portfolio-gallery-app" class="glightbox">
+                            <img src="/assets/images/portfolio/app-movil-android-ios.webp" class="img-fluid" alt="Développement d'applications mobiles pour Android et iOS - SoftdevAgency" title="Développement d'applications mobiles pour Android et iOS">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fin du Conteneur du Portefeuille -->
+        </div>
+    </div>
+</section>
+<!-- Fin de la Section du Portefeuille -->
+      <!-- Début de la section des tarifs -->
+<div class="pricing section">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plans de Maintenance Web</h2>
+                <p>Sélectionnez le plan qui correspond le mieux à vos besoins.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Basique</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>999</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Mise à jour du contenu mensuelle</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Maintenance de sécurité basique</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Sauvegardes mensuelles</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Support par e-mail</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=Je%20souhaite%20souscrire%20à%20un%20plan%20de%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Demander un Devis
+                     </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Plus</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>1500</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Mise à jour du contenu hebdomadaire</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Maintenance de sécurité avancée</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Sauvegardes hebdomadaires</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Support téléphonique et par e-mail</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Optimisation des performances web</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Analyse du trafic mensuelle</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=Je%20souhaite%20souscrire%20à%20un%20plan%20de%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Demander un Devis
+                     </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center equal-height">
+                        <div class="title">
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>2000</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Mise à jour du contenu quotidienne</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Maintenance de sécurité complète</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Sauvegardes quotidiennes</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Support prioritaire par téléphone, chat et e-mail</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Optimisation avancée des performances web</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Analyse et rapport détaillé du trafic</li>
+                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Revue mensuelle du SEO</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/529622113136?text=Je%20souhaite%20souscrire%20à%20un%20plan%20de%20maintenance:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Demander un Devis
+                     </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la section des tarifs -->
+<!-- Section des Témoignages -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Témoignages</h2>
+            <p>Ce que disent nos clients satisfaits</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="/assets/images/testimonials/testimonial-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <div>
+                                    <h3>Raul Peralta</h3>
+                                    <h4>Client</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i> "Travailler avec cette équipe a été un plaisir. Ils sont professionnels, créatifs et respectent toujours les délais. Hautement recommandé." 
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="/assets/images/testimonials/testimonial-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <div>
+                                    <h3>Oscar Navarrete</h3>
+                                    <h4>Client</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i> "Excellent service et support ! Toujours disponibles quand nous en avons besoin, et ils ne déçoivent jamais. Je les recommande à 100% pour tout projet." 
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center info-box">
+                                <img src="/assets/images/testimonials/testimonial-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <div>
+                                    <h3>Monica de la Cruz</h3>
+                                    <h4>Client</h4>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i> "L'expérience a été excellente. L'équipe s'est occupée de chaque détail et le projet a été réalisé exactement comme je l'espérais. Je reviendrai sans aucun doute." 
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Fin de la section des témoignages -->
+<!-- Développement de la Réalité Virtuelle -->
+<section id="vr-development">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>Faites passer votre entreprise à la réalité virtuelle !</h2>
+            <p>Nous concevons des expériences immersives pour les entreprises, l'éducation et le divertissement avec la technologie VR et la réalité augmentée.</p>
+        </div>
+        <div class="row align-items-center">
+            <!-- Image Représentative -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+               <img src="/assets/images/cripto/innovacion-realidad-virtual.webp" alt="Innovation en Réalité Virtuelle - Technologie du Futur" class="img-fluid" title="Innovation en Réalité Virtuelle - Technologie du Futur" />
+            </div>
+            <!-- Bouton d'action -->
+            <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250">
+                <a href="https://wa.me/529622113136?text=J%20aimerais%20demander%20un%20devis%20pour%20le%20développement%20de%20réalité%20virtuelle" 
+                    class="btn-get-started hide-on-mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    Développez votre projet VR
+                </a>
+            </div>
+            <!-- Description avec Technologies -->
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                    Nous créons des simulations et des environnements immersifs avec des technologies comme Unity, Unreal Engine et WebXR, 
+                    compatibles avec les appareils Oculus, HTC Vive et plus. Nous mettons en œuvre la modélisation 3D avec Blender et Maya, 
+                    ainsi que la programmation en C#, Blueprints et JavaScript pour des expériences interactives. 
+                    Faites passer vos idées au niveau supérieur avec la VR.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Début de la section du compteur -->
+<div id="stats-counter" class="call-to-action stats-counter section">
+    <div class="container" data-aos="fade-up">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-4">
+                <div class="stats-item d-flex flex-column align-items-center">
+                    <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div>
+                    <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><span>Clients Satisfaits</span> Nous avons obtenu de nombreux résultats</p>
+                </div>
+                <!-- Élément de statistiques finales -->
+            </div>
+            <div class="col-lg-4">
+                <div class="stats-item d-flex flex-column align-items-center">
+                    <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><span>Projets Terminés</span> Projets livrés avec succès</p>
+                </div>
+              <!-- Élément de statistiques finales -->
+            </div>
+            <div class="col-lg-4">
+                <div class="stats-item d-flex flex-column align-items-center">
+                    <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div>
+                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><span>Heures de Support</span> Assistance fournie à nos clients</p>
+                </div>
+               <!-- Élément de statistiques finales -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la section du compteur -->
+
+<!-- Section Clients -->
+<div id="clients" class="clients section">
+    <div class="container" data-aos="zoom-out">
+        <!-- Titre de la section -->
+        <h2 class="section-title">Compétences maîtrisées</h2>
+        
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <!-- Les éléments du slider -->
+
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/androidstudio-original.svg" class="img-fluid" alt="Android Studio">
+                        <p>Android Studio</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/composer-original.svg" class="img-fluid" alt="Composer">
+                        <p>Composer</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/flutter-original.svg" class="img-fluid" alt="Flutter">
+                        <p>Flutter</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/gitlab-original.svg" class="img-fluid" alt="GitLab">
+                        <p>GitLab</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/graphql.svg" class="img-fluid" alt="GraphQL">
+                        <p>GraphQL</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-bootstrap.svg" class="img-fluid" alt="Bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-css.svg" class="img-fluid" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-dart.svg" class="img-fluid" alt="Dart">
+                        <p>Dart</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-express.svg" class="img-fluid" alt="Express">
+                        <p>Express</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-git.svg" class="img-fluid" alt="Git">
+                        <p>Git</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-github.svg" class="img-fluid" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-html.svg" class="img-fluid" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-javascript.svg" class="img-fluid" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-mysql.svg" class="img-fluid" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-python.svg" class="img-fluid" alt="Python">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-react.svg" class="img-fluid" alt="React">
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-sass.svg" class="img-fluid" alt="Sass">
+                        <p>Sass</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/icon-typescript.svg" class="img-fluid" alt="TypeScript">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/java-original.svg" class="img-fluid" alt="Java">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/laravel.svg" class="img-fluid" alt="Laravel">
+                        <p>Laravel</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/linux-original.svg" class="img-fluid" alt="Linux">
+                        <p>Linux</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/materialui-original.svg" class="img-fluid" alt="Material UI">
+                        <p>Material UI</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/mongodb-original.svg" class="img-fluid" alt="MongoDB">
+                        <p>MongoDB</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client-item">
+                        <img src="/assets/images/clients/tailwindcss.svg" class="img-fluid" alt="Tailwind CSS">
+                        <p>Tailwind CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Section Clients Finale -->
+<!-- Section Notre Équipe -->
+<section id="team" class="team sections-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Équipe</h2>
+            <p>Notre équipe principale.</p>
+        </div>
+        <div class="row gy-4">
+
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <img src="/assets/images/team/manuel_leon-equipo-softdevagency.webp" class="img-fluid" alt="Manuel León">
+                    <h4>Manuel León</h4>
+                    <span>Développeur de logiciels</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561254802853" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/%C3%A1ngel-manuel-le%C3%B3n-martinez-39789a270/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/manuell_leon/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dernier membre de l'équipe -->
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                    <img src="/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp" class="img-fluid" alt="Manuel Sarmiento">
+                    <h4>Manuel Sarmiento</h4>
+                    <span>Développeur de logiciels</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100013127976460" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/juanm_fuentes/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dernier membre de l'équipe -->
+            <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="member">
+                    <img src="/assets/images/team/patricio_munoz-equipo-softdevagency.webp" class="img-fluid" alt="Patricio Muñoz">
+                    <h4>Patricio Muñoz</h4>
+                    <span>Développeur de logiciels</span>
+                    <div class="social">
+                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100070953241619" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dernier membre de l'équipe -->
+        </div>
+    </div>
+</section>
+<!-- Fin de la section Notre Équipe -->
+
+<!-- Section FAQ -->
+<section id="faq" class="faq">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Questions Fréquentes</h2>
+            <p>Trouvez des réponses aux questions les plus courantes concernant nos services de logiciels, développement web, applications mobiles et plus.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Question fréquente, point 1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Qu'est-ce que le développement de logiciels et pourquoi est-ce important pour mon entreprise ?
+                            </button>
+                        </h3>
+                        <div id="faq-content-1" class="accordion-collapse collapse show" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Le développement de logiciels est le processus de création d'applications et de systèmes informatiques personnalisés pour résoudre des problèmes spécifiques. Il est important car il permet d'optimiser les processus, d'améliorer la productivité et de fournir des solutions sur mesure pour vos besoins commerciaux.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # Article FAQ -->
+                    <!-- Question fréquente, point 2 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Comment savoir si j'ai besoin d'un site web ou d'une application mobile ?
+                            </button>
+                        </h3>
+                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Si votre entreprise a besoin d'une présence en ligne accessible depuis n'importe quel appareil, un site web est idéal. Cependant, si votre service nécessite des fonctionnalités mobiles spécifiques ou un accès constant via des appareils mobiles, une application peut être la meilleure option. Nous pouvons vous aider à décider ce qui est le mieux selon vos besoins.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # Article FAQ -->
+                    <!-- Question fréquente, point 3 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Pourquoi le marketing numérique est-il important pour mon entreprise ?
+                            </button>
+                        </h3>
+                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Le marketing numérique est essentiel pour atteindre un public plus large via Internet. Il permet de promouvoir votre entreprise, d'augmenter la visibilité de votre marque et de générer plus d'opportunités de vente grâce à des stratégies sur les réseaux sociaux, SEO, publicités payantes, et plus encore.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # Article FAQ -->
+                    <!-- Question fréquente, point 4 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Quels types de services logiciels proposez-vous ?
+                            </button>
+                        </h3>
+                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Chez **SoftDevAgency**, nous proposons une variété de services, y compris le développement d'applications mobiles, la création de sites web personnalisés, la conception de systèmes de sécurité, le marketing numérique, et un support technique pour nous assurer que votre technologie fonctionne toujours au maximum.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # Article FAQ -->
+                    <!-- Question fréquente, point 5 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                                <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                                Combien de temps faut-il pour développer une application mobile ou un site web ?
+                            </button>
+                        </h3>
+                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Le temps de développement dépend de la complexité du projet. Un site web simple ou une application de base peut prendre quelques semaines, tandis que des projets plus complexes peuvent prendre plusieurs mois. Notre équipe travaille de manière efficace pour vous offrir des solutions à temps.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # Article FAQ -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin de la section FAQ -->
+<!-- Section Appel à l'Action -->
+<section id="call-to-action" class="call-to-action">
+    <div class="container text-center aos-init aos-animate" data-aos="zoom-out">
+        <div class="row gy-4">
+            <div class="col-lg-12">
+                <h3>Parlons de votre projet</h3>
+                <p>Nous sommes fiers de notre capacité à innover et à fournir des solutions numériques de qualité. Utilisez le formulaire ci-dessous pour discuter de vos besoins avec notre équipe, et nous vous contacterons dès que possible.</p>
+                <a href="https://wa.me/529622113136?text=Me%20gustaría%20comentar%20miproyecto:" 
+                class="btn-get-started hide-on-mobile" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Contactez-nous
+             </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin de la section Appel à l'Action -->
+<!-- Section des publications récentes du blog -->
+<section id="recent-posts" class="recent-posts sections-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Dernières Nouvelles</h2>
+            <p>Consultez notre section pour les dernières actualités technologiques.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/B5HYGO462ZFPZLY44ERPG23PLQ.jpg?auth=7c383907bdb02d3d9334c0863797f96f1358c9e154e5f52bfb4c7a5229c81182&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-10/los-10-inventos-mas-curiosos-del-ces-2025-de-la-cuchara-que-sala-la-comida-sin-sal-a-la-camioneta-con-un-coche-volador-dentro.html">Les 10 inventions les plus curieuses</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Isabel Rubio</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">10 Janvier 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Fin de l'élément de la liste des publications -->
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/GMXKZWL3KBGFNBGRKIBLLFQYSU.jpg?auth=f09568974543e7924deec8509b3416eb37a90272adb6f481cbde7c38d96e1035&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-10/suprimir-la-verificacion-y-moderacion-en-redes-aumenta-el-odio-y-el-acoso-advierten-los-expertos.html">Supprimer la vérification et la modération sur les réseaux</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Raúl Limón</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">9 Janvier 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Fin de l'élément de la liste des publications -->
+            <div class="col-lg-4">
+                <article>
+                    <div class="post-img">
+                        <img src="https://imagenes.elpais.com/resizer/v2/ZF3SXI5OTFDE5IL6JE4BQBLKNM.jpg?auth=a27a6727bf45032d2b79b4d0d9448b379e78157be9b9e2a475e06b0a07265e98&width=1200" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">El País</p>
+                    <h2 class="title">
+                        <a href="https://elpais.com/tecnologia/2025-01-09/un-robot-que-aspira-y-recoge-los-calcetines-tirados-por-el-suelo-asi-sera-el-futuro-de-la-limpieza.html">Un robot qui aspire et ramasse les chaussettes</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author">Isabel Rubio</p>
+                            <p class="post-date">
+                                <time datetime="2022-01-01">9 Janvier 2025</time>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Fin de l'élément de la liste des publications -->
+        </div>
+        <!-- Fin de la liste des publications récentes -->
+    </div>
+</section>
+<!-- Fin de la section des publications récentes du blog -->
+
+ <!-- Pied de page -->
+<footer id="footer" class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="/fr/" class="logo d-flex align-items-center">
+                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Développement de logiciels et sites web">
+                            </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Nous offrons des solutions en développement web, applications et plus, engagés à fournir des services de haute qualité pour votre entreprise.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Suivez-nous</span>
+                            <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/106189443/admin/dashboard/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Services</h3>
+                        </div>
+                       <ul class="list">
+                            <li><a href="lesservices">Innovation numérique</a></li>
+                            <li><a href="lesservices">Développement de sites web</a></li>
+                            <li><a href="lesservices">Applications mobiles</a></li>
+                            <li><a href="lesservices">Marketing</a></li>
+                            <li><a href="lesservices">Service technique</a></li>
+                            <li><a href="lesservices">Systèmes de sécurité</a></li>
+                            <li><a href="lesservices">Cryptomonnaies et Blockchain</a></li>
+                            <li><a href="lesservices">Intelligence artificielle</a></li>
+                            <li><a href="lesservices">Réalité augmentée</a></li>
+                            <li><a href="lesservices">Réalité virtuelle</a></li>
+                            <li><a href="lesservices">Édition vidéo</a></li>
+                            <li><a href="lesservices">Édition photo</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="service-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Informations</h3>
+                        </div>
+                        <ul class="list">
+                            <li><a href="nous">À propos</a></li>
+                            <li><a href="équipe">Portefeuille</a></li>
+                            <li><a href="desquestions">Questions fréquentes</a></li>
+                            <li><a href="politiques_de_vie privée">Termes et conditions</a></li>
+                            <li><a href="politiques_de_vie privée">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="contact-widget footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Contacts</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p><i class="bi bi-geo-alt-fill mr-15"></i> Monterrey, Nuevo León / Tapachula, Chiapas, Mexique</p>
+                            <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +52 9622113136</p>
+                            <p><i class="bi bi-envelope-fill mr-15"></i> softdevagency@gmail.com</p>
+                            <p><i class="bi bi-envelope-fill mr-15"></i> snokert17@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Bulletin</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Ne manquez pas nos actualités, abonnez-vous à notre bulletin.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Adresse e-mail">
+                                <button><i class="bi bi-telegram"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+                    <div class="copyright-text">
+                     <p>SoftdevAgency © 2025 - Conçu par <a href="#">Manuel Leon</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Fin du pied de page -->
+
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+    <div id="preloader"></div>
+
+   <!-- Fichiers JS du fournisseur -->
+    <script src="/assets/javascripts/jquery.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/javascripts/plugins.js"></script>
+    <script src="/assets/javascripts/purecounter_vanilla.js"></script>
+    <script src="/assets/javascripts/validator.min.js"></script>
+    <script src="/assets/javascripts/contactform.js"></script>
+    <script src="/assets/javascripts/particles.min.js"></script>
+    <script src="/assets/javascripts/script.js"></script>
+<script src="/assets/javascripts/guardardark.js"></script>
+
+ <!-- Fichier JS du modèle principal -->
+    <script src="/assets/javascripts/main.js"></script>
+    <!-- Bootstrap JS (Facultatif, si vous voulez que la liste déroulante fonctionne) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+       <!-- Bootstrap JS (Assurez-vous d'inclure ces scripts) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
