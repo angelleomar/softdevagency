@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <!-- SEO -->
     <meta name="author" content="SoftdevAgency">
     <meta name="keywords" content="software development, web design, technology, programming, digital solutions">
-    <meta name="description" content="SoftdevAgency offers software development, web design, and innovative technology solutions for businesses and entrepreneurs.">
+    <meta name="description" content="Grow your business with SoftdevAgency! We provide expert software development, web design, and digital solutions tailored to your needs. Contact us today!">
     <title>SoftdevAgency | Professional Software Development & Web Design</title>
-    <!-- Canonical tag -->
-    <link rel="canonical" href="https://softdevagency.com/us"> 
-      <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Flag Icons CSS -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Favicons -->
-    <link href="/assets/images/favicon.ico" rel="icon">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
     
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Canonical & Hreflang for SEO -->
+    <link rel="canonical" href="https://softdevagency.com/us"> 
+    <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/" />
+    <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
+    <link rel="alternate" hreflang="x-default" href="https://softdevagency.com/" />
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
+    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     
-    <!-- Main CSS File -->
-    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
-    
-    <!-- Redirect to the version without index.html -->
+    <!-- Redirect to remove index.html -->
     <script>
         if (window.location.href.includes("index.html")) {
             window.location.href = window.location.href.replace("index.html", "");
         }
     </script>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQSKFK2V9V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -50,65 +39,51 @@
         gtag('js', new Date());
         gtag('config', 'G-TQSKFK2V9V');
     </script>
-    
-    </head>
-    <body>
-        <header id="header" class="header d-flex align-items-center sticked sticky-menu">
-             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-                 <a href="/us/" class="logo d-flex align-items-center">
-                     <!-- Large logo for desktops -->
-                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
-                     <!-- Small logo for mobile devices -->
-                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
-                 </a>
-                 <nav id="navbar" class="navbar">
-                     <ul>
-                         <li><a href="/us/" class="">Home</a></li>
-                         <li><a href="about" class="">About Us</a></li>
-                         <li><a href="contact" class="">Contact Us</a></li>
-                         <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                             <ul>
-                                 <li><a href="services" class="">Services</a></li>
-                                 <li><a href="portfolio" class="">Portfolio</a></li>
-                                 <li><a href="team" class="">Team</a></li>
-                                 <li><a href="calendar" class="">Schedule a Meeting</a></li>
-                                 <li><a href="faqs">FAQs</a></li>
-                                 <li><a href="privacy_policies">Privacy Policy</a></li>
-                             </ul>
-                         </li>
-                     </ul>
-                 </nav>
-                <!-- Container for language selector and dark mode button -->
-                <div class="d-flex align-items-center gap-3">
-                 <!-- Language selector with only a flag -->
-                 <div class="dropdown">
-                     <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                         <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
-                     </button>
-                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/us/" data-flag="flag-icon-us">
-                                <span class="flag-icon flag-icon-us me-2"></span> USA
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/" data-flag="flag-icon-mx">
-                                <span class="flag-icon flag-icon-mx me-2"></span> Mexico
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/fr/" data-flag="flag-icon-fr">
-                                <span class="flag-icon flag-icon-fr me-2"></span> France
-                            </a>
-                        </li>
-                     </ul>
-                 </div>
-                 <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-                 
-                 <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-                 <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-             </div>
-         </header>
+</head>
+<body>
+    <header class="header d-flex align-items-center sticked sticky-menu">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/us/" class="logo d-flex align-items-center">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/us/">Home</a></li>
+                    <li><a href="/us/about">About Us</a></li>
+                    <li><a href="/us/contact">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="/us/services">Services</a></li>
+                            <li><a href="/us/portfolio">Portfolio</a></li>
+                            <li><a href="/us/team">Team</a></li>
+                            <li><a href="/us/calendar">Schedule a Meeting</a></li>
+                            <li><a href="/us/faqs">FAQs</a></li>
+                            <li><a href="/us/privacy_policies">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+                        <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> USA</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="/"><span class="flag-icon flag-icon-mx me-2"></span> Mexico</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
+                    </ul>
+                </div>
+                <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+                <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
          <!-- End of Header -->
          <!-- Hero Section -->
      <section id="hero" class="hero sticked-header-offset">
@@ -1092,18 +1067,18 @@
                             <h3>Services</h3>
                         </div>
                         <ul class="list">
-                            <li><a href="services">Digital Innovation</a></li>
-                            <li><a href="services">Web Development</a></li>
-                            <li><a href="services">Mobile Apps</a></li>
-                            <li><a href="services">Marketing</a></li>
-                            <li><a href="services">Technical Service</a></li>
-                            <li><a href="services">Security Systems</a></li>
-                            <li><a href="services">Cryptocurrencies & Blockchain</a></li>
-                            <li><a href="services">Artificial Intelligence</a></li>
-                            <li><a href="services">Augmented Reality</a></li>
-                            <li><a href="services">Virtual Reality</a></li>
-                            <li><a href="services">Video Editing</a></li>
-                            <li><a href="services">Photo Editing</a></li>
+                            <li><a href="/us/services">Digital Innovation</a></li>
+                            <li><a href="/us/services">Web Development</a></li>
+                            <li><a href="/us/services">Mobile Apps</a></li>
+                            <li><a href="/us/services">Marketing</a></li>
+                            <li><a href="/us/services">Technical Service</a></li>
+                            <li><a href="/us/services">Security Systems</a></li>
+                            <li><a href="/us/services">Cryptocurrencies & Blockchain</a></li>
+                            <li><a href="/us/services">Artificial Intelligence</a></li>
+                            <li><a href="/us/services">Augmented Reality</a></li>
+                            <li><a href="/us/services">Virtual Reality</a></li>
+                            <li><a href="/us/services">Video Editing</a></li>
+                            <li><a href="/us/services">Photo Editing</a></li>
                         </ul>  
                     </div>
                 </div>
@@ -1113,12 +1088,12 @@
                             <h3>Information</h3>
                         </div>
                         <ul class="list">
-                            <li><a href="about">About</a></li>
-                            <li><a href="team">Team</a></li>
-                            <li><a href="portfolio">Portfolio</a></li>
-                            <li><a href="faqs">FAQs</a></li>
-                            <li><a href="privacy_policies">Terms & Conditions</a></li>
-                            <li><a href="privacy_policies">Privacy Policy</a></li>
+                            <li><a href="/us/about">About</a></li>
+                            <li><a href="/us/team">Team</a></li>
+                            <li><a href="/us/portfolio">Portfolio</a></li>
+                            <li><a href="/us/faqs">FAQs</a></li>
+                            <li><a href="/us/privacy_policies">Terms & Conditions</a></li>
+                            <li><a href="/us/privacy_policies">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
