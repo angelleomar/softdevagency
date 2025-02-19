@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <!-- SEO -->
     <meta name="author" content="SoftdevAgency">
     <meta name="keywords" content="software development, web design, technology, programming, digital solutions">
-    <meta name="description" content="SoftdevAgency offers software development, web design, and innovative technology solutions for businesses and entrepreneurs.">
+    <meta name="description" content="Grow your business with SoftdevAgency! We provide expert software development, web design, and digital solutions tailored to your needs. Contact us today!">
     <title>SoftdevAgency | Professional Software Development & Web Design</title>
-    <!-- Canonical tag -->
-    <link rel="canonical" href="https://softdevagency.com/us"> 
-      <!-- Bootstrap CSS -->
+    
+    <!-- Canonical & Hreflang for SEO --> 
+    <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/" />
+    <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
+    <link rel="alternate" hreflang="x-default" href="https://softdevagency.com/" />
+     <!-- Balise canonique -->
+     <link rel="canonical" href="https://softdevagency.com/us/"> 
+    
+     <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     
      <!-- Flag Icons CSS -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Favicons -->
-    <link href="/assets/images/favicon.ico" rel="icon">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
-    
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+     
+     <!-- Favicons -->
+     <link href="/assets/images/favicon.ico" rel="icon">
+     
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     
+     <!-- Vendor CSS Files -->
+     <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+     <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+     <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     
+     <!-- Main CSS File -->
+     <link href="/assets/stylesheets/styles.css" rel="stylesheet">
    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Main CSS File -->
-    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
-    
-    <!-- Redirect to the version without index.html -->
     <script>
         if (window.location.href.includes("index.html")) {
             window.location.href = window.location.href.replace("index.html", "");
         }
     </script>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQSKFK2V9V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -50,96 +56,82 @@
         gtag('js', new Date());
         gtag('config', 'G-TQSKFK2V9V');
     </script>
-    
-    </head>
-    <body>
-        <header id="header" class="header d-flex align-items-center sticked sticky-menu">
-             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-                 <a href="/us/" class="logo d-flex align-items-center">
-                     <!-- Large logo for desktops -->
-                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
-                     <!-- Small logo for mobile devices -->
-                     <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
-                 </a>
-                 <nav id="navbar" class="navbar">
-                     <ul>
-                         <li><a href="/us/" class="">Home</a></li>
-                         <li><a href="about" class="">About Us</a></li>
-                         <li><a href="contact" class="">Contact Us</a></li>
-                         <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                             <ul>
-                                 <li><a href="services" class="">Services</a></li>
-                                 <li><a href="portfolio" class="">Portfolio</a></li>
-                                 <li><a href="team" class="">Team</a></li>
-                                 <li><a href="calendar" class="">Schedule a Meeting</a></li>
-                                 <li><a href="faqs">FAQs</a></li>
-                                 <li><a href="privacy_policies">Privacy Policy</a></li>
-                             </ul>
-                         </li>
-                     </ul>
-                 </nav>
-                <!-- Container for language selector and dark mode button -->
-                <div class="d-flex align-items-center gap-3">
-                 <!-- Language selector with only a flag -->
-                 <div class="dropdown">
-                     <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                         <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
-                     </button>
-                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/us/" data-flag="flag-icon-us">
-                                <span class="flag-icon flag-icon-us me-2"></span> USA
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/" data-flag="flag-icon-mx">
-                                <span class="flag-icon flag-icon-mx me-2"></span> Mexico
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center language-option" href="/fr/" data-flag="flag-icon-fr">
-                                <span class="flag-icon flag-icon-fr me-2"></span> France
-                            </a>
-                        </li>
-                     </ul>
-                 </div>
-                 <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-                 
-                 <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-                 <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-             </div>
-         </header>
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center sticked sticky-menu">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/us/" class="logo d-flex align-items-center">
+                <!-- Large logo for desktops -->
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <!-- Small logo for mobile devices -->
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/us/">Home</a></li>
+                    <li><a href="/us/about">About Us</a></li>
+                    <li><a href="/us/contact">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="/us/services">Services</a></li>
+                            <li><a href="/us/portfolio">Portfolio</a></li>
+                            <li><a href="/us/team">Team</a></li>
+                            <li><a href="/us/calendar">Schedule a Meeting</a></li>
+                            <li><a href="/us/faqs">FAQs</a></li>
+                            <li><a href="/us/privacy_policies">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+                        <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> USA</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="/"><span class="flag-icon flag-icon-mx me-2"></span> Mexico</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
+                    </ul>
+                </div>
+                <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+                <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            </div>
+        </div>
+    </header>
          <!-- End of Header -->
-         <!-- Hero Section -->
+               <!-- Hero Section -->
      <section id="hero" class="hero sticked-header-offset">
      
-         <div id="particles-js"></div>
-         <div id="repulse-circle-div"></div>
-         <div class="container position-relative">
-             <div class="row gy-5 aos-init aos-animate">
-                 <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
-                     <h2 data-aos="fade-up">We Transform Ideas into <span>Digital Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
-                     <p data-aos="fade-up" data-aos-delay="400">We offer innovative services: software development, websites, mobile apps, digital marketing, and cybersecurity. Our focus is on growing your business with cutting-edge technology.</p>
-                     <div class="social" data-aos="fade-up" data-aos-delay="600">
-                         <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
-                         <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank"><i class="bi bi-facebook"></i></a>
-                         <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
-                         <a href="https://www.instagram.com/softdevagency.latam/" target="_blank"><i class="bi bi-instagram"></i></a>
-                     </div>
-                     <div class="d-flex justify-content-start">
-                         <a href="https://wa.me/529622113136?text=I%20would%20like%20a%20quote%20for:" 
-                         class="btn-get-started hide-on-mobile" 
-                         target="_blank" 
-                         rel="noopener noreferrer">
-                         Request a Quote
-                      </a>
-                         <a href="services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">View Services</a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <!-- End of Hero Section -->
+        <div id="particles-js"></div>
+        <div id="repulse-circle-div"></div>
+        <div class="container position-relative">
+            <div class="row gy-5 aos-init aos-animate">
+                <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+                    <h2 data-aos="fade-up">We Transform Ideas into <span>Digital Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+                    <p data-aos="fade-up" data-aos-delay="400">We offer innovative services: software development, websites, mobile apps, digital marketing, and cybersecurity. Our focus is on growing your business with cutting-edge technology.</p>
+                    <div class="social" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <a href="https://wa.me/529622113136?text=I%20would%20like%20a%20quote%20for:" 
+                        class="btn-get-started hide-on-mobile" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Request a Quote
+                     </a>
+                        <a href="services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section -->
      <!-- Start of Services Section -->
 <div id="services" class="section">
     <div class="top-icon-box position-relative">
@@ -221,7 +213,7 @@
         <div class="row align-items-center">
             <!-- Representative Image -->
             <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/images/cripto/tu-cripto-exito-softdevagency.webp" alt="Your idea, your crypto, your success in the blockchain world" title="Take your crypto idea to success" class="img-fluid" />  
+            <img src="/assets/images/us/cripto_blockchain.jpg" alt="Your idea, your crypto, your success in the blockchain world" title="Take your crypto idea to success" class="img-fluid" />  
             </div>
             <!-- Action Button -->
             <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250">
@@ -255,7 +247,7 @@
             <!-- First Image -->
             <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
                 <img 
-                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    src="/assets/images/us/affiliates.jpg" 
                     alt="Affiliate Promotion 1 - Exclusive Benefits" 
                     class="img-fluid rounded" 
                     style="max-width: 90%; height: auto; cursor: pointer;" 
@@ -266,7 +258,7 @@
             <!-- Second Image -->
             <div class="col-12 col-md-6 col-lg-5 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
                 <img 
-                    src="/assets/images/icons/promocion-afiliados-2.webp" 
+                    src="/assets/images/us/promotion_softdevagency.png" 
                     alt="Affiliate Promotion 2 - Join Today" 
                     class="img-fluid rounded" 
                     style="max-width: 90%; height: auto; cursor: pointer;" 
@@ -284,7 +276,7 @@
         <div class="modal-content">
             <div class="modal-body text-center">
                   <img 
-                    src="/assets/images/icons/promocion-afiliados-1.webp" 
+                    src="/assets/images/us/affiliates.jpg" 
                     alt="Affiliate Promotion 1 - Exclusive Benefits" 
                     class="img-fluid rounded" 
                     style="max-width: 90%; height: auto; cursor: pointer;" 
@@ -302,7 +294,7 @@
         <div class="modal-content">
             <div class="modal-body text-center">
                 <img 
-                src="/assets/images/icons/promocion-afiliados-2.webp" 
+                src="/assets/images/us/promotion_softdevagency.png" 
                 alt="Affiliate Promotion 2 - Join Today" 
                 class="img-fluid rounded" 
                 style="max-width: 90%; height: auto; cursor: pointer;" 
@@ -408,7 +400,7 @@
         <div class="row align-items-center">
             <!-- App Image -->
             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
-               <img src="/assets/images/vista-previa-app-softdevagency.webp" alt="SoftdevAgency mobile app preview" title="SoftdevAgency app preview" class="img-fluid" />
+               <img src="/assets/images/us/download_application.jpg" alt="SoftdevAgency mobile app preview" title="SoftdevAgency app preview" class="img-fluid" />
             </div>
             <!-- Download Buttons -->
             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
@@ -597,7 +589,7 @@
         <div class="row align-items-center">
             <!-- Representative Image -->
             <div class="col-md-12 text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-                <img src="/assets/images/cripto/inteligencia-artificial-softdevagency.webp" alt="AI in Marketing and Automation - Innovation and Future" class="img-fluid" title="AI in Marketing and Automation - Innovation and Future" />
+                <img src="/assets/images/us/IA_poster.jpg" alt="AI in Marketing and Automation - Innovation and Future" class="img-fluid" title="AI in Marketing and Automation - Innovation and Future" />
             </div>
             <!-- Detailed Description -->
             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
@@ -668,7 +660,8 @@
         </div>
     </div>
 </section>
-<!-- End of Testimonials Section --><!-- Virtual Reality Development --><section id="vr-development"> <div class="container"> <div class="section-header" data-aos="fade-up" data-aos-delay="100"> <h2>Take Your Business to Virtual Reality!</h2> <p>We design immersive experiences for businesses, education, and entertainment using VR and augmented reality technologies.</p> </div> <div class="row align-items-center"> <!-- Representative Image --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200"> <img src="/assets/images/cripto/innovacion-realidad-virtual.webp" alt="Innovation in Virtual Reality - Technology of the Future" class="img-fluid" title="Innovation in Virtual Reality - Technology of the Future" /> </div> <!-- Call-to-Action Button --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250"> <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20virtual%20reality%20development" class="btn-get-started hide-on-mobile" target="_blank" rel="noopener noreferrer"> Develop Your VR Project </a> </div> <!-- Description with Technologies --> <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300"> <p> We create simulations and immersive environments using technologies like Unity, Unreal Engine, and WebXR, compatible with devices such as Oculus, HTC Vive, and more. We implement 3D modeling in Blender and Maya, along with programming in C#, Blueprints, and JavaScript for interactive experiences. Take your ideas to the next level with VR. </p> </div> </div> </div> </section> <!-- Start of Counter Section --> <div id="stats-counter" class="call-to-action stats-counter section"> <div class="container" data-aos="fade-up"> <div class="row gy-4 align-items-center"> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> <p><span>Satisfied Clients</span> We achieve great results</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> <p><span>Completed Projects</span> Successfully delivered projects</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> <p><span>Support Hours</span> Assistance provided to our clients</p> </div> <!-- End of Stats Item --> </div> </div> </div> </div> <!-- End of Counter Section --> <!-- Clients Section --><div id="clients" class="clients section"> <div class="container" data-aos="zoom-out"> <!-- Section Title --> <h2 class="section-title">Skills We Handle</h2>
+<!-- End of Testimonials Section --><!-- Virtual Reality Development -->
+ <section id="vr-development"> <div class="container"> <div class="section-header" data-aos="fade-up" data-aos-delay="100"> <h2>Take Your Business to Virtual Reality!</h2> <p>We design immersive experiences for businesses, education, and entertainment using VR and augmented reality technologies.</p> </div> <div class="row align-items-center"> <!-- Representative Image --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200"> <img src="/assets/images/us/virtual-reality.jpg" alt="Innovation in Virtual Reality - Technology of the Future" class="img-fluid" title="Innovation in Virtual Reality - Technology of the Future" /> </div> <!-- Call-to-Action Button --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250"> <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20virtual%20reality%20development" class="btn-get-started hide-on-mobile" target="_blank" rel="noopener noreferrer"> Develop Your VR Project </a> </div> <!-- Description with Technologies --> <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300"> <p> We create simulations and immersive environments using technologies like Unity, Unreal Engine, and WebXR, compatible with devices such as Oculus, HTC Vive, and more. We implement 3D modeling in Blender and Maya, along with programming in C#, Blueprints, and JavaScript for interactive experiences. Take your ideas to the next level with VR. </p> </div> </div> </div> </section> <!-- Start of Counter Section --> <div id="stats-counter" class="call-to-action stats-counter section"> <div class="container" data-aos="fade-up"> <div class="row gy-4 align-items-center"> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> <p><span>Satisfied Clients</span> We achieve great results</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> <p><span>Completed Projects</span> Successfully delivered projects</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> <p><span>Support Hours</span> Assistance provided to our clients</p> </div> <!-- End of Stats Item --> </div> </div> </div> </div> <!-- End of Counter Section --> <!-- Clients Section --><div id="clients" class="clients section"> <div class="container" data-aos="zoom-out"> <!-- Section Title --> <h2 class="section-title">Skills We Handle</h2>
     <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center">
             <!-- Slider elements will go here -->
@@ -1080,9 +1073,9 @@
                         <div class="footer-social-icon">
                             <span>Follow us</span>
                             <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/106189443/admin/dashboard/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://www.instagram.com/softdevagency.latam/" target="_blank"><i class="bi bi-instagram"></i></a>
+                         <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
+                         <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
+                         <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1092,18 +1085,18 @@
                             <h3>Services</h3>
                         </div>
                         <ul class="list">
-                            <li><a href="services">Digital Innovation</a></li>
-                            <li><a href="services">Web Development</a></li>
-                            <li><a href="services">Mobile Apps</a></li>
-                            <li><a href="services">Marketing</a></li>
-                            <li><a href="services">Technical Service</a></li>
-                            <li><a href="services">Security Systems</a></li>
-                            <li><a href="services">Cryptocurrencies & Blockchain</a></li>
-                            <li><a href="services">Artificial Intelligence</a></li>
-                            <li><a href="services">Augmented Reality</a></li>
-                            <li><a href="services">Virtual Reality</a></li>
-                            <li><a href="services">Video Editing</a></li>
-                            <li><a href="services">Photo Editing</a></li>
+                            <li><a href="/us/services">Digital Innovation</a></li>
+                            <li><a href="/us/services">Web Development</a></li>
+                            <li><a href="/us/services">Mobile Apps</a></li>
+                            <li><a href="/us/services">Marketing</a></li>
+                            <li><a href="/us/services">Technical Service</a></li>
+                            <li><a href="/us/services">Security Systems</a></li>
+                            <li><a href="/us/services">Cryptocurrencies & Blockchain</a></li>
+                            <li><a href="/us/services">Artificial Intelligence</a></li>
+                            <li><a href="/us/services">Augmented Reality</a></li>
+                            <li><a href="/us/services">Virtual Reality</a></li>
+                            <li><a href="/us/services">Video Editing</a></li>
+                            <li><a href="/us/services">Photo Editing</a></li>
                         </ul>  
                     </div>
                 </div>
@@ -1113,12 +1106,12 @@
                             <h3>Information</h3>
                         </div>
                         <ul class="list">
-                            <li><a href="about">About</a></li>
-                            <li><a href="team">Team</a></li>
-                            <li><a href="portfolio">Portfolio</a></li>
-                            <li><a href="faqs">FAQs</a></li>
-                            <li><a href="privacy_policies">Terms & Conditions</a></li>
-                            <li><a href="privacy_policies">Privacy Policy</a></li>
+                            <li><a href="/us/about">About</a></li>
+                            <li><a href="/us/team">Team</a></li>
+                            <li><a href="/us/portfolio">Portfolio</a></li>
+                            <li><a href="/us/faqs">FAQs</a></li>
+                            <li><a href="/us/privacy_policies">Terms & Conditions</a></li>
+                            <li><a href="/us/privacy_policies">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
