@@ -13,27 +13,7 @@
   <priority>1.00</priority>
   <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/" />
   <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
-  <image:image>
-      <image:loc>https://softdevagency.com/assets/images/portfolio/innovacion-realidad-virtual.webp</image:loc>
-    </image:image>
-<image:image>
-      <image:loc>https://softdevagency.com/assets/images/portfolio/ia-en-marketing.webp</image:loc>
-    </image:image>
-<image:image>
-      <image:loc>https://softdevagency.com/assets/images/portfolio/diseño-web-apps.webp</image:loc>
-    </image:image>
- <image:image>
-      <image:loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-1.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://softdevagency.com/assets/images/icons/promocion-afiliados-2.webp</image:loc>
-    </image:image>
-<image:image>
-      <image:loc>https://softdevagency.com/assets/images/cripto/inteligencia-artificial-softdevagency.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://softdevagency.com/assets/images/cripto/innovacion-realidad-virtual.webp</image:loc>
-    </image:image>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/" />
 </url>
 
 <!-- Página Nosotros -->
@@ -42,16 +22,8 @@
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
   <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/nosotros" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/about-us" />
-</url>
-
-<!-- Página Contacto -->
-<url>
-  <loc>https://softdevagency.com/mx/contacto</loc>
-  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/contacto" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/contact" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/about" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/nous" />
 </url>
 
 <!-- Página Servicios -->
@@ -61,61 +33,27 @@
   <priority>0.80</priority>
   <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/servicios" />
   <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/services" />
-</url>
-
-<!-- Página Portafolio -->
-<url>
-  <loc>https://softdevagency.com/mx/portafolio</loc>
-  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/portafolio" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/portfolio" />
-</url>
-
-<!-- Página Equipo -->
-<url>
-  <loc>https://softdevagency.com/mx/equipo</loc>
-  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/equipo" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/team" />
-  <image:image>
-      <image:loc>https://softdevagency.com/assets/images/team/manuel_leon-equipo-softdevagency.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://softdevagency.com/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://softdevagency.com/assets/images/team/patricio_munoz-equipo-softdevagency.webp</image:loc>
-    </image:image>
-</url>
-
-<!-- Página Preguntas Frecuentes -->
-<url>
-  <loc>https://softdevagency.com/mx/preguntas</loc>
-  <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/preguntas" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/faq" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/services" />
 </url>
 
 <!-- Página Políticas de Privacidad -->
 <url>
   <loc>https://softdevagency.com/mx/politicas_privacidad</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
   <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/politicas_privacidad" />
   <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/privacy-policy" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/politique-de-confidentialite" />
 </url>
 
-<!-- Página Calendario -->
+<!-- Página Preguntas Frecuentes -->
 <url>
-  <loc>https://softdevagency.com/mx/calendario</loc>
+  <loc>https://softdevagency.com/mx/preguntas</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/calendario" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/schedule" />
+  <priority>0.60</priority>
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/preguntas" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/faq" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/faq" />
 </url>
 
 </urlset>
-
