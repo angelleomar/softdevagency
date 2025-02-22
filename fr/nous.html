@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="/assets/vendor/glightbox/css/glightbox.min.css">
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS Principal -->
     <link rel="stylesheet" href="/assets/stylesheets/styles.css">
     <!-- Google Tag Manager -->
@@ -122,7 +123,7 @@
       <div class="container">
         <ol>
           <li><a href="/">Accueil</a></li>
-          <li>À propos de nous</li>
+          <li class="text-dark">À propos de nous</li>
         </ol>
       </div>
     </nav>
@@ -153,87 +154,107 @@
               </div>
             </div>
           </section><!-- End Histoire -->
-          <!-- Mission et Vision -->
-          <section id="mision-vision" class="mt-5">
-            <div class="row">
-              <div class="col-md-6">
-                <h3>Mission</h3>
-                <p>Fournir des solutions logicielles innovantes qui favorisent la croissance et la transformation numérique de nos clients, en nous adaptant à leurs besoins et en dépassant leurs attentes.</p>
-              </div>
-              <div class="col-md-6">
-                <h3>Vision</h3>
-                <p>Être reconnus comme des leaders dans le développement de logiciels, en offrant des produits et des services de haute qualité qui contribuent au progrès technologique et à la réussite des entreprises de nos clients.</p>
-              </div>
-            </div>
-          </section><!-- End Mission et Vision -->
+            <!-- Mission et Vision -->
+<section id="mision-vision" class="mt-5 py-5 text-center bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 p-4">
+          <div class="card-body">
+            <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+            <h2 class="text-muted">Mission</h2>
+            <p class="text-muted">Fournir des solutions logicielles innovantes qui favorisent la croissance et la transformation numérique de nos clients, en nous adaptant à leurs besoins et en dépassant leurs attentes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 p-4">
+          <div class="card-body">
+            <i class="fas fa-eye fa-3x text-success mb-3"></i>
+            <h2 class="text-muted">Vision</h2>
+            <p class="text-muted">Être reconnus comme des leaders dans le développement de logiciels, en offrant des produits et des services de haute qualité qui contribuent au progrès technologique et à la réussite des entreprises de nos clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Misión y Visión -->
        <!-- Nouveaux services -->
-            <div class="row mt-4">
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="/assets/images/blog/ser4.jpg" class="card-img-top" alt="Montage vidéo et photo">
-                  <div class="card-body">
-                    <h5 class="card-title">Montage vidéo et photo</h5>
-                    <p class="card-text">Nous vous aidons à améliorer la qualité visuelle de vos projets avec des services professionnels de montage vidéo et photo.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="/assets/images/blog/ser5.jpg" class="card-img-top" alt="Installation de systèmes de sécurité et cybersécurité">
-                  <div class="card-body">
-                    <h5 class="card-title">Installation de systèmes de sécurité et cybersécurité</h5>
-                    <p class="card-text">Nous offrons des solutions de sécurité, physiques et numériques, pour protéger votre entreprise et vos données.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="/assets/images/blog/ser6.jpg" class="card-img-top" alt="Marketing digital">
-                  <div class="card-body">
-                    <h5 class="card-title">Marketing digital</h5>
-                    <p class="card-text">Boostez la présence de votre marque dans le monde numérique avec des stratégies efficaces de marketing en ligne.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                    <img src="/assets/images/blog/ser4.webp" class="card-img-top" alt="Réalité virtuelle">
-                    <div class="card-body">
-                        <h5 class="card-title">Réalité virtuelle</h5>
-                        <p class="card-text">Explorez l'avenir avec des expériences immersives en réalité virtuelle pour les entreprises, l'éducation et le divertissement.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                  <img src="/assets/images/blog/ser5.webp" class="card-img-top" alt="Réalité augmentée">
-                  <div class="card-body">
-                      <h5 class="card-title">Réalité augmentée</h5>
-                      <p class="card-text">Intégrez le monde numérique au monde réel grâce à des expériences interactives de réalité augmentée pour les entreprises et le divertissement.</p>
-                  </div>
-              </div>
-          </div>      
-         <div class="col-md-4">
-        <div class="card">
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser4.jpg" class="card-img-top" alt="Montage vidéo et photo">
+      <div class="card-body">
+        <h5 class="card-title">Montage vidéo et photo</h5>
+        <p class="card-text">Nous vous aidons à améliorer la qualité visuelle de vos projets avec des services professionnels de montage vidéo et photo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser5.jpg" class="card-img-top" alt="Installation de systèmes de sécurité et cybersécurité">
+      <div class="card-body">
+        <h5 class="card-title">Installation de systèmes de sécurité et cybersécurité</h5>
+        <p class="card-text">Nous offrons des solutions de sécurité, physiques et numériques, pour protéger votre entreprise et vos données.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser6.jpg" class="card-img-top" alt="Marketing digital">
+      <div class="card-body">
+        <h5 class="card-title">Marketing digital</h5>
+        <p class="card-text">Boostez la présence de votre marque dans le monde numérique avec des stratégies efficaces de marketing en ligne.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser4.webp" class="card-img-top" alt="Réalité virtuelle">
+      <div class="card-body">
+        <h5 class="card-title">Réalité virtuelle</h5>
+        <p class="card-text">Explorez l'avenir avec des expériences immersives en réalité virtuelle pour les entreprises, l'éducation et le divertissement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser5.webp" class="card-img-top" alt="Réalité augmentée">
+      <div class="card-body">
+        <h5 class="card-title">Réalité augmentée</h5>
+        <p class="card-text">Intégrez le monde numérique au monde réel grâce à des expériences interactives de réalité augmentée pour les entreprises et le divertissement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
       <img src="/assets/images/blog/ser7.jpg" class="card-img-top" alt="Création de cryptomonnaies">
       <div class="card-body">
-          <h5 class="card-title">Création de cryptomonnaies</h5>
-          <p class="card-text">Développement de cryptomonnaies personnalisées et de solutions blockchain pour votre entreprise.</p>
-         </div>
-       </div>
+        <h5 class="card-title">Création de cryptomonnaies</h5>
+        <p class="card-text">Développement de cryptomonnaies personnalisées et de solutions blockchain pour votre entreprise.</p>
       </div>
-     <div class="col-md-4">
-      <div class="card">
-       <img src="/assets/images/blog/ser8.jpg" class="card-img-top" alt="Intelligence artificielle">
-       <div class="card-body">
-       <h5 class="card-title">Intelligence artificielle</h5>
-      <p class="card-text">Implémentation de modèles IA pour optimiser les processus et améliorer la prise de décision.</p>
-       </div>
-         </div>
-             </div>
-            </div>
-          </section>
-          <!-- End Services -->    
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card bg-dark text-light">
+      <img src="/assets/images/blog/ser8.jpg" class="card-img-top" alt="Intelligence artificielle">
+      <div class="card-body">
+        <h5 class="card-title">Intelligence artificielle</h5>
+        <p class="card-text">Implémentation de modèles IA pour optimiser les processus et améliorer la prise de décision.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+<!-- End Services -->
        </div>
      </div>
  </section>
