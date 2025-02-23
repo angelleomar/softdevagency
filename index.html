@@ -1103,100 +1103,81 @@
     </div>
 </section>
 <!-- Finalizar sección de llamado a la acción -->
-
-
-
         <!-- Sección de publicaciones recientes del blog -->
-<!-- Sección de Noticias -->
-<section id="recent-posts" class="recent-posts sections-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
-            <h2>Últimas Noticias</h2>
-            <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
-        </div>
-        <div class="row gy-4" id="news-container">
-            <!-- Noticias dinámicas -->
-        </div>
-    </div>
-</section>
-
-<script>
-    const apiKey = "6537482e11ad4e8b9e96002cdecc80db"; 
-    const today = new Date();
-    const threeDaysAgo = new Date();
-    threeDaysAgo.setDate(today.getDate() - 3); // Buscar noticias de los últimos 3 días
-
-    const fromDate = threeDaysAgo.toISOString().split('T')[0];
-    const toDate = today.toISOString().split('T')[0];
-
-    const keywords = "tecnología OR inteligencia artificial OR software OR ciberseguridad";
-    const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=es&apiKey=${apiKey}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            let newsContainer = document.getElementById("news-container");
-
-            if (data.status !== "ok" || data.articles.length === 0) {
-                newsContainer.innerHTML = "<p>No hay noticias disponibles en español. Buscando en inglés...</p>";
-                return fetchBackupNews(); // Si no hay en español, buscar en inglés
-            }
-
-            renderNews(data.articles);
-        })
-        .catch(error => {
-            console.log("Error al obtener noticias: ", error);
-            document.getElementById("news-container").innerHTML = "<p>Error al obtener noticias.</p>";
-        });
-
-    function fetchBackupNews() {
-        const backupUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=en&apiKey=${apiKey}`;
-
-        fetch(backupUrl)
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === "ok" && data.articles.length > 0) {
-                    renderNews(data.articles);
-                } else {
-                    document.getElementById("news-container").innerHTML = "<p>No se encontraron noticias.</p>";
-                }
-            })
-            .catch(error => {
-                console.log("Error al obtener noticias de respaldo: ", error);
-                document.getElementById("news-container").innerHTML = "<p>Error al obtener noticias.</p>";
-            });
-    }
-
-    function renderNews(articles) {
-        let newsContainer = document.getElementById("news-container");
-        newsContainer.innerHTML = "";
-
-        articles.slice(0, 3).forEach(article => { // Solo mostramos 3 noticias
-            let newsItem = `
-                <div class="col-lg-4">
-                    <article>
-                        <div class="post-img">
-                            <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" alt="Imagen de la noticia" class="img-fluid">
-                        </div>
-                        <p class="post-category">Fuente: ${article.source.name}</p>
-                        <h2 class="title">
-                            <a href="${article.url}" target="_blank">${article.title}</a>
-                        </h2>
-                        <div class="d-flex align-items-center">
-                            <div class="post-meta">
-                                <p class="post-author">${article.author || "Desconocido"}</p>
-                                <p class="post-date">
-                                    <time datetime="${article.publishedAt}">${new Date(article.publishedAt).toLocaleDateString('es-ES')}</time>
-                                </p>
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Últimas Noticias</h2>
+                    <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://imagenes.eleconomista.com.mx/files/image_1000_1000/files/fp/uploads/2025/02/21/67b8b6533b409.r_d.734-219-6667.png" alt="" class="img-fluid">
                             </div>
-                        </div>
-                    </article>
-                </div>`;
-            newsContainer.innerHTML += newsItem;
-        });
-    }
-</script>
+                            <p class="post-category">El Economista</p>
+                            <h2 class="title">
+                                <a href="https://www.eleconomista.com.mx/tecnologia/valor-comercio-electronico-mexico-sigue-tendencia-creciente-20250222-747468.html">Valor del comercio electrónico en México.</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">El Economista</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">22 De Febrero, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                   <!-- Finalizar elemento de la lista de publicaciones -->
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://imagenes.eleconomista.com.mx/files/image_1280_720/uploads/2024/09/26/66f5f4b233c3e.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <p class="post-category">El Economista</p>
+                            <h2 class="title">
+                                <a href="https://www.eleconomista.com.mx/tecnologia/incierta-regulacion-inteligencia-artificial-expertos-analizan-retos-oportunidades-20250222-747506.html">Regulación de la inteligencia artificial</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">El Economista</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">22 De Febrero, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+               <!-- Finalizar elemento de la lista de publicaciones -->
 
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://imagenes.eleconomista.com.mx/files/image_1280_720/uploads/2025/01/27/6797e8e0407a5.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <p class="post-category">El Economista</p>
+                            <h2 class="title">
+                                <a href="https://www.eleconomista.com.mx/tecnologia/deepseek-compartira-parte-codigo-modelos-ia-20250221-747464.html">DeepSeek compartirá parte del código </a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">Reuters</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">21 De Febrero, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                   <!-- Finalizar elemento de la lista de publicaciones -->
+
+                </div>
+               <!-- Finalizar lista de publicaciones recientes -->
+
+            </div>
+        </section>
    <!-- Finalizar la sección de publicaciones recientes del blog -->
     </main>
     <!-- Fin #principal -->
