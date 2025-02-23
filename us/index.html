@@ -979,76 +979,62 @@
 </section>
 <!-- End Call to Action Section -->
  <!-- Recent Blog Posts Section -->
+<!-- Sección de Noticias -->
 <section id="recent-posts" class="recent-posts sections-bg">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
-            <h2>Latest News</h2>
-            <p>Check out our section for the latest technology news.</p>
+            <h2>Últimas Noticias</h2>
+            <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
         </div>
-        <div class="row gy-4">
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/B5HYGO462ZFPZLY44ERPG23PLQ.jpg?auth=7c383907bdb02d3d9334c0863797f96f1358c9e154e5f52bfb4c7a5229c81182&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-10/los-10-inventos-mas-curiosos-del-ces-2025-de-la-cuchara-que-sala-la-comida-sin-sal-a-la-camioneta-con-un-coche-volador-dentro.html">The 10 Most Curious Inventions</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Isabel Rubio</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-10">January 10, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/GMXKZWL3KBGFNBGRKIBLLFQYSU.jpg?auth=f09568974543e7924deec8509b3416eb37a90272adb6f481cbde7c38d96e1035&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-10/suprimir-la-verificacion-y-moderacion-en-redes-aumenta-el-odio-y-el-acoso-advierten-los-expertos.html">Removing Verification and Moderation on Social Networks</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Raúl Limón</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-09">January 9, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/ZF3SXI5OTFDE5IL6JE4BQBLKNM.jpg?auth=a27a6727bf45032d2b79b4d0d9448b379e78157be9b9e2a475e06b0a07265e98&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-09/un-robot-que-aspira-y-recoge-los-calcetines-tirados-por-el-suelo-asi-sera-el-futuro-de-la-limpieza.html">A Robot That Vacuums and Picks Up Socks</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Isabel Rubio</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-09">January 9, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <div class="row gy-4" id="news-container">
+            <!-- Noticias dinámicas -->
         </div>
     </div>
 </section>
+
+<script>
+    const apiKey = "6537482e11ad4e8b9e96002cdecc80db"; // API Key de NewsAPI
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let newsContainer = document.getElementById("news-container");
+
+            if (data.status !== "ok") {
+                newsContainer.innerHTML = "<p>Error al obtener noticias.</p>";
+                return;
+            }
+
+            newsContainer.innerHTML = "";
+            data.articles.slice(0, 3).forEach(article => { // Solo mostramos 3 noticias
+                let newsItem = `
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" alt="Imagen de la noticia" class="img-fluid">
+                            </div>
+                            <p class="post-category">Fuente: ${article.source.name}</p>
+                            <h2 class="title">
+                                <a href="${article.url}" target="_blank">${article.title}</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">${article.author || "Desconocido"}</p>
+                                    <p class="post-date">
+                                        <time datetime="${article.publishedAt}">${new Date(article.publishedAt).toLocaleDateString()}</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>`;
+                newsContainer.innerHTML += newsItem;
+            });
+        })
+        .catch(error => console.log("Error al obtener noticias: ", error));
+</script>
 </main>
 <!-- End #main -->
-
 <!-- Footer -->
 <footer id="footer" class="footer-section">
     <div class="container">
