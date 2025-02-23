@@ -1107,80 +1107,96 @@
 
 
         <!-- Sección de publicaciones recientes del blog -->
-        <section id="recent-posts" class="recent-posts sections-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Últimas Noticias</h2>
-                    <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
-                </div>
-                <div class="row gy-4">
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="post-img">
-                                <img src="https://imagenes.elpais.com/resizer/v2/B5HYGO462ZFPZLY44ERPG23PLQ.jpg?auth=7c383907bdb02d3d9334c0863797f96f1358c9e154e5f52bfb4c7a5229c81182&width=1200" alt="" class="img-fluid">
-                            </div>
-                            <p class="post-category">El País</p>
-                            <h2 class="title">
-                                <a href="https://elpais.com/tecnologia/2025-01-10/los-10-inventos-mas-curiosos-del-ces-2025-de-la-cuchara-que-sala-la-comida-sin-sal-a-la-camioneta-con-un-coche-volador-dentro.html">Los 10 inventos más curiosos</a>
-                            </h2>
-                            <div class="d-flex align-items-center">
-                                <div class="post-meta">
-                                    <p class="post-author">Isabel Rubio</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">10 de Enero, 2025</time>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                   <!-- Finalizar elemento de la lista de publicaciones -->
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="post-img">
-                                <img src="https://imagenes.elpais.com/resizer/v2/GMXKZWL3KBGFNBGRKIBLLFQYSU.jpg?auth=f09568974543e7924deec8509b3416eb37a90272adb6f481cbde7c38d96e1035&width=1200" alt="" class="img-fluid">
-                            </div>
-                            <p class="post-category">El País</p>
-                            <h2 class="title">
-                                <a href="https://elpais.com/tecnologia/2025-01-10/suprimir-la-verificacion-y-moderacion-en-redes-aumenta-el-odio-y-el-acoso-advierten-los-expertos.html">Suprimir la verificación y moderación en redes</a>
-                            </h2>
-                            <div class="d-flex align-items-center">
-                                <div class="post-meta">
-                                    <p class="post-author">Raúl Limón</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">9 Enero, 2025</time>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-               <!-- Finalizar elemento de la lista de publicaciones -->
+<!-- Sección de Noticias -->
+<section id="recent-posts" class="recent-posts sections-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Últimas Noticias</h2>
+            <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
+        </div>
+        <div class="row gy-4" id="news-container">
+            <!-- Noticias dinámicas -->
+        </div>
+    </div>
+</section>
 
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="post-img">
-                                <img src="https://imagenes.elpais.com/resizer/v2/ZF3SXI5OTFDE5IL6JE4BQBLKNM.jpg?auth=a27a6727bf45032d2b79b4d0d9448b379e78157be9b9e2a475e06b0a07265e98&width=1200" alt="" class="img-fluid">
-                            </div>
-                            <p class="post-category">El País</p>
-                            <h2 class="title">
-                                <a href="https://elpais.com/tecnologia/2025-01-09/un-robot-que-aspira-y-recoge-los-calcetines-tirados-por-el-suelo-asi-sera-el-futuro-de-la-limpieza.html">Un robot que aspira y recoge los calcetines</a>
-                            </h2>
-                            <div class="d-flex align-items-center">
-                                <div class="post-meta">
-                                    <p class="post-author">Isabel Rubio</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">9 De Enero, 2025</time>
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                   <!-- Finalizar elemento de la lista de publicaciones -->
+<script>
+    const apiKey = "6537482e11ad4e8b9e96002cdecc80db"; 
+    const today = new Date();
+    const threeDaysAgo = new Date();
+    threeDaysAgo.setDate(today.getDate() - 3); // Buscar noticias de los últimos 3 días
 
-                </div>
-               <!-- Finalizar lista de publicaciones recientes -->
+    const fromDate = threeDaysAgo.toISOString().split('T')[0];
+    const toDate = today.toISOString().split('T')[0];
 
-            </div>
-        </section>
+    const keywords = "tecnología OR inteligencia artificial OR software OR ciberseguridad";
+    const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=es&apiKey=${apiKey}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let newsContainer = document.getElementById("news-container");
+
+            if (data.status !== "ok" || data.articles.length === 0) {
+                newsContainer.innerHTML = "<p>No hay noticias disponibles en español. Buscando en inglés...</p>";
+                return fetchBackupNews(); // Si no hay en español, buscar en inglés
+            }
+
+            renderNews(data.articles);
+        })
+        .catch(error => {
+            console.log("Error al obtener noticias: ", error);
+            document.getElementById("news-container").innerHTML = "<p>Error al obtener noticias.</p>";
+        });
+
+    function fetchBackupNews() {
+        const backupUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=en&apiKey=${apiKey}`;
+
+        fetch(backupUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "ok" && data.articles.length > 0) {
+                    renderNews(data.articles);
+                } else {
+                    document.getElementById("news-container").innerHTML = "<p>No se encontraron noticias.</p>";
+                }
+            })
+            .catch(error => {
+                console.log("Error al obtener noticias de respaldo: ", error);
+                document.getElementById("news-container").innerHTML = "<p>Error al obtener noticias.</p>";
+            });
+    }
+
+    function renderNews(articles) {
+        let newsContainer = document.getElementById("news-container");
+        newsContainer.innerHTML = "";
+
+        articles.slice(0, 3).forEach(article => { // Solo mostramos 3 noticias
+            let newsItem = `
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" alt="Imagen de la noticia" class="img-fluid">
+                        </div>
+                        <p class="post-category">Fuente: ${article.source.name}</p>
+                        <h2 class="title">
+                            <a href="${article.url}" target="_blank">${article.title}</a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">${article.author || "Desconocido"}</p>
+                                <p class="post-date">
+                                    <time datetime="${article.publishedAt}">${new Date(article.publishedAt).toLocaleDateString('es-ES')}</time>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>`;
+            newsContainer.innerHTML += newsItem;
+        });
+    }
+</script>
+
    <!-- Finalizar la sección de publicaciones recientes del blog -->
     </main>
     <!-- Fin #principal -->
