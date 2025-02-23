@@ -75,33 +75,26 @@
               </nav>
            <!-- Conteneur pour le sélecteur de langues et le bouton de mode sombre -->
            <div class="d-flex align-items-center gap-3">
-            <!-- Sélecteur de langue avec seulement un drapeau -->
             <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Sélectionner la langue">
                     <span class="flag-icon flag-icon-fr" id="selectedFlag"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center language-option" href="/fr/lesservices" data-flag="flag-icon-fr">
-                            <span class="flag-icon flag-icon-fr me-2"></span> France
-                        </a>
-                    </li>  
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center language-option" href="/us/services" data-flag="flag-icon-us">
-                            <span class="flag-icon flag-icon-us me-2"></span> États-Unis
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center language-option" href="/mx/servicios" data-flag="flag-icon-mx">
-                            <span class="flag-icon flag-icon-mx me-2"></span> Mexique
-                        </a>
-                    </li>       
+                    <li><a class="dropdown-item d-flex align-items-center language-option" href="/fr/" data-flag="flag-icon-fr">
+                        <span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center language-option" href="/us/" data-flag="flag-icon-us">
+                        <span class="flag-icon flag-icon-us me-2"></span> États-Unis</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center language-option" href="/" data-flag="flag-icon-mx">
+                        <span class="flag-icon flag-icon-mx me-2"></span> Mexique</a></li>
                 </ul>
             </div>
-            <button id="darkmode-button"><i class="bi bi-moon-fill" ></i></button>
             
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <button id="darkmode-button" aria-label="Activer le mode sombre">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Ouvrir le menu mobile"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Fermer le menu mobile"></i>
         </div>
     </header>
     <!-- Fin de l'en-tête -->
