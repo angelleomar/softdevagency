@@ -1052,110 +1052,83 @@
     </div>
 </section>
 <!-- Fin de la section Appel à l'Action -->
-<!-- Section des publications récentes du blog -->
-<!-- Sección de Noticias -->
-<section id="recent-posts" class="recent-posts sections-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
-            <h2>Dernières Nouvelles</h2>
-            <p>Consultez notre section pour les dernières nouvelles technologiques.</p>
-        </div>
-        <div class="row gy-4" id="news-container">
-            <!-- Noticias dinámicas -->
-        </div>
-    </div>
-</section>
 
-<script>
-    const apiKey = "6537482e11ad4e8b9e96002cdecc80db"; 
-    const today = new Date();
-    const threeDaysAgo = new Date();
-    threeDaysAgo.setDate(today.getDate() - 3); // Rechercher les nouvelles des 3 derniers jours
-
-    const fromDate = threeDaysAgo.toISOString().split('T')[0];
-    const toDate = today.toISOString().split('T')[0];
-
-    const keywords = "technologie OR intelligence artificielle OR logiciel OR cybersécurité";
-    const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=fr&apiKey=${apiKey}`;
-
-    fetch(url)
-        .then(response => {
-            // Comprobamos si la respuesta fue exitosa
-            if (!response.ok) {
-                throw new Error('Error al obtener noticias: ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(data => {
-            let newsContainer = document.getElementById("news-container");
-
-            if (data.status !== "ok" || data.articles.length === 0) {
-                newsContainer.innerHTML = "<p>Aucune nouvelle disponible en français. Recherche en anglais...</p>";
-                return fetchBackupNews(); // Si ninguna noticia en francés, buscamos en inglés
-            }
-
-            renderNews(data.articles);
-        })
-        .catch(error => {
-            console.log("Erreur lors de la récupération des nouvelles : ", error);
-            document.getElementById("news-container").innerHTML = `<p>Erreur lors de la récupération des nouvelles: ${error.message}</p>`;
-        });
-
-    function fetchBackupNews() {
-        const backupUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=en&apiKey=${apiKey}`;
-
-        fetch(backupUrl)
-            .then(response => {
-                // Comprobamos si la respuesta fue exitosa
-                if (!response.ok) {
-                    throw new Error('Error al obtener noticias en inglés: ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.status === "ok" && data.articles.length > 0) {
-                    renderNews(data.articles);
-                } else {
-                    document.getElementById("news-container").innerHTML = "<p>Aucune nouvelle trouvée.</p>";
-                }
-            })
-            .catch(error => {
-                console.log("Erreur lors de la récupération des nouvelles de secours : ", error);
-                document.getElementById("news-container").innerHTML = `<p>Erreur lors de la récupération des nouvelles: ${error.message}</p>`;
-            });
-    }
-
-    function renderNews(articles) {
-        let newsContainer = document.getElementById("news-container");
-        newsContainer.innerHTML = "";
-
-        articles.slice(0, 3).forEach(article => { // Mostrar solo 3 noticias
-            let newsItem = `
-                <div class="col-lg-4">
-                    <article>
-                        <div class="post-img">
-                            <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" alt="Image de la nouvelle" class="img-fluid">
-                        </div>
-                        <p class="post-category">Source : ${article.source.name}</p>
-                        <h2 class="title">
-                            <a href="${article.url}" target="_blank">${article.title}</a>
-                        </h2>
-                        <div class="d-flex align-items-center">
-                            <div class="post-meta">
-                                <p class="post-author">${article.author || "Inconnu"}</p>
-                                <p class="post-date">
-                                    <time datetime="${article.publishedAt}">${new Date(article.publishedAt).toLocaleDateString('fr-FR')}</time>
-                                </p>
+        <!-- Section des articles de blog récents -->
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Dernières nouvelles</h2>
+                    <p>Découvrez les dernières nouvelles technologiques dans notre section.</p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://mobile-img.lpcdn.ca/v2/924x/36aa287b/0b56a27a8f9938d087c09ce490c15f40.webp" alt="" class="img-fluid">
                             </div>
-                        </div>
-                    </article>
-                </div>`;
-            newsContainer.innerHTML += newsItem;
-        });
-    }
-</script>
+                            <p class="post-category">La presse</p>
+                            <h2 class="title">
+                                <a href="https://www.lapresse.ca/affaires/techno/2025-02-20/spotify-ouvre-davantage-sa-plateforme-aux-livres-audio-generes-par-l-ia.php">Spotify ouvre davantage sa plateforme</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">France Presse</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">20 Février, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                   <!-- Fin de l'élément de la liste de publications -->
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://mobile-img.lpcdn.ca/v2/924x/r3996/ccd31408e92937029617634a6c7f9f71.webp" alt="" class="img-fluid">
+                            </div>
+                            <p class="post-category">La presse</p>
+                            <h2 class="title">
+                                <a href="https://www.lapresse.ca/affaires/techno/2025-02-19/vie-numerique/clins-d-oeil.php">Clins d’œil</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">Alain McKenna</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">19 Février, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+               <!-- Fin de l'élément de la liste de publications-->
 
-<!-- Fin de la section des publications récentes du blog -->
+                    <div class="col-lg-4">
+                        <article>
+                            <div class="post-img">
+                                <img src="https://mobile-img.lpcdn.ca/v2/924x/r3996/806d7c3350813a97a6e615e8b415bec0.webp" alt="" class="img-fluid">
+                            </div>
+                            <p class="post-category">La presse</p>
+                            <h2 class="title">
+                                <a href="https://www.lapresse.ca/affaires/techno/2025-02-19/pour-faire-evoluer-la-medecine/un-nouveau-modele-d-ia-integre-le-genome-de-toutes-les-especes-vivantes.php">Un nouveau modèle dIA</a>
+                            </h2>
+                            <div class="d-flex align-items-center">
+                                <div class="post-meta">
+                                    <p class="post-author">France Presse</p>
+                                    <p class="post-date">
+                                        <time datetime="2022-01-01">19 Février, 2025</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                   <!-- Fin de l'élément de la liste de publications -->
+
+                </div>
+               <!-- Fin de la liste des messages récents-->
+
+            </div>
+        </section>
+   <!-- Terminer la section des articles de blog récents -->
 
  <!-- Pied de page -->
 <footer id="footer" class="footer-section">
