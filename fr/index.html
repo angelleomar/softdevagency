@@ -1053,6 +1053,7 @@
 </section>
 <!-- Fin de la section Appel à l'Action -->
 <!-- Section des publications récentes du blog -->
+<!-- Sección de Noticias -->
 <section id="recent-posts" class="recent-posts sections-bg">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -1078,27 +1079,39 @@
     const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=fr&apiKey=${apiKey}`;
 
     fetch(url)
-        .then(response => response.json())
+        .then(response => {
+            // Comprobamos si la respuesta fue exitosa
+            if (!response.ok) {
+                throw new Error('Error al obtener noticias: ' + response.statusText);
+            }
+            return response.json();
+        })
         .then(data => {
             let newsContainer = document.getElementById("news-container");
 
             if (data.status !== "ok" || data.articles.length === 0) {
                 newsContainer.innerHTML = "<p>Aucune nouvelle disponible en français. Recherche en anglais...</p>";
-                return fetchBackupNews(); // Si aucune nouvelle en français, chercher en anglais
+                return fetchBackupNews(); // Si ninguna noticia en francés, buscamos en inglés
             }
 
             renderNews(data.articles);
         })
         .catch(error => {
             console.log("Erreur lors de la récupération des nouvelles : ", error);
-            document.getElementById("news-container").innerHTML = "<p>Erreur lors de la récupération des nouvelles.</p>";
+            document.getElementById("news-container").innerHTML = `<p>Erreur lors de la récupération des nouvelles: ${error.message}</p>`;
         });
 
     function fetchBackupNews() {
         const backupUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(keywords)}&from=${fromDate}&to=${toDate}&sortBy=popularity&language=en&apiKey=${apiKey}`;
 
         fetch(backupUrl)
-            .then(response => response.json())
+            .then(response => {
+                // Comprobamos si la respuesta fue exitosa
+                if (!response.ok) {
+                    throw new Error('Error al obtener noticias en inglés: ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
                 if (data.status === "ok" && data.articles.length > 0) {
                     renderNews(data.articles);
@@ -1108,7 +1121,7 @@
             })
             .catch(error => {
                 console.log("Erreur lors de la récupération des nouvelles de secours : ", error);
-                document.getElementById("news-container").innerHTML = "<p>Erreur lors de la récupération des nouvelles.</p>";
+                document.getElementById("news-container").innerHTML = `<p>Erreur lors de la récupération des nouvelles: ${error.message}</p>`;
             });
     }
 
@@ -1116,7 +1129,7 @@
         let newsContainer = document.getElementById("news-container");
         newsContainer.innerHTML = "";
 
-        articles.slice(0, 3).forEach(article => { // Nous affichons uniquement 3 nouvelles
+        articles.slice(0, 3).forEach(article => { // Mostrar solo 3 noticias
             let newsItem = `
                 <div class="col-lg-4">
                     <article>
@@ -1141,6 +1154,7 @@
         });
     }
 </script>
+
 <!-- Fin de la section des publications récentes du blog -->
 
  <!-- Pied de page -->
