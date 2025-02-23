@@ -75,36 +75,31 @@
                     </li>
                 </ul>
             </nav>
-           <!-- Contenedor para el selector de idiomas y el botón de modo oscuro -->
-           <div class="d-flex align-items-center gap-3">
-            <!-- Language selector with only a flag -->
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="flag-icon flag-icon-mx" id="selectedFlag"></span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/mx/nosotros" data-flag="flag-icon-mx">
-                        <span class="flag-icon flag-icon-mx me-2"></span> México
-                    </a>
-                </li>
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/us/about" data-flag="flag-icon-us">
-                        <span class="flag-icon flag-icon-us me-2"></span> Estados Unidos
-                    </a>
-                </li>
-                <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/fr/nous" data-flag="flag-icon-fr">
-                        <span class="flag-icon flag-icon-fr me-2"></span> Francia
-                    </a>
-                </li>         
-                </ul>
-            </div>
-            <button id="darkmode-button"><i class="bi bi-moon-fill" ></i></button>
-            
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-        </div>
+                   <!-- Contenedor para el selector de idiomas y el botón de modo oscuro -->
+<div class="d-flex align-items-center gap-3">
+  <!-- seleccionar idioma -->
+  <div class="d-flex align-items-center gap-3">
+      <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar idioma">
+              <span class="flag-icon flag-icon-mx"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item d-flex align-items-center" href="/mx/"><span class="flag-icon flag-icon-mx me-2"></span> México</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> Estados Unidos</a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> Francia</a></li>
+          </ul>
+      </div>
+      
+      <!-- Botón de modo oscuro con aria-label -->
+      <button id="darkmode-button" aria-label="Activar modo oscuro">
+          <i class="bi bi-moon-fill"></i>
+      </button>
+      
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Abrir menú móvil"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Cerrar menú móvil"></i>
+  </div>
+</div>
+<!-- Fin del Encabezado -->
     </header>
 <!-- Fin del Encabezado -->
 <!-- Sección Hero -->
