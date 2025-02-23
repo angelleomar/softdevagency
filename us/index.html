@@ -979,60 +979,82 @@
 </section>
 <!-- End Call to Action Section -->
  <!-- Recent Blog Posts Section -->
-<!-- Sección de Noticias -->
-<section id="recent-posts" class="recent-posts sections-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
-            <h2>Últimas Noticias</h2>
-            <p>Revisa en nuestra sección las últimas noticias tecnológicas.</p>
-        </div>
-        <div class="row gy-4" id="news-container">
-            <!-- Noticias dinámicas -->
-        </div>
-    </div>
-</section>
-
-<script>
-    const apiKey = "6537482e11ad4e8b9e96002cdecc80db"; // API Key de NewsAPI
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            let newsContainer = document.getElementById("news-container");
-
-            if (data.status !== "ok") {
-                newsContainer.innerHTML = "<p>Error al obtener noticias.</p>";
-                return;
-            }
-
-            newsContainer.innerHTML = "";
-            data.articles.slice(0, 3).forEach(article => { // Solo mostramos 3 noticias
-                let newsItem = `
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="post-img">
-                                <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" alt="Imagen de la noticia" class="img-fluid">
+   <!-- Recent blog posts section -->
+      <section id="recent-posts" class="recent-posts sections-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <p>Check out the latest technology news in our section.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/27fa/live/cd0eb030-f070-11ef-8c03-7dfdbeeb2526.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/c5ym8n4lzp6o">Are planes crashing more often?</a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Joshua Cheetham</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">21 February, 2025</time>
+                                </p>
                             </div>
-                            <p class="post-category">Fuente: ${article.source.name}</p>
-                            <h2 class="title">
-                                <a href="${article.url}" target="_blank">${article.title}</a>
-                            </h2>
-                            <div class="d-flex align-items-center">
-                                <div class="post-meta">
-                                    <p class="post-author">${article.author || "Desconocido"}</p>
-                                    <p class="post-date">
-                                        <time datetime="${article.publishedAt}">${new Date(article.publishedAt).toLocaleDateString()}</time>
-                                    </p>
-                                </div>
+                        </div>
+                    </article>
+                </div>
+            <!-- End post list item -->
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/fbc5/live/83553da0-f07b-11ef-8c03-7dfdbeeb2526.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/cgj54eq4vejo">Apple pulls data protection </a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Zoe Kleinman</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">22 February, 2025</time>
+                                </p>
                             </div>
-                        </article>
-                    </div>`;
-                newsContainer.innerHTML += newsItem;
-            });
-        })
-        .catch(error => console.log("Error al obtener noticias: ", error));
-</script>
+                        </div>
+                    </article>
+                </div>
+       <!-- End post list item -->
+
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/79a8/live/c7bf8d20-ee18-11ef-adfc-71abea2c6a0e.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/cj3e3252gj8o">Powerful quantum </a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Chris Vallance</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">19 February, 2025</time>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+           <!-- End post list item -->
+
+        </div>
+        <!-- End list of recent posts -->
+
+     </div>
+ </section>
+<!-- End recent blog posts section -->
 </main>
 <!-- End #main -->
 <!-- Footer -->
