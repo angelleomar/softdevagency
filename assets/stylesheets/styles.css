@@ -168,7 +168,7 @@ body {
   
   .section-header p {
     margin-bottom: 0;
-    color: #b9935a;
+    color: #0c7cd8;
   }
   
   img {
@@ -3588,7 +3588,7 @@ body {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #2a6aca; /* Ajusta según el tema */
+    color: #025add; /* Ajusta según el tema */
 }
 
 /* Ajusta el tamaño de los íconos de Google Play y App Store */
