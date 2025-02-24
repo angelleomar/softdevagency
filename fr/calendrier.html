@@ -89,14 +89,14 @@
                         <span class="flag-icon flag-icon-mx me-2"></span> Mexique</a></li>
                 </ul>
             </div>
-            
-            <button id="darkmode-button" aria-label="Activer le mode sombre">
-                <i class="bi bi-moon-fill"></i>
-            </button>
-            
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Ouvrir le menu mobile"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Fermer le menu mobile"></i>
+             <!-- Botón de modo oscuro con aria-label -->
+            <button id="darkmode-button" aria-label="Activer le mode sombre"><i class="bi bi-moon-fill"></i></button>
+            <!-- Ícono para abrir el menú móvil -->
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Ouvrir le menu mobile"></i>
+            <!-- Ícono para cerrar el menú móvil -->
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Fermer le menu mobile"></i>
         </div>
+    </div>
     </header>
     <!-- Fin de l'en-tête -->
 <!-- Section Hero -->
@@ -233,7 +233,9 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Adresse e-mail">
-                                <button><i class="bi bi-telegram"></i></button>
+                                <button aria-label="Suscribirse al boletín">
+                                    <i class="bi bi-telegram"></i>
+                                </button>                                
                             </form>
                         </div>
                     </div>
