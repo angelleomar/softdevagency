@@ -213,7 +213,7 @@ body {
   .breadcrumbs .page-header {
     padding: 120px 0 60px 0;
     min-height: 20vh;
-    background: url(../images/page-header-bg.png) center bottom;
+    background: url(../images/page-header-bg.webp) center bottom;
     background-size: cover;
     border-radius: 0px;
     overflow: hidden;
@@ -1025,7 +1025,7 @@ body {
   # Call To Action Section
   --------------------------------------------------------------*/
   .call-to-action {
-    background: url(../images/hero-bg.png) center left;
+    background: url(../images/hero-bg.webp) center left;
     background-size: cover;
     padding: 150px 0px;
     border-radius: 0px;
@@ -1488,7 +1488,7 @@ body {
   .hero {
     width: 100%;
     position: relative;
-    background: url(../images/hero-bg.png) center center;
+    background: url(../images/hero-bg.webp) center center;
     background-size: cover;
     padding: 60px 0 0 0;
     height: 100vh;
@@ -1627,13 +1627,13 @@ body {
   
   @media (max-width: 991px) {
     .hero {
-      background: url(../images/hero-bg.png) center center;
+      background: url(../images/hero-bg.webp) center center;
     }
     .hero h2 {
       font-size: 22px;
     }
     .call-to-action {
-      background: url(../images/hero-bg.png) center left;
+      background: url(../images/hero-bg.webp) center left;
       background-size: cover;
       padding: 150px 60px;
       border-radius: 0px;
@@ -3364,7 +3364,7 @@ body {
   --------------------------------------------------------------*/
   
   .footer-section {
-    background: url(../images/hero-bg.png) center left;
+    background: url(../images/hero-bg.webp) center left;
     background-size: cover;
     padding: 60px 0;
     border-radius: 0px;
@@ -3611,4 +3611,7 @@ body {
 
 #download-app .store-badge {
     margin: 10px; /* Espaciado entre los botones */
+}
+.text-muted {
+  color: #555 !important;
 }
