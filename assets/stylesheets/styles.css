@@ -4,13 +4,13 @@
   scroll-behavior: smooth;
 
   /* Modo claro */
-  --color-bg: #025add;
+  --color-bg: #0d479e;
   --hero-overlay-color: transparent;
   --menu-color: #ffffff;
   --theme-color: #025add;
   --border-color: #e2e2e2;
   --theme-color-dark: #f8f8f8;
-  --text-color: #3a3a3a;
+  --text-color: #000000;
   --hero-text-color: #ffffff;
   --text-white-color: #ffffff;
   --text-grey-color: #3a3a3a;
@@ -168,7 +168,7 @@ body {
   
   .section-header p {
     margin-bottom: 0;
-    color: #b8651d;
+    color: #b9935a;
   }
   
   img {
