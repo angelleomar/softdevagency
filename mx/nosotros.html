@@ -89,14 +89,12 @@
               <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> Francia</a></li>
           </ul>
       </div>
-      
-      <!-- Botón de modo oscuro con aria-label -->
-      <button id="darkmode-button" aria-label="Activar modo oscuro">
-          <i class="bi bi-moon-fill"></i>
-      </button>
-      
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Abrir menú móvil"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Cerrar menú móvil"></i>
+        <!-- Botón de modo oscuro con aria-label -->
+        <button id="darkmode-button" aria-label="Activar modo oscuro"><i class="bi bi-moon-fill"></i></button>
+        <!-- Ícono para abrir el menú móvil -->
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Abrir menú móvil"></i>
+        <!-- Ícono para cerrar el menú móvil -->
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Cerrar menú móvil"></i>
   </div>
 </div>
 <!-- Fin del Encabezado -->
@@ -350,7 +348,9 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Dirección de correo electrónico">
-                                <button><i class="bi bi-telegram"></i></button>
+                                <button aria-label="Suscribirse al boletín">
+                                  <i class="bi bi-telegram"></i>
+                              </button>                              
                             </form>
                         </div>
                     </div>
