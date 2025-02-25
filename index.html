@@ -4,54 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <!-- SEO -->
     <meta name="author" content="SoftdevAgency">
     <meta name="keywords" content="desarrollo de software, páginas web, tecnología, programación, soluciones digitales, diseño web en México">
     <meta name="description" content="SoftdevAgency desarrolla software a medida y diseña páginas web profesionales para empresas en México. ¡Impulsa tu negocio con tecnología innovadora!">
     <title>SoftdevAgency | Desarrollo de Software y Páginas Web en México</title>
-
     <!-- Etiquetas hreflang para SEO internacional -->
     <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/">
     <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/">
     <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/">
     <link rel="alternate" hreflang="x-default" href="https://softdevagency.com/">
-
     <!-- Etiqueta canónica -->
     <link rel="canonical" href="https://softdevagency.com/">
-
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content="SoftdevAgency | Desarrollo de Software y Páginas Web en México">
     <meta property="og:description" content="Creamos soluciones digitales innovadoras para negocios en México. Desarrollo de software y diseño web a medida.">
     <meta property="og:image" content="https://softdevagency.com/assets/images/softdevagency-desarrollo-software-paginas-web.webp">
     <meta property="og:url" content="https://softdevagency.com/">
     <meta property="og:type" content="website">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
-
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest.json">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
     <!-- Main CSS File -->
     <link href="assets/stylesheets/styles.css" rel="stylesheet">
-
     <!-- Redirigir a la versión sin index.html -->
+    <link href="/assets/stylesheets/styles.css" rel="stylesheet">
+    <!-- Redirection vers la version sans index.html -->
     <script>
         if (window.location.pathname.endsWith("index.html")) {
             window.location.replace(window.location.pathname.replace("index.html", ""));
@@ -188,6 +181,7 @@
         </div>
     </section>
 
+    <hr class="my-1 border-1 border-dark">
     <!-- Sección de Servicios -->
     <div id="services" class="section">
         <div class="top-icon-box position-relative">
@@ -750,35 +744,36 @@
         </div>
     </section>
 
-    <!-- Iniciar sección del contador -->
-    <div id="stats-counter" class="call-to-action stats-counter section">
-        <div class="container" data-aos="fade-up">
-            <div class="row gy-4 align-items-center">
-                <div class="col-lg-4">
-                    <div class="stats-item d-flex flex-column align-items-center">
-                        <div class="icon circle"><img src="assets/images/icons/happy-clients.svg" alt="icon"></div>
-                        <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-                        <p><span>Clientes Satisfechos</span> Conseguimos muchos resultados</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="stats-item d-flex flex-column align-items-center">
-                        <div class="icon circle"><img src="assets/images/icons/complete-projects.svg" alt="icon"></div>
-                        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                        <p><span>Proyectos Completados</span> Proyectos entregados con éxito</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="stats-item d-flex flex-column align-items-center">
-                        <div class="icon circle"><img src="assets/images/icons/hours-support.svg" alt="icon"></div>
-                        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
-                        <p><span>Horas de Soporte</span> Asistencia brindada a nuestros clientes</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin de sección del contador -->
+    <!-- Inicio de la Sección de Contadores --> 
+<div id="stats-counter" class="call-to-action stats-counter section"> 
+    <div class="container" data-aos="fade-up"> 
+      <div class="row gy-4 align-items-center"> 
+        <div class="col-lg-4"> 
+          <div class="stats-item d-flex flex-column align-items-center"> 
+            <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icono"></div> 
+            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> 
+            <p><span>Clientes Satisfechos</span> Logramos grandes resultados</p> 
+          </div> 
+        </div> 
+        <div class="col-lg-4"> 
+          <div class="stats-item d-flex flex-column align-items-center"> 
+            <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icono"></div> 
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> 
+            <p><span>Proyectos Completados</span> Entregamos proyectos con éxito</p> 
+          </div> 
+        </div> 
+        <div class="col-lg-4"> 
+          <div class="stats-item d-flex flex-column align-items-center"> 
+            <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icono"></div> 
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> 
+            <p><span>Horas de Soporte</span> Asistencia brindada a nuestros clientes</p> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+  <!-- Fin de la Sección de Contadores --> 
+   
 
     <!-- Sección Clientes -->
     <div id="clients" class="clients section">
@@ -936,6 +931,7 @@
     </div>
     <!-- Sección Clientes Finales -->
 
+    <hr class="my-1 border-1 border-dark">
     <!-- Sección Nuestro Equipo -->
     <section id="team" class="team sections-bg">
         <div class="container aos-init aos-animate" data-aos="fade-up">
