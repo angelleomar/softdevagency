@@ -11,18 +11,12 @@
     <title>Contacto | SoftdevAgency - Desarrollo de Software</title>
     <!-- Canonica -->
     <link rel="canonical" href="https://softdevagency.com/contacto">
-     <!-- Hreflang para SEO Multilingüe -->
-     <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/contacto">
-     <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/contact">
-     <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/contacter">
      <!-- Flag Icons CSS -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
- <!-- Favicons -->
- <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
- <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
- <link rel="manifest" href="/assets/images/favicon/site.webmanifest.json">
+    <!-- Favicons -->
+    <link href="/assets/images/favicon.ico" rel="icon">
+    <!-- Favicons -->
+    <link rel="icon" href="/assets/images/favicon.ico">
     <!-- Google Fonts (Optimizadas) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,9 +44,9 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="/" class="logo d-flex align-items-center">
                 <!-- Logotipo grande para computadoras -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
                 <!-- Logotipo pequeño para dispositivos móviles -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
@@ -71,29 +65,36 @@
                     </li>
                 </ul>
             </nav>
-                   <!-- Contenedor para el selector de idiomas y el botón de modo oscuro -->
-<div class="d-flex align-items-center gap-3">
-    <!-- seleccionar idioma -->
-    <div class="d-flex align-items-center gap-3">
-        <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar idioma">
-                <span class="flag-icon flag-icon-mx"></span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item d-flex align-items-center" href="/mx/"><span class="flag-icon flag-icon-mx me-2"></span> México</a></li>
-                <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> Estados Unidos</a></li>
-                <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> Francia</a></li>
-            </ul>
+           <!-- Contenedor para el selector de idiomas y el botón de modo oscuro -->
+           <div class="d-flex align-items-center gap-3">
+            <!-- Language selector with only a flag -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="flag-icon flag-icon-mx" id="selectedFlag"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/mx/contacto" data-flag="flag-icon-mx">
+                            <span class="flag-icon flag-icon-mx me-2"></span> México
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/us/contact" data-flag="flag-icon-us">
+                            <span class="flag-icon flag-icon-us me-2"></span> Estados Unidos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center language-option" href="/fr/contacter" data-flag="flag-icon-fr">
+                            <span class="flag-icon flag-icon-fr me-2"></span> Francia
+                        </a>
+                    </li>         
+                </ul>
+            </div>
+            <button id="darkmode-button"><i class="bi bi-moon-fill" ></i></button>
+            
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         </div>
-        <!-- Botón de modo oscuro con aria-label -->
-        <button id="darkmode-button" aria-label="Activar modo oscuro"><i class="bi bi-moon-fill"></i></button>
-        <!-- Ícono para abrir el menú móvil -->
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Abrir menú móvil"></i>
-        <!-- Ícono para cerrar el menú móvil -->
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Cerrar menú móvil"></i>
-    </div>
-</div>
-<!-- Fin del Encabezado -->
     </header>
     <!-- Fin del Encabezado -->
 <!-- Sección Hero -->
@@ -112,7 +113,7 @@
       <div class="container">
         <ol>
           <li><a href="/">Inicio</a></li>
-          <li class="text-dark">Equipo</li>
+          <li>Equipo</li>
         </ol>
       </div>
     </nav>
@@ -131,26 +132,38 @@
         </div>
 
         <div class="row gy-5">
-            <!-- Ubicación Monterrey -->
-            <div class="col-lg-6">
+            <!-- Ubicación Tapachula -->
+            <div class="col-lg-4">
                 <div class="info-box" style="padding: 20px; border: 1px solid #8be2f1; border-radius: 8px; background-color: #8be2f1;">
                     <h3>Ubicados en Tapachula</h3>
                     <p>Tapachula, Chiapas.</p>
                     <div class="map-container" style="margin-top: 15px;">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.814985828472!2d-92.2554613!3d14.8916204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x72fe560143193db%3A0xb82fbd7ee68e7674!2sSoftDev%20Agency%20Chiapas%20-%20Desarrollo%20de%20Software%20y%20P%C3%A1ginas%20web.!5e0!3m2!1ses-419!2smx!4v1737097092860!5m2!1ses-419!2smx" 
-                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
 
-            <!-- Ubicación Tapachula -->
-            <div class="col-lg-6">
+            <!-- Ubicación Monterrey -->
+            <div class="col-lg-4">
                 <div class="info-box" style="padding: 20px; border: 1px solid #8be2f1; border-radius: 8px; background-color: #8be2f1;">
                     <h3>Ubicados en Monterrey</h3>
                     <p>Monterrey, Nuevo León.</p>
                     <div class="map-container" style="margin-top: 15px;">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8200436741495!2d-100.20621402391158!3d25.776506907991948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x49fc5b0c2920bb09%3A0x7d059dead9c0b9bc!2sSoftDev%20Agency%20Monterrey%20-%20Desarrollo%20de%20Software%20y%20P%C3%A1ginas%20web.!5e0!3m2!1ses-419!2smx!4v1737097301023!5m2!1ses-419!2smx" 
-                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ubicación Jalisco -->
+            <div class="col-lg-4">
+                <div class="info-box" style="padding: 20px; border: 1px solid #8be2f1; border-radius: 8px; background-color: #8be2f1;">
+                    <h3>Ubicados en Jalisco</h3>
+                    <p>Jalisco, México.</p>
+                    <div class="map-container" style="margin-top: 15px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7642311.0573172225!2d-113.126220703125!3d20.726575291034344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aff78aba85ff%3A0x93cf7249ff51696!2sSoftDev%20Agency%20Jalisco%20-%20Desarrollo%20de%20Software%20y%20P%C3%A1ginas%20web.!5e0!3m2!1ses-419!2smx!4v1747338676928!5m2!1ses-419!2smx" 
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -158,6 +171,7 @@
     </div>
 </section>
 <!-- Fin de la sección Contáctanos -->
+
  
 
     </div>
@@ -310,7 +324,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="/" class="logo d-flex align-items-center">
-                             <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Desarrollo de Software y Páginas Web">
+                             <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Desarrollo de Software y Páginas Web">
                             </a>
                         </div>
                         <div class="footer-text">
@@ -318,19 +332,11 @@
                         </div>
                         <div class="footer-social-icon">
                             <span>Síguenos</span>
-                            <a href="https://twitter.com/softdevagency/" target="_blank" aria-label="Ir al Twitter de SoftdevAgency">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank" aria-label="Ir al Facebook de SoftdevAgency">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/106189443/admin/dashboard/" target="_blank" aria-label="Ir al LinkedIn de SoftdevAgency">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/softdevagency.latam/" target="_blank" aria-label="Ir al Instagram de SoftdevAgency">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </div>                        
+                            <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61569828424920" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/106189443/admin/dashboard/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/softdevagency/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -392,9 +398,7 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Dirección de correo electrónico">
-                                <button aria-label="Suscribirse al boletín">
-                                    <i class="bi bi-telegram"></i>
-                                </button>                                
+                                <button><i class="bi bi-telegram"></i></button>
                             </form>
                         </div>
                     </div>
