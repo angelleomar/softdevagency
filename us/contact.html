@@ -11,18 +11,10 @@
     <title>Contact | SoftdevAgency - Software Development</title>
     <!-- Canonical -->
     <link rel="canonical" href="https://softdevagency.com/contact">
-    <!-- Hreflang para SEO Multilingüe -->
-    <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/contact">
-    <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/contacto">
-    <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/contacter">
     <!-- Flag Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest.json">
+    <link rel="icon" href="/assets/images/favicon.ico">
     <!-- Google Fonts (Optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,8 +41,8 @@
     <header id="header" class="header d-flex align-items-center sticked sticky-menu">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="/us/" class="logo d-flex align-items-center">
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
@@ -71,22 +63,31 @@
             </nav>
             <div class="d-flex align-items-center gap-3">
                 <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> USA</a></li>
-                        <li><a class="dropdown-item d-flex align-items-center" href="/"><span class="flag-icon flag-icon-mx me-2"></span> Mexico</a></li>
-                        <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="/us/contact" data-flag="flag-icon-us">
+                                <span class="flag-icon flag-icon-us me-2"></span> United States
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="/mx/contacto" data-flag="flag-icon-mx">
+                                <span class="flag-icon flag-icon-mx me-2"></span> Mexico
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center language-option" href="/fr/calendrier" data-flag="flag-icon-fr">
+                                <span class="flag-icon flag-icon-fr me-2"></span> France
+                            </a>
+                        </li>         
                     </ul>
                 </div>
-                <!-- Botón de modo oscuro con aria-label -->
-                <button id="darkmode-button" aria-label="Activate dark mode"><i class="bi bi-moon-fill"></i></button>
-                <!-- Ícono para abrir el menú móvil -->
-                <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Open mobile menu"></i>
-                <!-- Ícono para cerrar el menú móvil -->
-                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Close mobile menu"></i>
-            </div>   
+                <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
+                <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            </div>
         </div>
     </header>
      <!-- End of Header -->
@@ -106,7 +107,7 @@
       <div class="container">
         <ol>
           <li><a href="/">Home</a></li>
-          <li class="text-dark">Team</li>
+          <li>Team</li>
         </ol>
       </div>
     </nav>
@@ -147,6 +148,20 @@
             </div>
           </div>
         </div>
+
+
+        <div class="col-lg-4">
+                <div class="info-box" style="padding: 20px; border: 1px solid #8be2f1; border-radius: 8px; background-color: #8be2f1;">
+                    <h3>Located in Jalisco</h3>
+                    <p>Jalisco, México.</p>
+                    <div class="map-container" style="margin-top: 15px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7642311.0573172225!2d-113.126220703125!3d20.726575291034344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aff78aba85ff%3A0x93cf7249ff51696!2sSoftDev%20Agency%20Jalisco%20-%20Desarrollo%20de%20Software%20y%20P%C3%A1ginas%20web.!5e0!3m2!1ses-419!2smx!4v1747338676928!5m2!1ses-419!2smx" 
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       </div>
     </div>
   </section>
@@ -298,19 +313,19 @@
                   <div class="footer-widget">
                       <div class="footer-logo">
                           <a href="/us/" class="logo d-flex align-items-center">
-                               <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Pages">
+                               <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Pages">
                           </a>
                       </div>
                       <div class="footer-text">
                           <p>We offer solutions in web development, applications, and more, committed to providing high-quality services for your business.</p>
                       </div>
                       <div class="footer-social-icon">
-                        <span>Follow us</span>
-                        <a href="https://twitter.com/softdevagency/" target="_blank" aria-label="Go to SoftdevAgency Twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank" aria-label="Go to SoftdevAgency Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank" aria-label="Go to SoftdevAgency LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/softdevagency.global/" target="_blank" aria-label="Go to SoftdevAgency Instagram"><i class="bi bi-instagram"></i></a>
-                    </div>                    
+                          <span>Follow us</span>
+                          <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
+                          <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
+                          <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
+                      </div>
                   </div>
               </div>
               <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
@@ -371,9 +386,7 @@
                       <div class="subscribe-form">
                           <form action="#">
                               <input type="text" placeholder="Email Address">
-                              <button aria-label="Suscribirse al boletín">
-                                <i class="bi bi-telegram"></i>
-                            </button>                            
+                              <button><i class="bi bi-telegram"></i></button>
                           </form>
                       </div>
                   </div>
