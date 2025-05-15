@@ -11,12 +11,20 @@
     <title>About Us | SoftdevAgency - Software Development</title>
     <!-- Canonical URL -->
     <link rel="canonical" href="https://softdevagency.com/about">
+  <!-- Hreflang para SEO Multilingüe -->
+  <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/about">
+  <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/nosotros">
+  <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/nous">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Flag Icons CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Favicons -->
-    <link rel="icon" href="/assets/images/favicon.png">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+   <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+   <link rel="manifest" href="/assets/images/favicon/site.webmanifest.json">
     <!-- Google Fonts (Optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +36,7 @@
     <link rel="stylesheet" href="/assets/vendor/glightbox/css/glightbox.min.css">
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/stylesheets/styles.css">
     <!-- Google Tag Manager -->
@@ -44,9 +53,9 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="/us/" class="logo d-flex align-items-center">
                 <!-- Large Logo for Desktops -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
                 <!-- Small Logo for Mobile Devices -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
             </a>
             <nav id="navbar" class="navbar">
                 <ul>
@@ -67,34 +76,24 @@
             </nav>
            <!-- Language Selector and Dark Mode Button -->
            <div class="d-flex align-items-center gap-3">
-            <!-- Language Selector with Only a Flag -->
             <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
                     <span class="flag-icon flag-icon-us" id="selectedFlag"></span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/us/about" data-flag="flag-icon-us">
-                        <span class="flag-icon flag-icon-us me-2"></span> United States
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/mx/nosotros" data-flag="flag-icon-mx">
-                        <span class="flag-icon flag-icon-mx me-2"></span> Mexico
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center language-option" href="/fr/nous" data-flag="flag-icon-fr">
-                        <span class="flag-icon flag-icon-fr me-2"></span> France
-                    </a>
-                  </li>         
+                    <li><a class="dropdown-item d-flex align-items-center" href="/us/"><span class="flag-icon flag-icon-us me-2"></span> USA</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="/"><span class="flag-icon flag-icon-mx me-2"></span> Mexico</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
                 </ul>
             </div>
-            <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-            
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <!-- Botón de modo oscuro con aria-label -->
+        <button id="darkmode-button" aria-label="Activate dark mode"><i class="bi bi-moon-fill"></i></button>
+        <!-- Ícono para abrir el menú móvil -->
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Open mobile menu"></i>
+        <!-- Ícono para cerrar el menú móvil -->
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Close mobile menu"></i>
         </div>
+    </div>
     </header>
 <!-- End of Header -->
  <!-- Hero Section -->
@@ -113,15 +112,13 @@
       <div class="container">
         <ol>
           <li><a href="/">Home</a></li>
-          <li>About Us</li>
+          <li class="text-dark">About Us</li>
         </ol>
       </div>
     </nav>
   </div><!-- End Breadcrumbs -->
-  
   <main id="main">
-    <div class="single-page">
-      
+    <div class="single-page"> 
       <!-- Featured Section -->
       <section>
         <div class="container" id="featured">
@@ -140,90 +137,110 @@
                   <img src="/assets/images/us/logo_softdevagency.jpg" alt="SoftDevAgency logo and foundation story" class="img-fluid rounded">
                 </div>
               </div>
-            </section><!-- End History -->
-            
-            <!-- Mission and Vision -->
-            <section id="mission-vision" class="mt-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <h2>Mission</h2>
-                  <p>To provide innovative software solutions that drive growth and digital transformation for our clients, exceeding their expectations.</p>
-                </div>
-                <div class="col-md-6">
-                  <h2>Vision</h2>
-                  <p>To be recognized as leaders in software development, offering high-quality products and services that contribute to technological and business progress.</p>
-                </div>
-              </div>
-            </section><!-- End Mission and Vision -->
-            
-            <!-- Services -->
-            <section id="services" class="mt-4">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser4.jpg" class="card-img-top" alt="Professional Video and Photo Editing Services">
-                    <div class="card-body">
-                      <h3 class="card-title">Video & Photo Editing</h3>
-                      <p class="card-text">Enhance the visual quality of your projects with professional video and photo editing services.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser5.jpg" class="card-img-top" alt="Security Systems and Cybersecurity Solutions">
-                    <div class="card-body">
-                      <h3 class="card-title">Security & Cybersecurity</h3>
-                      <p class="card-text">We offer physical and digital security solutions to protect your business and data.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser6.jpg" class="card-img-top" alt="Digital Marketing Strategies">
-                    <div class="card-body">
-                      <h3 class="card-title">Digital Marketing</h3>
-                      <p class="card-text">Boost your brand's online presence with effective digital marketing strategies.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser4.webp" class="card-img-top" alt="Virtual Reality Solutions">
-                    <div class="card-body">
-                      <h3 class="card-title">Virtual Reality</h3>
-                      <p class="card-text">Explore the future with immersive virtual reality experiences for businesses, education, and entertainment.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser5.webp" class="card-img-top" alt="Augmented Reality Experiences">
-                    <div class="card-body">
-                      <h3 class="card-title">Augmented Reality</h3>
-                      <p class="card-text">Integrate the digital and physical worlds with interactive augmented reality experiences.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser7.jpg" class="card-img-top" alt="Cryptocurrency Development">
-                    <div class="card-body">
-                      <h3 class="card-title">Cryptocurrency Creation</h3>
-                      <p class="card-text">Develop custom cryptocurrencies and blockchain solutions for your business.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="/assets/images/blog/ser8.jpg" class="card-img-top" alt="Artificial Intelligence Solutions">
-                    <div class="card-body">
-                      <h3 class="card-title">Artificial Intelligence</h3>
-                      <p class="card-text">Implement AI models to optimize processes and improve decision-making.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section><!-- End Services -->
+            </section>
+            <!-- End History -->
+            <!-- Misión y Visión -->
+<section id="mision-vision" class="mt-5 py-5 text-center bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 p-4">
+          <div class="card-body">
+            <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+            <h2 class="text-muted">Mission</h2>
+            <p class="text-muted">To provide innovative software solutions that drive growth and digital transformation for our clients, exceeding their expectations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0 p-4">
+          <div class="card-body">
+            <i class="fas fa-eye fa-3x text-success mb-3"></i>
+            <h2 class="text-muted">Visión</h2>
+            <p class="text-muted">To be recognized as leaders in software development, offering high-quality products and services that contribute to technological and business progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Misión y Visión -->
+          <!-- Services -->
+<section id="services" class="mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser4.jpg" class="card-img-top" alt="Professional Video and Photo Editing Services">
+        <div class="card-body">
+          <h3 class="card-title">Video & Photo Editing</h3>
+          <p class="card-text">Enhance the visual quality of your projects with professional video and photo editing services.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser5.jpg" class="card-img-top" alt="Security Systems and Cybersecurity Solutions">
+        <div class="card-body">
+          <h3 class="card-title">Security & Cybersecurity</h3>
+          <p class="card-text">We offer physical and digital security solutions to protect your business and data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser6.jpg" class="card-img-top" alt="Digital Marketing Strategies">
+        <div class="card-body">
+          <h3 class="card-title">Digital Marketing</h3>
+          <p class="card-text">Boost your brand's online presence with effective digital marketing strategies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser4.webp" class="card-img-top" alt="Virtual Reality Solutions">
+        <div class="card-body">
+          <h3 class="card-title">Virtual Reality</h3>
+          <p class="card-text">Explore the future with immersive virtual reality experiences for businesses, education, and entertainment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser5.webp" class="card-img-top" alt="Augmented Reality Experiences">
+        <div class="card-body">
+          <h3 class="card-title">Augmented Reality</h3>
+          <p class="card-text">Integrate the digital and physical worlds with interactive augmented reality experiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser7.jpg" class="card-img-top" alt="Cryptocurrency Development">
+        <div class="card-body">
+          <h3 class="card-title">Cryptocurrency Creation</h3>
+          <p class="card-text">Develop custom cryptocurrencies and blockchain solutions for your business.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-dark text-light">
+        <img src="/assets/images/blog/ser8.jpg" class="card-img-top" alt="Artificial Intelligence Solutions">
+        <div class="card-body">
+          <h3 class="card-title">Artificial Intelligence</h3>
+          <p class="card-text">Implement AI models to optimize processes and improve decision-making.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- End Services -->
           </div>
         </div>
       </section>
@@ -244,19 +261,19 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="/us/" class="logo d-flex align-items-center">
-                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Pages">
+                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Pages">
                             </a>
                         </div>
                         <div class="footer-text">
                             <p>We offer solutions in web development, applications, and more, committed to providing high-quality services for your business.</p>
                         </div>
                         <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
-                         <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
-                         <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
-                         <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        </div>
+                          <span>Follow us</span>
+                          <a href="https://twitter.com/softdevagency/" target="_blank" aria-label="Go to SoftdevAgency Twitter"><i class="bi bi-twitter"></i></a>
+                          <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank" aria-label="Go to SoftdevAgency Facebook"><i class="bi bi-facebook"></i></a>
+                          <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank" aria-label="Go to SoftdevAgency LinkedIn"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://www.instagram.com/softdevagency.global/" target="_blank" aria-label="Go to SoftdevAgency Instagram"><i class="bi bi-instagram"></i></a>
+                      </div>                      
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
@@ -301,7 +318,7 @@
                             <h3>Contact</h3>
                         </div>
                         <div class="footer-text">
-                            <p><i class="bi bi-geo-alt-fill mr-15"></i> Monterrey, Nuevo León. / Tapachula, Chiapas, Mexico / Guadalajara, Jalisco.</p>
+                            <p><i class="bi bi-geo-alt-fill mr-15"></i>Monterrey, Nuevo León. / Tapachula, Chiapas, México / Guadalajara, Jalisco.</p>
                             <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +52 9622113136</p>
                             <p><i class="bi bi-envelope-fill mr-15"></i> softdevagency@gmail.com</p>
                             <p><i class="bi bi-envelope-fill mr-15"></i> snokert17@hotmail.com</p>
@@ -317,7 +334,9 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Email Address">
-                                <button><i class="bi bi-telegram"></i></button>
+                                <button aria-label="Suscribirse al boletín">
+                                  <i class="bi bi-telegram"></i>
+                              </button>                              
                             </form>
                         </div>
                     </div>

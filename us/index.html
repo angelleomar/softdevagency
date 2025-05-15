@@ -4,50 +4,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <!-- SEO -->
-    <meta name="author" content="SoftdevAgency">
-    <meta name="keywords" content="software development, web design, technology, programming, digital solutions">
-    <meta name="description" content="Grow your business with SoftdevAgency! We provide expert software development, web design, and digital solutions tailored to your needs. Contact us today!">
-    <title>SoftdevAgency | Professional Software Development & Web Design</title>
-    
-    <!-- Canonical & Hreflang for SEO --> 
-    <link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/" />
-    <link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/" />
-    <link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
-    <link rel="alternate" hreflang="x-default" href="https://softdevagency.com/" />
-     <!-- Balise canonique -->
-     <link rel="canonical" href="https://softdevagency.com/us/"> 
-    
+<meta name="author" content="SoftdevAgency">
+<meta name="keywords" content="software development, web pages, technology, programming, digital solutions, web design in USA">
+<meta name="description" content="SoftdevAgency develops custom software and designs professional websites for businesses in the USA. Empower your business with innovative technology!">
+<title>SoftdevAgency | Custom Software and Web Design in USA</title>
+
+<!-- Canonical & Hreflang for SEO -->
+<link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/" />
+<link rel="alternate" hreflang="fr-FR" href="https://softdevagency.com/fr/" />
+<link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
+<link rel="alternate" hreflang="x-default" href="https://softdevagency.com/" />
+
+<!-- Canonical Tag -->
+<link rel="canonical" href="https://softdevagency.com/us/" />
+
+<!-- Open Graph for social networks -->
+<meta property="og:title" content="SoftdevAgency | Custom Software and Web Design in USA">
+<meta property="og:description" content="We create innovative digital solutions for businesses in the USA. Custom software development and web design tailored to your needs.">
+<meta property="og:image" content="https://softdevagency.com/assets/images/softdevagency-desarrollo-software-paginas-web.webp">
+<meta property="og:url" content="https://softdevagency.com/us/">
+<meta property="og:type" content="website">
+
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     
      <!-- Flag Icons CSS -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.0/css/flag-icon.min.css" rel="stylesheet">
-     
      <!-- Favicons -->
-     <link href="/assets/images/favicon.ico" rel="icon">
-     
+     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
+     <link rel="manifest" href="/assets/images/favicon/site.webmanifest.json">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-     
      <!-- Vendor CSS Files -->
      <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
      <link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
      <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
      <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-     
      <!-- Main CSS File -->
      <link href="/assets/stylesheets/styles.css" rel="stylesheet">
-   
     <script>
         if (window.location.href.includes("index.html")) {
             window.location.href = window.location.href.replace("index.html", "");
         }
     </script>
-    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQSKFK2V9V"></script>
     <script>
@@ -62,9 +65,9 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="/us/" class="logo d-flex align-items-center">
                 <!-- Large logo for desktops -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-none d-lg-block" style="max-width: 250px;">
                 <!-- Small logo for mobile devices -->
-                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
+                <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Design" class="img-fluid d-block d-lg-none" style="max-width: 130px;">
             </a>
             <nav class="navbar">
                 <ul>
@@ -95,43 +98,79 @@
                         <li><a class="dropdown-item d-flex align-items-center" href="/fr/"><span class="flag-icon flag-icon-fr me-2"></span> France</a></li>
                     </ul>
                 </div>
-                <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-                <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+                <!-- Botón de modo oscuro con aria-label -->
+                <button id="darkmode-button" aria-label="Activate dark mode"><i class="bi bi-moon-fill"></i></button>
+                <!-- Ícono para abrir el menú móvil -->
+                <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Open mobile menu"></i>
+                <!-- Ícono para cerrar el menú móvil -->
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Close mobile menu"></i>
             </div>
         </div>
     </header>
          <!-- End of Header -->
                <!-- Hero Section -->
-     <section id="hero" class="hero sticked-header-offset">
-     
-        <div id="particles-js"></div>
-        <div id="repulse-circle-div"></div>
-        <div class="container position-relative">
-            <div class="row gy-5 aos-init aos-animate">
-                <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
-                    <h2 data-aos="fade-up">We Transform Ideas into <span>Digital Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
-                    <p data-aos="fade-up" data-aos-delay="400">We offer innovative services: software development, websites, mobile apps, digital marketing, and cybersecurity. Our focus is on growing your business with cutting-edge technology.</p>
-                    <div class="social" data-aos="fade-up" data-aos-delay="600">
-                        <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <a href="https://wa.me/529622113136?text=I%20would%20like%20a%20quote%20for:" 
-                        class="btn-get-started hide-on-mobile" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                        Request a Quote
-                     </a>
-                        <a href="services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">View Services</a>
+               <section id="hero" class="hero sticked-header-offset">
+                <div id="particles-js"></div>
+                <div id="repulse-circle-div"></div>
+                <div class="container position-relative">
+                    <div class="row gy-5 aos-init aos-animate">
+                        <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+                            <h2 data-aos="fade-up">We Transform Ideas into <span>Digital Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+                            <p data-aos="fade-up" data-aos-delay="400">We offer innovative services: software development, websites, mobile apps, digital marketing, and cybersecurity. Our focus is on growing your business with cutting-edge technology.</p>
+                            <div class="social" data-aos="fade-up" data-aos-delay="600">
+                                <a href="https://twitter.com/softdevagency/" target="_blank" aria-label="Go to SoftdevAgency Twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank" aria-label="Go to SoftdevAgency Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank" aria-label="Go to SoftdevAgency LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/softdevagency.global/" target="_blank" aria-label="Go to SoftdevAgency Instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://wa.me/529622113136?text=I%20would%20like%20a%20quote%20for:" 
+                                class="btn-get-started hide-on-mobile" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                aria-label="Request a quote from SoftdevAgency">
+                                Request a Quote
+                             </a>
+                                <a href="services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000" aria-label="View SoftdevAgency services">View Services</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>            
     <!-- End of Hero Section -->
+     <!-- United States Carousel Section -->
+<section id="carousel-mexico">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-delay="100">
+            <h2>United States, land of advanced technology</h2>
+            <p>Discover the cutting-edge advancements and technological wonders of the United States through our image gallery.</p>            
+        </div>
+        <div id="carouselMexico" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/images/us/washington.jpg" class="d-block w-100" alt="washington">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/us/angels.jpg" class="d-block w-100" alt="los angeles california">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/us/libertad.jpg" class="d-block w-100" alt="statue of liberty">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMexico" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMexico" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<hr class="my-1 border-1 border-dark">
+
      <!-- Start of Services Section -->
 <div id="services" class="section">
     <div class="top-icon-box position-relative">
@@ -142,7 +181,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-design.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Software Development</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Software Development</a></h3>
                         <p>We design and implement customized solutions to optimize your business processes.</p>
                     </div>
                 </div>
@@ -152,7 +191,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-hosting.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Website Development</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Website Development</a></h3>
                         <p>Creation of professional, responsive, and optimized websites to enhance your online presence.</p>
                     </div>
                 </div>
@@ -162,7 +201,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-social.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Mobile Applications</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Mobile Applications</a></h3>
                         <p>We develop innovative apps for Android and iOS devices, tailored to your needs.</p>
                     </div>
                 </div>
@@ -172,7 +211,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-seo.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Digital Marketing</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Digital Marketing</a></h3>
                         <p>Boost your brand with digital marketing strategies, social media management, and SEO optimization.</p>
                     </div>
                 </div>
@@ -182,7 +221,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-secure.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Cybersecurity</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Cybersecurity</a></h3>
                         <p>We protect your systems and data with advanced IT security solutions.</p>
                     </div>
                 </div>
@@ -192,7 +231,7 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="icon-box">
                         <div class="icon"><img src="/assets/images/icons/service-cloud.svg" alt="icon"></div>
-                        <h4 class="title"><a href="" class="stretched-link">Technical Support</a></h4>
+                        <h3 class="title"><a href="" class="stretched-link">Technical Support</a></h3>
                         <p>We provide maintenance, technical support, and optimization for your tech equipment.</p>
                     </div>
                 </div>
@@ -318,8 +357,8 @@
             <div class="col-md-4 left">
                 <div class="list-wrap" data-aos="fade-up" data-aos-delay="100">
                     <div class="description">
-                        <h4>Experience</h4>
-                        <p>Over 10 years developing customized solutions for businesses in various industries.</p>
+                        <h3>Experience</h3>
+                        <p>Over 3 years developing customized solutions for businesses in various industries.</p>
                     </div>
                     <div class="icon">
                         <img src="/assets/images/icons/icon-1.svg" alt="icon">
@@ -328,7 +367,7 @@
 
                 <div class="list-wrap" data-aos="fade-up" data-aos-delay="400">
                     <div class="description">
-                        <h4>Quality</h4>
+                        <h3>Quality</h3>
                         <p>We focus on delivering robust, scalable products tailored to our clients' needs.</p>
                     </div>
                     <div class="icon">
@@ -338,7 +377,7 @@
 
                 <div class="list-wrap" data-aos="fade-up" data-aos-delay="500">
                     <div class="description">
-                        <h4>Innovation</h4>
+                        <h3>Innovation</h3>
                         <p>We adopt cutting-edge technologies to keep you ahead in the market.</p>
                     </div>
                     <div class="icon">
@@ -361,7 +400,7 @@
                         <img src="/assets/images/icons/icon-4.svg" alt="icon">
                     </div>
                     <div class="description">
-                        <h4>Competitive Prices</h4>
+                        <h3>Competitive Prices</h3>
                         <p>We offer affordable solutions without compromising the quality of our services.</p>
                     </div>
                 </div>
@@ -371,7 +410,7 @@
                         <img src="/assets/images/icons/icon-5.svg" alt="icon">
                     </div>
                     <div class="description">
-                        <h4>On-Time Delivery</h4>
+                        <h3>On-Time Delivery</h3>
                         <p>We ensure compliance with agreed timelines for each project.</p>
                     </div>
                 </div>
@@ -381,7 +420,7 @@
                         <img src="/assets/images/icons/icon-6.svg" alt="icon">
                     </div>
                     <div class="description">
-                        <h4>Technical Support</h4>
+                        <h3>Technical Support</h3>
                         <p>We provide personalized assistance and continuous support to ensure your satisfaction.</p>
                     </div>
                 </div>
@@ -405,10 +444,10 @@
             <!-- Download Buttons -->
             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://play.google.com/store/apps/details?id=com.leomar.softdevagency&hl=en" target="_blank">
-                    <img src="/assets/images/app2.webp" alt="Download on Google Play" class="store-badge">
+                    <img src="/assets/images/app2.png" alt="Download on Google Play" class="store-badge">
                 </a>
                 <a href="https://www.apple.com/app-store/" target="_blank">
-                    <img src="/assets/images/app1.webp" alt="Download on the App Store" class="store-badge">
+                    <img src="/assets/images/app1.png" alt="Download on the App Store" class="store-badge">
                 </a>
             </div>
         </div>
@@ -488,97 +527,94 @@
     </div>
 </section>
 <!-- End of Portfolio Section -->
-        <!-- Start Pricing Section -->
-<div class="pricing section">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="section-header">
-                <h2>Web Maintenance Plans</h2>
-                <p>Select the plan that best suits your needs.</p>
+       <!-- Start Pricing Section -->
+<div class="pricing section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>Web Maintenance Plans</h2>
+            <p>Select the plan that best suits your needs.</p>
+        </div>
+        <div class="row">
+            <!-- Basic Plan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center equal-height shadow-lg">
+                    <div class="title p-3">
+                        <h3 class="price display-4">Basic</h3>
+                    </div>
+                    <div class="price p-3">
+                        <p class="price display-4"><sup>$</sup>55</p>
+                    </div>
+                    <div class="option p-3">
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle"></i> Monthly content updates</li>
+                            <li><i class="bi bi-check-circle"></i> Basic security maintenance</li>
+                            <li><i class="bi bi-check-circle"></i> Monthly backups</li>
+                            <li><i class="bi bi-check-circle"></i> Email support</li>
+                        </ul>
+                    </div>
+                    <div class="p-3">
+                        <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Request a Quote</a>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card text-center equal-height">
-                        <div class="title">
-                            <h2>Basic</h2>
-                        </div>
-                        <div class="price">
-                            <h4><sup>$</sup>999</h4>
-                        </div>
-                        <div class="option">
-                            <ul>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly content updates</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Basic security maintenance</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly backups</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Email support</li>
-                            </ul>
-                        </div>
+
+            <!-- Plus Plan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center equal-height shadow-lg">
+                    <div class="title p-3">
+                        <h3 class="price display-4">Plus</h3>
+                    </div>
+                    <div class="price p-3">
+                        <p class="price display-4"><sup>$</sup>83</p>
+                    </div>
+                    <div class="option p-3">
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle"></i> Weekly content updates</li>
+                            <li><i class="bi bi-check-circle"></i> Advanced security maintenance</li>
+                            <li><i class="bi bi-check-circle"></i> Weekly backups</li>
+                            <li><i class="bi bi-check-circle"></i> Phone and email support</li>
+                            <li><i class="bi bi-check-circle"></i> Web performance optimization</li>
+                            <li><i class="bi bi-check-circle"></i> Monthly traffic analysis</li>
+                        </ul>
+                    </div>
+                    <div class="p-3">
                         <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
-                        class="btn-get-started hide-on-mobile" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                        Request a Quote
-                     </a>
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Request a Quote</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card text-center equal-height">
-                        <div class="title">
-                            <h2>Plus</h2>
-                        </div>
-                        <div class="price">
-                            <h4><sup>$</sup>1500</h4>
-                        </div>
-                        <div class="option">
-                            <ul>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Weekly content updates</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Advanced security maintenance</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Weekly backups</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Phone and email support</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Web performance optimization</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly traffic analysis</li>
-                            </ul>
-                        </div>
-                        <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
-                        class="btn-get-started hide-on-mobile" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                        Request a Quote
-                     </a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card text-center equal-height shadow-lg">
+                    <div class="title p-3">
+                        <h3 class="price display-4">Premium</h3>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card text-center equal-height">
-                        <div class="title">
-                            <h2>Premium</h2>
-                        </div>
-                        <div class="price">
-                            <h4><sup>$</sup>2000</h4>
-                        </div>
-                        <div class="option">
-                            <ul>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily content updates</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Full security maintenance</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily backups</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Priority support via phone, chat, and email</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Advanced web performance optimization</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Detailed traffic analysis and reports</li>
-                                <li><i class="bi bi-check-circle" aria-hidden="true"></i> Monthly SEO review</li>
-                            </ul>
-                        </div>
+                    <div class="price p-3">
+                        <p class="price display-4"><sup>$</sup>110</p>
+                    </div>
+                    <div class="option p-3">
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle"></i> Daily content updates</li>
+                            <li><i class="bi bi-check-circle"></i> Complete security maintenance</li>
+                            <li><i class="bi bi-check-circle"></i> Daily backups</li>
+                            <li><i class="bi bi-check-circle"></i> Priority support via phone, chat, and email</li>
+                            <li><i class="bi bi-check-circle"></i> Advanced web performance optimization</li>
+                            <li><i class="bi bi-check-circle"></i> Detailed traffic analysis and reports</li>
+                            <li><i class="bi bi-check-circle"></i> Monthly SEO review</li>
+                        </ul>
+                    </div>
+                    <div class="p-3">
                         <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20hire%20maintenance:" 
-                        class="btn-get-started hide-on-mobile" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                        Request a Quote
-                     </a>
+                            class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Request a Quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- End of Pricing Section -->
+<!-- End Pricing Section -->
 <!-- AI in Marketing and Automation -->
 <section id="ai-marketing">
     <div class="container">
@@ -617,10 +653,10 @@
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center info-box">
-                                <img src="/assets/images/testimonials/testimonial-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <img src="/assets/images/testimonials/testimonial-2.webp" class="testimonial-img flex-shrink-0" alt="">
                                 <div>
                                     <h3>Raul Peralta</h3>
-                                    <h4>Client</h4>
+                                    <h3>Client</h3>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                     </div>
@@ -638,10 +674,10 @@
                     <div class="testimonial-wrap">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center info-box">
-                                <img src="/assets/images/testimonials/testimonial-3.jpg" class="testimonial-img flex-shrink-0" alt="">
+                                <img src="/assets/images/testimonials/testimonial-3.webp" class="testimonial-img flex-shrink-0" alt="">
                                 <div>
                                     <h3>Oscar Navarrete</h3>
-                                    <h4>Client</h4>
+                                    <h3>Client</h3>
                                     <div class="stars">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                     </div>
@@ -661,7 +697,7 @@
     </div>
 </section>
 <!-- End of Testimonials Section --><!-- Virtual Reality Development -->
- <section id="vr-development"> <div class="container"> <div class="section-header" data-aos="fade-up" data-aos-delay="100"> <h2>Take Your Business to Virtual Reality!</h2> <p>We design immersive experiences for businesses, education, and entertainment using VR and augmented reality technologies.</p> </div> <div class="row align-items-center"> <!-- Representative Image --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200"> <img src="/assets/images/us/virtual-reality.jpg" alt="Innovation in Virtual Reality - Technology of the Future" class="img-fluid" title="Innovation in Virtual Reality - Technology of the Future" /> </div> <!-- Call-to-Action Button --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250"> <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20virtual%20reality%20development" class="btn-get-started hide-on-mobile" target="_blank" rel="noopener noreferrer"> Develop Your VR Project </a> </div> <!-- Description with Technologies --> <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300"> <p> We create simulations and immersive environments using technologies like Unity, Unreal Engine, and WebXR, compatible with devices such as Oculus, HTC Vive, and more. We implement 3D modeling in Blender and Maya, along with programming in C#, Blueprints, and JavaScript for interactive experiences. Take your ideas to the next level with VR. </p> </div> </div> </div> </section> <!-- Start of Counter Section --> <div id="stats-counter" class="call-to-action stats-counter section"> <div class="container" data-aos="fade-up"> <div class="row gy-4 align-items-center"> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> <p><span>Satisfied Clients</span> We achieve great results</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> <p><span>Completed Projects</span> Successfully delivered projects</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> <p><span>Support Hours</span> Assistance provided to our clients</p> </div> <!-- End of Stats Item --> </div> </div> </div> </div> <!-- End of Counter Section --> <!-- Clients Section --><div id="clients" class="clients section"> <div class="container" data-aos="zoom-out"> <!-- Section Title --> <h2 class="section-title">Skills We Handle</h2>
+ <section id="vr-development"> <div class="container"> <div class="section-header" data-aos="fade-up" data-aos-delay="100"> <h2>Take Your Business to Virtual Reality!</h2> <p>We design immersive experiences for businesses, education, and entertainment using VR and augmented reality technologies.</p> </div> <div class="row align-items-center"> <!-- Representative Image --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="200"> <img src="/assets/images/us/virtual-reality.webp" alt="Innovation in Virtual Reality - Technology of the Future" class="img-fluid" title="Innovation in Virtual Reality - Technology of the Future" /> </div> <!-- Call-to-Action Button --> <div class="col-md-12 text-center mb-4" data-aos="fade-up" data-aos-delay="250"> <a href="https://wa.me/529622113136?text=I%20would%20like%20to%20get%20a%20quote%20for%20virtual%20reality%20development" class="btn-get-started hide-on-mobile" target="_blank" rel="noopener noreferrer"> Develop Your VR Project </a> </div> <!-- Description with Technologies --> <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300"> <p> We create simulations and immersive environments using technologies like Unity, Unreal Engine, and WebXR, compatible with devices such as Oculus, HTC Vive, and more. We implement 3D modeling in Blender and Maya, along with programming in C#, Blueprints, and JavaScript for interactive experiences. Take your ideas to the next level with VR. </p> </div> </div> </div> </section> <!-- Start of Counter Section --> <div id="stats-counter" class="call-to-action stats-counter section"> <div class="container" data-aos="fade-up"> <div class="row gy-4 align-items-center"> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/happy-clients.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span> <p><span>Satisfied Clients</span> We achieve great results</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/complete-projects.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span> <p><span>Completed Projects</span> Successfully delivered projects</p> </div> <!-- End of Stats Item --> </div> <div class="col-lg-4"> <div class="stats-item d-flex flex-column align-items-center"> <div class="icon circle"><img src="/assets/images/icons/hours-support.svg" alt="icon"></div> <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span> <p><span>Support Hours</span> Assistance provided to our clients</p> </div> <!-- End of Stats Item --> </div> </div> </div> </div> <!-- End of Counter Section --> <!-- Clients Section --><div id="clients" class="clients section"> <div class="container" data-aos="zoom-out"> <!-- Section Title --> <h2 class="section-title">Skills We Handle</h2>
     <div class="clients-slider swiper">
         <div class="swiper-wrapper align-items-center">
             <!-- Slider elements will go here -->
@@ -814,61 +850,63 @@
     </div>
 </div>
 </div> <!-- End of Clients Section -->
-<!-- Team Section -->
-<section id="team" class="team sections-bg">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
-        <div class="section-header">
-            <h2>Our Team</h2>
-            <p>Meet our core team.</p>
-        </div>
-        <div class="row gy-4">
-
+<hr class="my-1 border-1 border-dark">
+      <!-- Our Team Section -->
+      <section id="team" class="team sections-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Meet Our Team</h2>
+            <p>Get to know our talented professionals.</p>
+          </div>
+          <div class="row gy-4">
+            <!-- Team Member 1 -->
             <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                    <img src="/assets/images/team/manuel_leon-equipo-softdevagency.webp" class="img-fluid" alt="Manuel León">
-                    <h4>Manuel León</h4>
-                    <span>Software Developer</span>
-                    <div class="social">
-                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61561254802853" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/%C3%A1ngel-manuel-le%C3%B3n-martinez-39789a270/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/manuell_leon/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-                    </div>
+              <div class="member">
+                <img src="/assets/images/team/manuel_leon-equipo-softdevagency.webp" class="img-fluid" alt="Manuel León - Software Developer">
+                <h3>Manuel León</h3>
+                <span>Software Developer</span>
+                <div class="social">
+                  <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer" aria-label="Softdevagency Twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61561254802853" target="_blank" rel="noopener noreferrer" aria-label="Manuel León Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/%C3%A1ngel-manuel-le%C3%B3n-martinez-39789a270/" target="_blank" rel="noopener noreferrer" aria-label="Manuel León LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/manuell_leon/" target="_blank" rel="noopener noreferrer" aria-label="Manuel León Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
+              </div>
             </div>
-            <!-- End Team Member -->
+            <!-- Team Member 2 -->
             <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <div class="member">
-                    <img src="/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp" class="img-fluid" alt="Manuel Sarmiento">
-                    <h4>Manuel Sarmiento</h4>
-                    <span>Software Developer</span>
-                    <div class="social">
-                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100013127976460" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/juanm_fuentes/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-                    </div>
+              <div class="member">
+                <img src="/assets/images/team/manuel_sarmiento-equipo-softdevagency.webp" class="img-fluid" alt="Manuel Sarmiento - Software Developer">
+                <h3>Manuel Sarmiento</h3>
+                <span>Software Developer</span>
+                <div class="social">
+                  <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer" aria-label="Softdevagency Twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100013127976460" target="_blank" rel="noopener noreferrer" aria-label="Manuel Sarmiento Facebook"><i class="bi bi-facebook"></i></a>
+                  <span aria-hidden="true"><i class="bi bi-linkedin"></i></span>
+                  <a href="https://www.instagram.com/juanm_fuentes/" target="_blank" rel="noopener noreferrer" aria-label="Manuel Sarmiento Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
+              </div>
             </div>
-            <!-- End Team Member -->
+            <!-- Team Member 3 -->
             <div class="col-xl-4 col-md-6 d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                    <img src="/assets/images/team/patricio_munoz-equipo-softdevagency.webp" class="img-fluid" alt="Patricio Muñoz">
-                    <h4>Patricio Muñoz</h4>
-                    <span>Software Developer</span>
-                    <div class="social">
-                        <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100070953241619" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-                    </div>
+              <div class="member">
+                <img src="/assets/images/team/patricio_munoz-equipo-softdevagency.webp" class="img-fluid" alt="Patricio Muñoz - Software Developer">
+                <h3>Patricio Muñoz</h3>
+                <span>Software Developer</span>
+                <div class="social">
+                  <a href="https://x.com/Softdevagency" target="_blank" rel="noopener noreferrer" aria-label="Softdevagency Twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100070953241619" target="_blank" rel="noopener noreferrer" aria-label="Patricio Muñoz Facebook"><i class="bi bi-facebook"></i></a>
+                  <span aria-hidden="true"><i class="bi bi-linkedin"></i></span>
+                  <span aria-hidden="true"><i class="bi bi-instagram"></i></span>
                 </div>
+              </div>
             </div>
-            <!-- End Team Member -->
+          </div>
         </div>
-    </div>
-</section>
-<!-- End Team Section -->
+      </section>
+      <!-- End Our Team Section -->
+  
+  
 
 <!-- FAQ Section -->
 <section id="faq" class="faq">
@@ -985,76 +1023,84 @@
 </section>
 <!-- End Call to Action Section -->
  <!-- Recent Blog Posts Section -->
-<section id="recent-posts" class="recent-posts sections-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
-            <h2>Latest News</h2>
-            <p>Check out our section for the latest technology news.</p>
+   <!-- Recent blog posts section -->
+      <section id="recent-posts" class="recent-posts sections-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <p>Check out the latest technology news in our section.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/27fa/live/cd0eb030-f070-11ef-8c03-7dfdbeeb2526.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/c5ym8n4lzp6o">Are planes crashing more often?</a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Joshua Cheetham</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">21 February, 2025</time>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            <!-- End post list item -->
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/fbc5/live/83553da0-f07b-11ef-8c03-7dfdbeeb2526.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/cgj54eq4vejo">Apple pulls data protection </a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Zoe Kleinman</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">22 February, 2025</time>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+       <!-- End post list item -->
+
+                <div class="col-lg-4">
+                    <article>
+                        <div class="post-img">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/79a8/live/c7bf8d20-ee18-11ef-adfc-71abea2c6a0e.jpg.webp" alt="" class="img-fluid">
+                        </div>
+                        <p class="post-category">BBC</p>
+                        <h2 class="title">
+                            <a href="https://www.bbc.com/news/articles/cj3e3252gj8o">Powerful quantum </a>
+                        </h2>
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-author">Chris Vallance</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">19 February, 2025</time>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+           <!-- End post list item -->
+
         </div>
-        <div class="row gy-4">
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/B5HYGO462ZFPZLY44ERPG23PLQ.jpg?auth=7c383907bdb02d3d9334c0863797f96f1358c9e154e5f52bfb4c7a5229c81182&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-10/los-10-inventos-mas-curiosos-del-ces-2025-de-la-cuchara-que-sala-la-comida-sin-sal-a-la-camioneta-con-un-coche-volador-dentro.html">The 10 Most Curious Inventions</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Isabel Rubio</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-10">January 10, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/GMXKZWL3KBGFNBGRKIBLLFQYSU.jpg?auth=f09568974543e7924deec8509b3416eb37a90272adb6f481cbde7c38d96e1035&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-10/suprimir-la-verificacion-y-moderacion-en-redes-aumenta-el-odio-y-el-acoso-advierten-los-expertos.html">Removing Verification and Moderation on Social Networks</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Raúl Limón</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-09">January 9, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4">
-                <article>
-                    <div class="post-img">
-                        <img src="https://imagenes.elpais.com/resizer/v2/ZF3SXI5OTFDE5IL6JE4BQBLKNM.jpg?auth=a27a6727bf45032d2b79b4d0d9448b379e78157be9b9e2a475e06b0a07265e98&width=1200" alt="" class="img-fluid">
-                    </div>
-                    <p class="post-category">El País</p>
-                    <h2 class="title">
-                        <a href="https://elpais.com/tecnologia/2025-01-09/un-robot-que-aspira-y-recoge-los-calcetines-tirados-por-el-suelo-asi-sera-el-futuro-de-la-limpieza.html">A Robot That Vacuums and Picks Up Socks</a>
-                    </h2>
-                    <div class="d-flex align-items-center">
-                        <div class="post-meta">
-                            <p class="post-author">Isabel Rubio</p>
-                            <p class="post-date">
-                                <time datetime="2025-01-09">January 9, 2025</time>
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- End list of recent posts -->
+
+     </div>
+ </section>
+<!-- End recent blog posts section -->
 </main>
 <!-- End #main -->
-
 <!-- Footer -->
 <footer id="footer" class="footer-section">
     <div class="container">
@@ -1064,7 +1110,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="/us/" class="logo d-flex align-items-center">
-                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.png" alt="SoftdevAgency - Software Development and Web Pages">
+                                 <img src="/assets/images/softdevagency-desarrollo-software-paginas-web.webp" alt="SoftdevAgency - Software Development and Web Pages">
                             </a>
                         </div>
                         <div class="footer-text">
@@ -1072,11 +1118,11 @@
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <a href="https://twitter.com/softdevagency/" target="_blank"><i class="bi bi-twitter"></i></a>
-                         <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank"><i class="bi bi-facebook"></i></a>
-                         <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank"><i class="bi bi-linkedin"></i></a>
-                         <a href="https://www.instagram.com/softdevagency.global/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        </div>
+                            <a href="https://twitter.com/softdevagency/" target="_blank" aria-label="Go to SoftdevAgency Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61572906672074" target="_blank" aria-label="Go to SoftdevAgency Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/softdevagency?trk=blended-typeahead" target="_blank" aria-label="Go to SoftdevAgency LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/softdevagency.global/" target="_blank" aria-label="Go to SoftdevAgency Instagram"><i class="bi bi-instagram"></i></a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
@@ -1121,7 +1167,7 @@
                             <h3>Contact</h3>
                         </div>
                         <div class="footer-text">
-                            <p><i class="bi bi-geo-alt-fill mr-15"></i> Monterrey, Nuevo León. / Tapachula, Chiapas, Mexico / Guadalajara, Jalisco.</p>
+                            <p><i class="bi bi-geo-alt-fill mr-15"></i>Monterrey, Nuevo León. / Tapachula, Chiapas, México / Guadalajara, Jalisco.</p>
                             <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +52 9622113136</p>
                             <p><i class="bi bi-envelope-fill mr-15"></i> softdevagency@gmail.com</p>
                             <p><i class="bi bi-envelope-fill mr-15"></i> snokert17@hotmail.com</p>
@@ -1137,7 +1183,9 @@
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="Email Address">
-                                <button><i class="bi bi-telegram"></i></button>
+                                <button aria-label="Suscribirse al boletín">
+                                    <i class="bi bi-telegram"></i>
+                                </button>                                                            
                             </form>
                         </div>
                     </div>
