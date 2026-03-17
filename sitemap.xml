@@ -8,52 +8,52 @@
 
 <!-- Página principal -->
 <url>
-  <loc>https://softdevagency.com/</loc>
+  <loc>https://softdevagency.com.mx/</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>1.00</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/" />
-  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/" />
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com.mx/mx/" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com.mx/us/" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com.mx/fr/" />
 </url>
 
 <!-- Página Nosotros -->
 <url>
-  <loc>https://softdevagency.com/mx/nosotros</loc>
+  <loc>https://softdevagency.com.mx/mx/nosotros</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/nosotros" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/about" />
-  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/nous" />
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com.mx/mx/nosotros" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com.mx/us/about" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com.mx/fr/nous" />
 </url>
 
 <!-- Página Servicios -->
 <url>
-  <loc>https://softdevagency.com/mx/servicios</loc>
+  <loc>https://softdevagency.com.mx/mx/servicios</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/servicios" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/services" />
-  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/services" />
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com.mx/mx/servicios" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com.mx/us/services" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com.mx/fr/services" />
 </url>
 
 <!-- Página Políticas de Privacidad -->
 <url>
-  <loc>https://softdevagency.com/mx/politicas_privacidad</loc>
+  <loc>https://softdevagency.com.mx/mx/politicas_privacidad</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.50</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/politicas_privacidad" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/privacy-policy" />
-  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/politique-de-confidentialite" />
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com.mx/mx/politicas_privacidad" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com.mx/us/privacy-policy" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com.mx/fr/politique-de-confidentialite" />
 </url>
 
 <!-- Página Preguntas Frecuentes -->
 <url>
-  <loc>https://softdevagency.com/mx/preguntas</loc>
+  <loc>https://softdevagency.com.mx/mx/preguntas</loc>
   <lastmod>2025-01-22T06:37:12+00:00</lastmod>
   <priority>0.60</priority>
-  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com/mx/preguntas" />
-  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com/us/faq" />
-  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com/fr/faq" />
+  <xhtml:link rel="alternate" hreflang="es-MX" href="https://softdevagency.com.mx/mx/preguntas" />
+  <xhtml:link rel="alternate" hreflang="en-US" href="https://softdevagency.com.mx/us/faq" />
+  <xhtml:link rel="alternate" hreflang="fr" href="https://softdevagency.com.mx/fr/faq" />
 </url>
 
 </urlset>

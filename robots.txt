@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /assets/
 Allow: /assets/images/
 
-Sitemap: https://www.softdevagency.com/sitemap.xml
+Sitemap: https://www.softdevagency.com.mx/sitemap.xml
